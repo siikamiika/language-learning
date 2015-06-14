@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+background: #000;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+line-height: 18px;
+color: #aaa;
+}
+
+img { border: none; }
+a { 
+	color: #97C4FF; text-decoration: none;}
+a:hover { 
+	text-decoration: underline; color : #aaa; }
+
+p,cite,code,ul {
+	font-size: 1.2em;
+	padding-bottom: 1.2em;
+}
+
+#wrap {
+margin: 40px auto 0 auto;
+width: 830px;
+}
+
+#header { 
+border: 5px solid #222;
+height: 100px;
+background: #333;
+}
+#header h1 {
+font-size: 26px;
+color: #FFF;
+font-weight: 100;
+padding: 12px 0 5px 10px;
+
+}
+#header h2 {
+color: #ccc;
+font-size: 15px;
+color: #FFF;
+font-weight: 100;
+padding: 0 0 0 11px;
+letter-spacing: -1px;
+line-height: 12px;
+}
+
+cite {
+	display: block;
+	font: normal 1.8em "Arial",serif;
+	padding-left: 28px;
+}
+
+.kanji2 {
+	font: normal 5em "Arial",serif;
+	margin-bottom: -45px;
+}
+
+.kanji {
+	font: normal 5em "Arial",serif;
+	padding-left: 28px;
+	margin-bottom: -45px;
+}
+
+.kanji3 {
+	font: normal 3em "Arial",serif;
+	margin-bottom: -45px;
+}
+
+.kana {
+	font: normal 25px/25px "Arial",serif;
+	padding-bottom: 0.1em;
+	text-align: center;
+}
+
+.yooon {
+	font: normal 3em "Arial",serif;
+	padding-bottom: 0.1em;
+	text-align: center;
+}
+
+	.yoooninlausunta {
+		font: normal 1.7em "Arial",serif;
+		padding-bottom: 0.1em;
+		text-align: center;
+	}
+
+.lausunta {
+	font: normal 1.5em "Arial",serif;
+	padding-bottom: 0.1em;
+	text-align: center;
+}
+
+
+
+.loota { 
+	font-size: 9em; 
+	padding-top: 1.2em;
+	padding-bottom: 1em;
+	}
+	
+.pikkuloota { 
+		font-size: 5em; 
+		padding-top: 1.2em;
+		}
+
+.kommentti {
+	color:#aaa;
+	background-color: #333;
+	border: 5px solid #ccc;
+	text-align: center;
+	
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	
+	
+	}
+
+
+.left {
+margin-top: 10px;
+width: 570px;
+float: left;
+text-align: justify;
+border: 5px solid #222;
+padding: 10px;
+background: #333;
+}
+.left h2 {
+color: #aaa;
+font-size: 24px;
+color: #FFF;
+font-weight: 100;
+padding : 10px 0 15px 0;
+}
+
+.left h3 {
+color: #aaa;
+font-size: 18px;
+color: #FFF;
+font-weight: 100;
+padding : 10px 0 15px 0;
+}
+
+.right {
+margin-top: 10px;
+width: 190px;
+float: right;
+border: 5px solid #222;
+font-size: 12px;
+padding: 10px;
+background: #333;
+}
+.right ul {
+list-style-type: square;
+padding: 5px 10px 10px 20px;
+color: #59799F;
+}
+.right h2 {
+height: 30px;
+font-size: 15px;
+color: #666;
+line-height: 30px;
+}
+.right a { text-decoration: none }
+
+#footer {
+margin-top: 10px;
+text-align: center;
+color: #eee;
+font-size: 11px;
+border: 5px solid #222;
+padding: 10px;
+background: #333;
+}
+
+
