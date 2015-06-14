@@ -1,0 +1,41 @@
+#keyboard {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-size: 15px;
+    background-color: white;
+    z-index: 1;
+    opacity: 0.9;
+}
+#content {
+    margin-top: 250px;
+}
+
+#keyboard td {
+    position: relative;
+}
+td {
+    border: 1px solid black;
+}
+
+.button {
+    padding: 5px;
+    text-align: center;
+}
+
+.button span {
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    text-align: left;
+    background-color: white;
+    border: 2px solid black;
+    z-index: 2;
+    top: 50px;
+
+}
+
+.button:hover span {
+    display: block;
+    visibility: visible;
+}
