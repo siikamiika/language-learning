@@ -82,6 +82,9 @@ Russian alphabet the qwerty way by siikamiika
     </table>
     <p>Hover mouse over keys to show info. Click to play sound.</p>
 </div>
+<div id="settings">
+    <span>Hide answers (hover to peek)</span><input id="hidecheckbox" type="checkbox">
+</div>
 <div id="content">
     <h1>Russian alphabet the qwerty way</h1>
     <h2>Telling them apart</h2>
@@ -129,32 +132,32 @@ Russian alphabet the qwerty way by siikamiika
         <tr>
             <td>Рр</td>
             <td>p</td>
-            <td>rrr (r key)</td>
+            <td class="answer">rrr (r key)</td>
         </tr>
         <tr>
             <td>Уу</td>
             <td>y</td>
-            <td>u (u key)</td>
+            <td class="answer">u (u key)</td>
         </tr>
         <tr>
             <td>Сс</td>
             <td>c</td>
-            <td>s (s key)</td>
+            <td class="answer">s (s key)</td>
         </tr>
         <tr>
             <td>Хх</td>
             <td>x</td>
-            <td>h (x key)</td>
+            <td class="answer">h (x key)</td>
         </tr>
         <tr>
             <td>Вв</td>
             <td>b</td>
-            <td>v (v key)</td>
+            <td class="answer">v (v key)</td>
         </tr>
         <tr>
             <td>Нн</td>
             <td>h</td>
-            <td>n (n key)</td>
+            <td class="answer">n (n key)</td>
         </tr>
     </table>
     <!-- end False Friends -->
@@ -167,87 +170,87 @@ Russian alphabet the qwerty way by siikamiika
         </tr>
         <tr>
             <td>Ёё</td>
-            <td>jo (backtick key)</td>
+            <td class="answer">jo (backtick key)</td>
         </tr>
         <tr>
             <td>Ъъ</td>
-            <td>hard sign (equals key)</td>
+            <td class="answer">hard sign (equals key)</td>
         </tr>
         <tr>
             <td>Яя</td>
-            <td>ja (q key)</td>
+            <td class="answer">ja (q key)</td>
         </tr>
         <tr>
             <td>Шш</td>
-            <td>sh (w key)</td>
+            <td class="answer">sh (w key)</td>
         </tr>
         <tr>
             <td>Ыы</td>
-            <td>y (y key)</td>
+            <td class="answer">y (y key)</td>
         </tr>
         <tr>
             <td>Ии</td>
-            <td>i (i key)</td>
+            <td class="answer">i (i key)</td>
         </tr>
         <tr>
             <td>Пп</td>
-            <td>p (p key)</td>
+            <td class="answer">p (p key)</td>
         </tr>
         <tr>
             <td>Юю</td>
-            <td>ju (left square bracket key)</td>
+            <td class="answer">ju (left square bracket key)</td>
         </tr>
         <tr>
             <td>Щщ</td>
-            <td>long sh (right square bracket key)</td>
+            <td class="answer">long sh (right square bracket key)</td>
         </tr>
         <tr>
             <td>Дд</td>
-            <td>d (d key)</td>
+            <td class="answer">d (d key)</td>
         </tr>
         <tr>
             <td>Фф</td>
-            <td>f (f key)</td>
+            <td class="answer">f (f key)</td>
         </tr>
         <tr>
             <td>Гг</td>
-            <td>g (g key)</td>
+            <td class="answer">g (g key)</td>
         </tr>
         <tr>
             <td>Чч</td>
-            <td>ch (h key)</td>
+            <td class="answer">ch (h key)</td>
         </tr>
         <tr>
             <td>Йй</td>
-            <td>short i (j key)</td>
+            <td class="answer">short i (j key)</td>
         </tr>
         <tr>
             <td>Лл</td>
-            <td>l (l key)</td>
+            <td class="answer">l (l key)</td>
         </tr>
         <tr>
             <td>Ьь</td>
-            <td>soft sign (semicolon key)</td>
+            <td class="answer">soft sign (semicolon key)</td>
         </tr>
         <tr>
             <td>Жж</td>
-            <td>ž (apostrophe key)</td>
+            <td class="answer">ž (apostrophe key)</td>
         </tr>
         <tr>
             <td>Ээ</td>
-            <td>e (backslash key)</td>
+            <td class="answer">e (backslash key)</td>
         </tr>
         <tr>
             <td>Зз</td>
-            <td>z (z key)</td>
+            <td class="answer">z (z key)</td>
         </tr>
         <tr>
             <td>Цц</td>
-            <td>ts (c key)</td>
+            <td class="answer">ts (c key)</td>
         </tr>
         <tr>
             <td>Бб</td>
-            <td>b (b key)</td>
+            <td class="answer">b (b key)</td>
         </tr>
     </table>
     <!-- end Others -->
@@ -263,7 +266,7 @@ Russian alphabet the qwerty way by siikamiika
                 <p>Ээ</p>
                 <p>Зз</p>
             </td>
-            <td>
+            <td class="answer">
                 <p>Ээ is backslash key</p>
                 <p>Зз is z key</p>
             </td>
@@ -273,7 +276,7 @@ Russian alphabet the qwerty way by siikamiika
                 <p>Шш</p>
                 <p>Щщ</p>
             </td>
-            <td>
+            <td class="answer">
                 <p>Шш is w key</p>
                 <p>Щщ is right square bracket key</p>
             </td>
@@ -283,7 +286,7 @@ Russian alphabet the qwerty way by siikamiika
                 <p>Ее</p>
                 <p>Ёё</p>
             </td>
-            <td>
+            <td class="answer">
                 <p>Ее is e key</p>
                 <p>Ёё is backtick key</p>
             </td>
@@ -295,7 +298,7 @@ Russian alphabet the qwerty way by siikamiika
                 <p>Бб</p>
                 <p>Вв</p>
             </td>
-            <td>
+            <td class="answer">
                 <p>Ьь is semicolon key</p>
                 <p>Ъъ is equals key</p>
                 <p>Бб is b key</p>
@@ -313,23 +316,23 @@ Russian alphabet the qwerty way by siikamiika
         </tr>
         <tr>
             <td>Аа</td>
-            <td>a (a key)</td>
+            <td class="answer">a (a key)</td>
         </tr>
         <tr>
             <td>Ээ</td>
-            <td>e (backslash key)</td>
+            <td class="answer">e (backslash key)</td>
         </tr>
         <tr>
             <td>Уу</td>
-            <td>u (u key)</td>
+            <td class="answer">u (u key)</td>
         </tr>
         <tr>
             <td>Оо</td>
-            <td>o (o key)</td>
+            <td class="answer">o (o key)</td>
         </tr>
         <tr>
             <td>Ыы</td>
-            <td>y (y key)</td>
+            <td class="answer">y (y key)</td>
         </tr>
 
     </table>
@@ -343,23 +346,23 @@ Russian alphabet the qwerty way by siikamiika
         </tr>
         <tr>
             <td>Яя</td>
-            <td>ja (q key)</td>
+            <td class="answer">ja (q key)</td>
         </tr>
         <tr>
             <td>Ее</td>
-            <td>je (e key)</td>
+            <td class="answer">je (e key)</td>
         </tr>
         <tr>
             <td>Юю</td>
-            <td>ju (left square bracket key)</td>
+            <td class="answer">ju (left square bracket key)</td>
         </tr>
         <tr>
             <td>Ёё</td>
-            <td>jo (backtick key)</td>
+            <td class="answer">jo (backtick key)</td>
         </tr>
         <tr>
             <td>Ии</td>
-            <td>i (i key)</td>
+            <td class="answer">i (i key)</td>
         </tr>
     </table>
     <!-- end Soft Vowels -->
@@ -372,31 +375,31 @@ Russian alphabet the qwerty way by siikamiika
         </tr>
         <tr>
             <td>Шш</td>
-            <td>sh (w key)</td>
+            <td class="answer">sh (w key)</td>
         </tr>
         <tr>
             <td>Щщ</td>
-            <td>long sh (right square bracket key)</td>
+            <td class="answer">long sh (right square bracket key)</td>
         </tr>
         <tr>
             <td>Сс</td>
-            <td>s (s key)</td>
+            <td class="answer">s (s key)</td>
         </tr>
         <tr>
             <td>Чч</td>
-            <td>ch (h key)</td>
+            <td class="answer">ch (h key)</td>
         </tr>
         <tr>
             <td>Жж</td>
-            <td>ž (apostrophe key)</td>
+            <td class="answer">ž (apostrophe key)</td>
         </tr>
         <tr>
             <td>Зз</td>
-            <td>z (z key)</td>
+            <td class="answer">z (z key)</td>
         </tr>
         <tr>
             <td>Цц</td>
-            <td>ts (c key)</td>
+            <td class="answer">ts (c key)</td>
         </tr>
     </table>
     <!-- end Dat S -->

@@ -34,10 +34,31 @@ function keyboard_press(e) {
     play_sound(charcode);
 }
 
-window.addEventListener('keypress', function (e) {
-    keyboard_press(e);
-}, false)
+function toggle_show_answers () {
+    var chkbox = document.getElementById('hidecheckbox');
+    var answers = document.getElementsByClassName('answer');
+    if (chkbox.checked) {
+        for (var i = 0; i < answers.length; i++) {
+            answers[i].classList.add('hide');
+        }
+    }
+    else {
+        for (var i = 0; i < answers.length; i++) {
+            answers[i].classList.remove('hide');
+        }
+    }
+}
 
 window.addEventListener("load", function () {
+
     prepare_buttons();
+
+    document.getElementById('hidecheckbox').addEventListener('click', function () {
+        toggle_show_answers();
+    }, false);
+
+    window.addEventListener('keypress', function (e) {
+        keyboard_press(e);
+    }, false);
+
 }, false);

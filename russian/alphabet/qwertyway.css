@@ -45,3 +45,17 @@ td {
     display: block;
     visibility: visible;
 }
+
+.hide {
+    color: transparent;
+}
+
+.hide:hover {
+    color: black;
+}
+
+#settings {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
