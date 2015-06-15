@@ -5,15 +5,21 @@
     font-size: 15px;
     background-color: white;
     z-index: 1;
-    opacity: 0.9;
+    opacity: 0.25;
 }
+
+#keyboard:hover {
+    opacity: 1;
+}
+
 #content {
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 #keyboard td {
     position: relative;
 }
+
 td {
     border: 1px solid black;
 }
