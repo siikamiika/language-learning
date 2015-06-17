@@ -52,6 +52,7 @@ function toggle_show_answers () {
 window.addEventListener("load", function () {
 
     prepare_buttons();
+    toggle_show_answers();
 
     document.getElementById('hidecheckbox').addEventListener('click', function () {
         toggle_show_answers();
