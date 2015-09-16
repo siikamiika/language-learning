@@ -34,25 +34,24 @@ months_fi = [(mo, mo[:-3]) for mo in [
     ]]
 
 class Question(object):
-    def __init__(self, monthlist, question_type=None, offset=None):
+    def __init__(self, monthlist):
         self.months = monthlist
-        self.q = question_type
-        if not self.q:
-            self.q = random.choice([
-                'order_num',
-                #'name',
-                'abbreviation',
-                ])
+
+        self.q = random.choice([
+            'order_num',
+            #'name',
+            'abbreviation',
+            ])
+
         self.index = random.randint(0, 11)
-        self.offset = offset
-        if self.offset == None:
-            max_offset = 2
-            r = list(range(-max_offset, max_offset+1))
-            if self.index > 11 - max_offset:
-                r = r[:9 - self.index]
-            elif self.index < max_offset:
-                r = r[2 - self.index:]
-            self.offset = random.choice(r + [0]*5)
+
+        max_offset = 2
+        r = list(range(-max_offset, max_offset+1))
+        if self.index > 11 - max_offset:
+            r = r[:9 - self.index]
+        elif self.index < max_offset:
+            r = r[2 - self.index:]
+        self.offset = random.choice(r + [0]*5)
 
     def ask(self):
 
