@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    min-width: 100px;
+}
+
+#output {
+    font-size: 26px;
+}
