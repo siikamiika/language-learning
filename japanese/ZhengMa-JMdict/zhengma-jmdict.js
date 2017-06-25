@@ -4,9 +4,21 @@ var jmdictWords;
 var input = document.getElementById('input');
 var output = document.getElementById('output');
 var fullText = document.getElementById('fulltext');
+var layout = document.getElementById('layout');
 
 input.oninput = refreshResults;
 fullText.oninput = refreshResults;
+input.onfocus = showLayout;
+input.onblur = hideLayout;
+
+function showLayout() {
+    layout.style.visibility = 'visible';
+}
+
+function hideLayout() {
+    layout.style.visibility = 'hidden';
+}
+
 var refreshId = 0;
 
 function refreshResults(event, timer) {
@@ -22,14 +34,20 @@ function refreshResults(event, timer) {
     var matches = [];
 
     if (input.value.split('/').length == 1) {
-        for (key in zhengmaDictionary) {
-            if (!key.match(/^[a-z]+$/)) {
-                continue;
+        if (!input.value.match(/^[a-z\.\$]+$/)) {
+            for (var i = 0; i < input.value.length; i++) {
+                matches.push(input.value[i] + zhengmaDictionary[input.value[i]].join('/'));
             }
-            if (key.match(new RegExp('^'+input.value))) {
-                for (var i = 0; i < zhengmaDictionary[key].length; i++) {
-                    if (!(matches.indexOf(zhengmaDictionary[key][i]) + 1)) {
-                        matches.push(zhengmaDictionary[key][i] + zhengmaDictionary[zhengmaDictionary[key][i]].join('/'));
+        } else {
+            for (key in zhengmaDictionary) {
+                if (!key.match(/^[a-z]+$/)) {
+                    continue;
+                }
+                if (key.match(new RegExp('^'+input.value))) {
+                    for (var i = 0; i < zhengmaDictionary[key].length; i++) {
+                        if (!(matches.indexOf(zhengmaDictionary[key][i]) + 1)) {
+                            matches.push(zhengmaDictionary[key][i] + zhengmaDictionary[zhengmaDictionary[key][i]].join('/'));
+                        }
                     }
                 }
             }

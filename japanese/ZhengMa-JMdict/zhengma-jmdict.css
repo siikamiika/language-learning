@@ -2,3 +2,15 @@ body {
     font-family: sans-serif;
     font-size: 26px;
 }
+
+#output {
+    float: left;
+    width: 15%;
+}
+
+#layout {
+    float: right;
+    width: 1500px;
+    position: fixed;
+    visibility: hidden;
+}
