@@ -3,8 +3,10 @@ var jmdictWords;
 
 var input = document.getElementById('input');
 var output = document.getElementById('output');
+var fullText = document.getElementById('fulltext');
 
 input.oninput = refreshResults;
+fullText.oninput = refreshResults;
 var refreshId = 0;
 
 function refreshResults(event, timer) {
@@ -19,14 +21,29 @@ function refreshResults(event, timer) {
 
     var matches = [];
 
+    if (input.value.split('/').length == 1) {
+        for (key in zhengmaDictionary) {
+            if (!key.match(/^[a-z]+$/)) {
+                continue;
+            }
+            if (key.match(new RegExp('^'+input.value))) {
+                for (var i = 0; i < zhengmaDictionary[key].length; i++) {
+                    if (!(matches.indexOf(zhengmaDictionary[key][i]) + 1)) {
+                        matches.push(zhengmaDictionary[key][i] + zhengmaDictionary[zhengmaDictionary[key][i]].join('/'));
+                    }
+                }
+            }
+        }
+    }
+
     if (!input.value) {
         output.innerHTML = '';
         return;
     }
 
-    var pattern = input.value.split('/').map(generatePattern).join('');
+    var pattern = (!fullText.checked ? '^' : '') + input.value.split('/').map(generatePattern).join('');
 
-    if (pattern.match(/^\.+$/)) {
+    if (pattern.match(/^[\.^]+$/)) {
         output.innerHTML = '';
         return;
     }
