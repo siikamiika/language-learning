@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    min-width: 100px;
+}
+
+.result {
+    font-size: 24px;
+    float: left;
+    min-height: 1px;
+}
+
+#exact-characters {
+    width: 150px;
+}
+
+#longer-characters {
+    width: 150px;
+}
+
+#exact-words {
+    width: 20%;
+}
+
+#longer-words {
+    /*width: 40%;*/
+}
