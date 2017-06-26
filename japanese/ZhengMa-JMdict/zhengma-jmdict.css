@@ -1,16 +1,17 @@
 body {
     font-family: sans-serif;
-    font-size: 26px;
 }
 
 #output {
-    float: left;
-    width: 15%;
+    font-size: 26px;
 }
 
 #layout {
-    float: right;
-    width: 1500px;
-    position: fixed;
     visibility: hidden;
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    left: 50px;
+    right: 0px;
+    overflow-x: scroll;
 }

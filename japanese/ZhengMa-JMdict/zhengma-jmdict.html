@@ -2,16 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <title>ZhengMa JMdict</title>
         <link rel="stylesheet" type="text/css" href="zhengma-jmdict.css">
     </head>
     <body>
+        <div id="layout">
+            <img src="layout.png" alt="layout">
+        </div>
         <input type="text" id="input" placeholder="">
         <label><input type="checkbox" id= "fulltext"> full text</label>
-        <div>
-            <pre id="output"></pre>
-            <img id="layout" src="layout.png">
-        </div>
+        <div id="output"></div>
         <script type="text/javascript" src="jmdict.js"></script>
         <script type="text/javascript" src="zhengma-dictionary.js"></script>
         <script type="text/javascript" src="zhengma-jmdict.js"></script>

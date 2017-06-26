@@ -25,77 +25,95 @@ function refreshResults(event, timer) {
 
     if (!timer) {
         clearTimeout(refreshId);
-        setTimeout(function() {
+        refreshId = setTimeout(function() {
             refreshResults(null, true);
-        }, 300);
+        }, 600);
         return;
     }
 
-    var matches = [];
+    var inputValue = splitInput();
 
-    if (input.value.split('/').length == 1) {
-        if (!input.value.match(/^[a-z\.\$]+$/)) {
-            for (var i = 0; i < input.value.length; i++) {
-                matches.push(input.value[i] + zhengmaDictionary[input.value[i]].join('/'));
-            }
+    var characters = [];
+    if (inputValue.length == 0) {
+        output.innerHTML = '';
+        return;
+    } else if (inputValue.length == 1) {
+        if (isAscii(inputValue[0])) {
+            characters = getUniqueZhengmaCharacters(inputValue[0]);
         } else {
-            for (key in zhengmaDictionary) {
-                if (!key.match(/^[a-z]+$/)) {
-                    continue;
-                }
-                if (key.match(new RegExp('^'+input.value))) {
-                    for (var i = 0; i < zhengmaDictionary[key].length; i++) {
-                        if (!(matches.indexOf(zhengmaDictionary[key][i]) + 1)) {
-                            matches.push(zhengmaDictionary[key][i] + zhengmaDictionary[zhengmaDictionary[key][i]].join('/'));
-                        }
-                    }
-                }
+            for (var i = 0; i < inputValue[0].length; i++) {
+                characters.push(inputValue[0][i]);
             }
         }
     }
 
-    if (!input.value) {
-        output.innerHTML = '';
-        return;
+    var words = [];
+    var wordPattern = generateWordPattern(inputValue);
+    if (!wordPattern.match(/^[\.]*$/)) {
+        words = getWords(RegExp((fullText.checked ? '' : '^') + wordPattern));
     }
 
-    var pattern = (!fullText.checked ? '^' : '') + input.value.split('/').map(generatePattern).join('');
-
-    if (pattern.match(/^[\.^]+$/)) {
-        output.innerHTML = '';
-        return;
-    }
-
-    for (var i = 0; i < jmdictWords.length; i++) {
-        if (jmdictWords[i].match(pattern)) {
-            matches.push(jmdictWords[i])
-        }
-    }
-
-    output.innerHTML = matches.join('\n');
+    output.innerHTML = characters.map(generateCharacterHtml).join('') + words.join('<br>');
 
 }
 
-function generatePattern(info) {
-    if (info.match(/^[a-z\.\$]+$/)) {
-        if (info.match(/^\.+$/)) {
-            return '.';
-        }
-        var output = [];
-        for (key in zhengmaDictionary) {
-            if (!key.match(/^[a-z]+$/)) {
-                continue;
+function splitInput() {
+    return input.value.split(/[\/'\s]/);
+}
+
+function isAscii(text) {
+    return text.match(/^[\!-~]+$/);
+}
+
+function generateCharacterHtml(character) {
+    var code = zhengmaDictionary.character[character];
+    if (!code) {
+        return '';
+    }
+    return character+' '+code.join('/')+'<br>';
+}
+
+function generateWordPattern(inputValue) {
+    var output = [];
+    for (var i = 0; i < inputValue.length; i++) {
+        if (isAscii(inputValue[i])) {
+            var characters = getUniqueZhengmaCharacters(inputValue[i]);
+            if (characters.length) {
+                output.push('['+getUniqueZhengmaCharacters(inputValue[i]).join('')+']');
+            } else {
+                output.push('.');
             }
-            if (key.match(new RegExp('^'+info))) {
-                for (var i = 0; i < zhengmaDictionary[key].length; i++) {
-                    if (!(output.indexOf(zhengmaDictionary[key][i]) + 1)) {
-                        output.push(zhengmaDictionary[key][i]);
-                    }
+        } else if (inputValue[i].length == 0) {
+            output.push('.');
+        }
+    }
+    return output.join('');
+}
+
+function getUniqueZhengmaCharacters(code) {
+    var output = [];
+    if (!code.match(/[a-z]/)) {
+        return output;
+    }
+    var codePattern = RegExp('^'+code);
+    for (code in zhengmaDictionary.code) {
+        if (code.match(codePattern)) {
+            for (var i = 0; i < zhengmaDictionary.code[code].length; i++) {
+                if (output.indexOf(zhengmaDictionary.code[code][i]) === -1) {
+                    output.push(zhengmaDictionary.code[code][i]);
                 }
             }
         }
-        return '['+output.join('')+']';
-    } else {
-        return info || '.';
     }
+    return output;
+}
+
+function getWords(pattern) {
+    var output = [];
+    for (var i = 0; i < jmdictWords.length; i++) {
+        if (jmdictWords[i].match(pattern)) {
+            output.push(jmdictWords[i]);
+        }
+    }
+    return output;
 }

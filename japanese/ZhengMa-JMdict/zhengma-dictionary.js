@@ -7359,18 +7359,18 @@ zzzp 斷`.split(/\n/).map(function(line) {
         return line.split(/[\s]+/);
     });
 
-    var output = {};
+    var output = {code: {}, character: {}};
     for (var i = 0; i < raw.length; i++) {
         // output[qwerty]
-        if (!output.hasOwnProperty(raw[i][0])) {
-            output[raw[i][0]] = [];
+        if (!output.code.hasOwnProperty(raw[i][0])) {
+            output.code[raw[i][0]] = [];
         }
-        output[raw[i][0]].push(raw[i][1]);
+        output.code[raw[i][0]].push(raw[i][1]);
         // output[character]
-        if (!output.hasOwnProperty(raw[i][1])) {
-            output[raw[i][1]] = [];
+        if (!output.character.hasOwnProperty(raw[i][1])) {
+            output.character[raw[i][1]] = [];
         }
-        output[raw[i][1]].push(raw[i][0]);
+        output.character[raw[i][1]].push(raw[i][0]);
     }
     return output;
 })();
