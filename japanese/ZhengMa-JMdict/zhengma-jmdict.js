@@ -85,6 +85,8 @@ function generateWordPattern(inputValue) {
             }
         } else if (inputValue[i].length == 0) {
             output.push('.');
+        } else {
+            output.push(inputValue[i]);
         }
     }
     return output.join('');
