@@ -2,7 +2,9 @@ var zhengmaDictionary;
 var jmdictWords;
 
 var input = document.getElementById('input');
+var decomposeInput = document.getElementById('decompose-input');
 var output = document.getElementById('output');
+var decomposeOutput = document.getElementById('decompose-output');
 var fullText = document.getElementById('fulltext');
 var layout = document.getElementById('layout');
 
@@ -11,12 +13,37 @@ fullText.oninput = refreshResults;
 input.onfocus = showLayout;
 input.onblur = hideLayout;
 
+decomposeInput.oninput = refreshTree;
+
 function showLayout() {
     layout.style.visibility = 'visible';
 }
 
 function hideLayout() {
     layout.style.visibility = 'hidden';
+}
+
+function refreshTree() {
+    if (!decomposeInput.value.length) {
+        decomposeOutput.innerHTML = '';
+        return;
+    }
+
+    decomposeOutput.innerHTML = recursiveTreeOutput(recursiveGetTree(decomposeInput.value[0]), 0).join('\n');
+}
+
+function recursiveTreeOutput(obj, depth) {
+    var output = [];
+    if (typeof(obj) !== 'object') {
+        return [];
+    }
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            output.push(' '.repeat(depth * 2) + key);
+            output = output.concat(recursiveTreeOutput(obj[key], depth + 1));
+        }
+    }
+    return output;
 }
 
 var refreshId = 0;
@@ -39,7 +66,14 @@ function refreshResults(event, timer) {
         return;
     } else if (inputValue.length == 1) {
         if (isAscii(inputValue[0])) {
-            characters = getUniqueZhengmaCharacters(inputValue[0]);
+            if (inputValue[0].indexOf(';') != -1) {
+                var zhengmaInput = inputValue[0].split(';');
+                var decompInput = zhengmaInput[1].split(',');
+                zhengmaInput = zhengmaInput[0];
+                characters = getUniqueZhengmaCharacters(zhengmaInput, decompInput);
+            } else {
+                characters = getUniqueZhengmaCharacters(inputValue[0]);
+            }
         } else {
             for (var i = 0; i < inputValue[0].length; i++) {
                 characters.push(inputValue[0][i]);
@@ -62,7 +96,7 @@ function splitInput() {
 }
 
 function isAscii(text) {
-    return text.match(/^[\!-~]+$/);
+    return text.split(';')[0].match(/^[\!-~]+$/);
 }
 
 function generateCharacterHtml(character) {
@@ -77,9 +111,19 @@ function generateWordPattern(inputValue) {
     var output = [];
     for (var i = 0; i < inputValue.length; i++) {
         if (isAscii(inputValue[i])) {
-            var characters = getUniqueZhengmaCharacters(inputValue[i]);
+            var characters;
+            (function() {
+            if (inputValue[i].indexOf(';') != -1) {
+                var zhengmaInput = inputValue[i].split(';');
+                var decompInput = zhengmaInput[1].split(',');
+                zhengmaInput = zhengmaInput[0];
+                characters = getUniqueZhengmaCharacters(zhengmaInput, decompInput);
+            } else {
+                characters = getUniqueZhengmaCharacters(inputValue[i]);
+            }
+            })();
             if (characters.length) {
-                output.push('['+getUniqueZhengmaCharacters(inputValue[i]).join('')+']');
+                output.push('['+characters.join('')+']');
             } else {
                 output.push('.');
             }
@@ -92,9 +136,9 @@ function generateWordPattern(inputValue) {
     return output.join('');
 }
 
-function getUniqueZhengmaCharacters(code) {
+function getUniqueZhengmaCharacters(code, parts) {
     var output = [];
-    if (!code.match(/[a-z]/)) {
+    if (!code.match(/[a-z]/) && !parts) {
         return output;
     }
     var codePattern = RegExp('^'+code);
@@ -102,7 +146,23 @@ function getUniqueZhengmaCharacters(code) {
         if (code.match(codePattern)) {
             for (var i = 0; i < zhengmaDictionary.code[code].length; i++) {
                 if (output.indexOf(zhengmaDictionary.code[code][i]) === -1) {
-                    output.push(zhengmaDictionary.code[code][i]);
+                    if (parts) {
+                        (function() {
+                        var thisParts = recursiveGetParts(zhengmaDictionary.code[code][i]);
+                        var match = true;
+                        for (var j = 0; j < parts.length; j++) {
+                            if (thisParts.indexOf(parts[j]) === -1) {
+                                match = false;
+                                break;
+                            }
+                        }
+                        if (match) {
+                            output.push(zhengmaDictionary.code[code][i]);
+                        }
+                        })();
+                    } else {
+                        output.push(zhengmaDictionary.code[code][i]);
+                    }
                 }
             }
         }
