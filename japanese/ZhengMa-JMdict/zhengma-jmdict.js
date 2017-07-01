@@ -84,10 +84,10 @@ function refreshResults(event, timer) {
     var words = [];
     var wordPattern = generateWordPattern(inputValue);
     if (!wordPattern.match(/^[\.]*$/)) {
-        words = getWords(RegExp((fullText.checked ? '' : '^') + wordPattern));
+        words = words.concat(getWords(RegExp((fullText.checked ? '' : '^') + wordPattern)));
     }
 
-    output.innerHTML = characters.map(generateCharacterHtml).join('') + words.join('<br>');
+    output.innerHTML = characters.map(generateCharacterHtml).join('') + (characters.length ? '<hr>' : '') + words.join('<br>');
 
 }
 
@@ -96,7 +96,7 @@ function splitInput() {
 }
 
 function isAscii(text) {
-    return text.split(';')[0].match(/^[\!-~]+$/);
+    return text.split(';')[0].match(/^[\!-~]+$|^$/);
 }
 
 function generateCharacterHtml(character) {
@@ -110,7 +110,13 @@ function generateCharacterHtml(character) {
 function generateWordPattern(inputValue) {
     var output = [];
     for (var i = 0; i < inputValue.length; i++) {
-        if (isAscii(inputValue[i])) {
+        if (inputValue[i][0] == 'H') {
+            output.push(toHiragana(inputValue[i].slice(1)));
+        } else if (inputValue[i][0] == 'K') {
+            output.push(toKatakana(inputValue[i].slice(1)));
+        } else if (inputValue[i][0] == '$') {
+            output.push('$');
+        } else if (isAscii(inputValue[i])) {
             var characters;
             (function() {
             if (inputValue[i].indexOf(';') != -1) {
@@ -151,7 +157,14 @@ function getUniqueZhengmaCharacters(code, parts) {
                         var thisParts = recursiveGetParts(zhengmaDictionary.code[code][i]);
                         var match = true;
                         for (var j = 0; j < parts.length; j++) {
-                            if (thisParts.indexOf(parts[j]) === -1) {
+                            if (!parts[j]) {
+                                continue;
+                            } else if (isAscii(parts[j])) {
+                                if (intersection(zhengmaDictionary.code[parts[j]], thisParts).length == 0) {
+                                    match = false;
+                                    break;
+                                }
+                            } else if (thisParts.indexOf(parts[j]) === -1) {
                                 match = false;
                                 break;
                             }
@@ -168,6 +181,17 @@ function getUniqueZhengmaCharacters(code, parts) {
         }
     }
     return output;
+}
+
+function intersection(a, b) {
+    return a.filter(function(i) {
+        if(b.indexOf(i) > -1) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    });
 }
 
 function getWords(pattern) {
