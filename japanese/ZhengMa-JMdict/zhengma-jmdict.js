@@ -87,7 +87,7 @@ function refreshResults(event, timer) {
         words = words.concat(getWords(RegExp((fullText.checked ? '' : '^') + wordPattern)));
     }
 
-    output.innerHTML = characters.map(generateCharacterHtml).join('') + (characters.length ? '<hr>' : '') + words.join('<br>');
+    output.innerHTML = generateCharacterHtml(characters, zhengmaDictionary.code[inputValue[0].split(';')[0]]) + (characters.length ? '<hr>' : '') + words.join('<br>');
 
 }
 
@@ -99,12 +99,65 @@ function isAscii(text) {
     return text.split(';')[0].match(/^[\!-~]+$|^$/);
 }
 
-function generateCharacterHtml(character) {
-    var code = zhengmaDictionary.character[character];
-    if (!code) {
-        return '';
+function generateCharacterHtml(characters, exactChars) {
+    var output = {
+        'exact': [],
+        'enclosure': [], // s.*
+        'across': [], // a
+        'downwards': [], // d
+        'repeat': [], // r.*
+        'other': [] // c, lock, m.*, w.*, ...
+    };
+    var enclosure = /^s.*/;
+    var across = /^a$/;
+    var downwards = /^d$/;
+    var repeat = /^r.*/;
+    for (var i = 0; i < characters.length; i++) {
+        if (!decomp[characters[i]]) {
+            continue;
+        } else if (exactChars && exactChars.indexOf(characters[i]) !== -1) {
+            output.exact.push([characters[i]]);
+        } else if (decomp[characters[i]][0][0].match(enclosure)) {
+            output.enclosure.push([characters[i]]);
+        } else if (decomp[characters[i]][0][0].match(across)) {
+            output.across.push([characters[i]]);
+        } else if (decomp[characters[i]][0][0].match(downwards)) {
+            output.downwards.push([characters[i]]);
+        } else if (decomp[characters[i]][0][0].match(repeat)) {
+            output.repeat.push([characters[i]]);
+        } else {
+            output.other.push([characters[i]]);
+        }
     }
-    return character+' '+code.join('/')+'<br>';
+    outputHtml = [];
+    var categories = ['exact', 'other', 'downwards', 'across', 'enclosure', 'repeat'];
+
+    categories.forEach(function(category) {
+        if (output[category].length == 0) {return};
+        outputHtml.push('<b class="clickable" onclick="toggle(\''+category+'\')">' + category + '</b><br>');
+        outputHtml.push('<div style="display: '+(category == 'exact' ? '' : 'none')+';" id="'+category+'">')
+        for (var i = 0; i < output[category].length; i++) {
+            outputHtml.push(output[category][i][0] + ' ' + zhengmaDictionary.character[output[category][i][0]].join('/') +
+                ' <span class="clickable" onclick="select(\''+output[category][i][0]+'\')">[+]</span>' +
+                '<br>');
+        }
+        outputHtml.push('</div>')
+    })
+    return outputHtml.join('');
+}
+
+function toggle(category) {
+    var el = document.getElementById(category);
+    if (el.style.display == 'none') {
+        el.style.display = '';
+    } else {
+        el.style.display = 'none';
+    }
+}
+
+function select(character) {
+    input.value = character;
+    input.oninput();
 }
 
 function generateWordPattern(inputValue) {
