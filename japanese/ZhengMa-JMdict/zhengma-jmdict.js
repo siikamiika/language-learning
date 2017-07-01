@@ -182,9 +182,13 @@ function generateWordPattern(inputValue) {
             }
             })();
             if (characters.length) {
-                output.push('['+characters.join('')+']');
+                if (characters[0] == '.') {
+                    output.push('.');
+                } else {
+                    output.push('['+characters.join('')+']');
+                }
             } else {
-                output.push('.');
+                return 'a^';
             }
         } else if (inputValue[i].length == 0) {
             output.push('.');
@@ -197,15 +201,16 @@ function generateWordPattern(inputValue) {
 
 function getUniqueZhengmaCharacters(code, parts) {
     var output = [];
-    if (!code.match(/[a-z]/) && !parts) {
-        return output;
+    parts = parts ? parts.filter(function(part) {return part != ''}) : [];
+    if (!code.match(/[a-z]/) && (!parts.length)) {
+        return ['.'];
     }
     var codePattern = RegExp('^'+code);
     for (code in zhengmaDictionary.code) {
         if (code.match(codePattern)) {
             for (var i = 0; i < zhengmaDictionary.code[code].length; i++) {
                 if (output.indexOf(zhengmaDictionary.code[code][i]) === -1) {
-                    if (parts) {
+                    if (parts.length) {
                         (function() {
                         var thisParts = recursiveGetParts(zhengmaDictionary.code[code][i]);
                         var match = true;
