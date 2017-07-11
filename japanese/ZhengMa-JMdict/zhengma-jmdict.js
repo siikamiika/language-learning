@@ -87,8 +87,27 @@ function refreshResults(event, timer) {
         words = words.concat(getWords(RegExp((fullText.checked ? '' : '^') + wordPattern)));
     }
 
-    output.innerHTML = generateCharacterHtml(characters, zhengmaDictionary.code[inputValue[0].split(';')[0]]) + (characters.length ? '<hr>' : '') + words.join('<br>');
+    output.innerHTML = generateCharacterHtml(characters, zhengmaDictionary.code[inputValue[0].split(';')[0]]) + (characters.length ? '<hr>' : '') + words.map(generateWordHtml).join('<br>');
 
+}
+
+function generateWordHtml(word) {
+    return '<span>' + word + '</span> <span class="clickable" onclick="showCodes(this)">[?]</span>';
+}
+
+function showCodes(buttonElement) {
+    var textElement = buttonElement.previousSibling.previousSibling;
+    var text = textElement.textContent;
+    var output = [];
+    for (var i = 0; i < text.length; i++) {
+        if (zhengmaDictionary.character[text[i]]) {
+            output.push('<ruby>' + text[i] + '<rt>[' + zhengmaDictionary.character[text[i]].join('/') + ']</rt></ruby>');
+        } else {
+            output.push(text[i]);
+        }
+    }
+    textElement.innerHTML = output.join('');
+    buttonElement.parentNode.removeChild(buttonElement);
 }
 
 function splitInput() {
