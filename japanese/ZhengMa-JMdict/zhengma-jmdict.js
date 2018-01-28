@@ -1,15 +1,18 @@
 var zhengmaDictionary;
 var jmdictWords;
+var enamdictWords;
 
 var input = document.getElementById('input');
 var decomposeInput = document.getElementById('decompose-input');
 var output = document.getElementById('output');
 var decomposeOutput = document.getElementById('decompose-output');
 var fullText = document.getElementById('fulltext');
+var names = document.getElementById('names');
 var layout = document.getElementById('layout');
 
 input.oninput = refreshResults;
 fullText.oninput = refreshResults;
+names.oninput = refreshResults;
 input.onfocus = showLayout;
 input.onblur = hideLayout;
 
@@ -273,9 +276,18 @@ function intersection(a, b) {
 
 function getWords(pattern) {
     var output = [];
-    for (var i = 0; i < jmdictWords.length; i++) {
-        if (jmdictWords[i].match(pattern)) {
-            output.push(jmdictWords[i]);
+    if (names.checked) {
+        for (var i = 0; i < enamdictWords.length; i++) {
+            if (enamdictWords[i].match(pattern)) {
+                output.push(enamdictWords[i]);
+            }
+        }
+    }
+    else {
+        for (var i = 0; i < jmdictWords.length; i++) {
+            if (jmdictWords[i].match(pattern)) {
+                output.push(jmdictWords[i]);
+            }
         }
     }
     return output;
