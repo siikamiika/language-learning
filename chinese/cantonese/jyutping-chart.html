@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jyutping table</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- tone -->
+        <form id="tone">
+            <label><input type="radio" name="tone" value="0" checked>all</label>
+            <label><input type="radio" name="tone" value="1">1</label>
+            <label><input type="radio" name="tone" value="2">2</label>
+            <label><input type="radio" name="tone" value="3">3</label>
+            <label><input type="radio" name="tone" value="4">4</label>
+            <label><input type="radio" name="tone" value="5">5</label>
+            <label><input type="radio" name="tone" value="6">6</label>
+        </form>
+        <!-- initials and finals -->
+        <table>
+            <tr>
+                <td>
+                    <table id="initials"></table>
+                </td>
+                <td>
+                    <table id="finals"></table>
+                </td>
+            </tr>
+        </table>
+
+        <script src="helpers.js"></script>
+        <script src="dict.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
