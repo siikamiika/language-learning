@@ -84,3 +84,7 @@ function buildDom(object, targetObject) {
 
     return element;
 }
+
+// https://stackoverflow.com/a/37324915/2444105
+const intersect2 = (xs,ys) => xs.filter(x => ys.some(y => y === x));
+const intersect = (xs,ys,...rest) => ys === undefined ? xs : intersect(intersect2(xs,ys),...rest);

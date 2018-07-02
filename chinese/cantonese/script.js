@@ -3,12 +3,18 @@ let initialsElement = document.getElementById('initials');
 let finalsElement = document.getElementById('finals');
 let resultsElement = document.getElementById('results');
 let positionElement = document.getElementById('position');
+let resetElement = document.getElementById('reset');
 // other vars
 let state = {
     tone: 0,
     initial: null,
     final: null,
-    position: 0
+    position: -1,
+    positions: [{
+        tone: 0,
+        initial: null,
+        final: null
+    }]
 };
 let dictTrie = {};
 
@@ -16,7 +22,7 @@ let dictTrie = {};
 Array.from(document.getElementsByName('tone')).forEach(
     b => {
         b.onclick = _ => {
-            state.tone = Number(b.value);
+            setState('tone', Number(b.value));
             update();
         }
     }
@@ -24,7 +30,30 @@ Array.from(document.getElementsByName('tone')).forEach(
 // position init
 positionElement.oninput = e => {
     state.position = Number(e.target.value);
+    if (!state.positions[state.position]) {
+        state.positions[state.position] = {
+            tone: 0,
+            initial: null,
+            final: null
+        }
+    }
     update();
+}
+// reset init
+resetElement.onclick = _ => {
+    state.tone = 0;
+    state.initial = null;
+    state.final = null;
+    state.position = -1;
+    state.positions = [{
+        tone: 0,
+        initial: null,
+        final: null
+    }];
+    document.getElementsByName('tone')[0].checked = true;
+    positionElement.value = -1;
+    update();
+    return false;
 }
 
 // table data
@@ -60,7 +89,7 @@ initialsElement.appendChild(buildDom({
 for (let row of tableLayout.initials) {
     initialsElement.appendChild(buildDom({
         E: 'tr',
-        C: row.map(i => ({E: 'td', id: `i_${i}`, onclick: _ => {state.initial = i; update()}, C: i}))
+        C: row.map(i => ({E: 'td', id: `i_${i}`, onclick: _ => {setState('initial', i); update()}, C: i}))
     }));
 }
 
@@ -75,7 +104,7 @@ for (let i = 0; i < tableLayout.finals.length; i++) {
         C: [{E: 'th', C: finalStart[i]}].concat(tableLayout.finals[i].map(f => ({E: 'td',
             id: `f_${f}`,
             onclick: _ => {
-                state.final = f;
+                setState('final', f);
                 update();
             },
             C: f
@@ -150,7 +179,7 @@ for (let i = 0; i < dictWords.length; i++) {
 
 // functions
 function update() {
-    let results = dictionarySearch(state.initial, state.final, state.tone, state.position);
+    let results = dictionarySearch();
     clearChildren(resultsElement);
     resultsElement.appendChild(buildDom({E: 'ul',
         C: results.map(r => ({E: 'li',
@@ -171,12 +200,66 @@ function update() {
     }));
 }
 
-function dictionarySearch(initial, final, tone, position) {
-    if (!initial || !final) {
-        return [];
+function setState(prop, val) {
+    if (state.position == -1) {
+        state[prop] = val;
+    } else {
+        state.positions[state.position][prop] = val;
+    }
+}
+
+function getState(prop) {
+    if (prop === 'position') {
+        return state.position;
     }
 
-    let words = dictTrie[initial][final];
+    if (state.position == -1) {
+        return state[prop];
+    } else {
+        return state.positions[state.position][prop];
+    }
+}
+
+function dictionarySearch() {
+    if (getState('position') == -1) {
+        return searchSingle(state.initial, state.final, state.tone, state.position);
+    } else {
+        let position = state.positions[0];
+        let out = searchSingle(position.initial, position.final, position.tone, 0);
+        for (let i = 1; i < state.positions.length; i++) {
+            let position = state.positions[i];
+            let searchResult = searchSingle(position.initial, position.final, position.tone, i);
+            if (searchResult.length) {
+                out = intersect2(out, searchResult);
+            }
+        }
+        return out;
+    }
+}
+
+function searchSingle(initial, final, tone, position) {
+    if (!initial) {
+        return [];
+    }
+    let words = dictTrie[initial];
+    // final
+    if (final) {
+        words = words[final];
+    } else {
+        let out = {1: {}, 2: {}, 3: {}, 4: {}, 5: {}, 6: {}};
+        for (let f in words) {
+            let tempWords = words[f];
+            for (let t of [1, 2, 3, 4, 5, 6]) {
+                for (let p in tempWords[t]) {
+                    if (!out[t][p]) {
+                        out[t][p] = [];
+                    }
+                    Array.prototype.push.apply(out[t][p], tempWords[t][p]);
+                }
+            }
+        }
+        words = out;
+    }
     // tone
     if (tone >= 1 && tone <= 6) {
         words = words[tone];
