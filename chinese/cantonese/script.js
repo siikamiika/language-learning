@@ -2,11 +2,13 @@
 let initialsElement = document.getElementById('initials');
 let finalsElement = document.getElementById('finals');
 let resultsElement = document.getElementById('results');
+let positionElement = document.getElementById('position');
 // other vars
 let state = {
     tone: 0,
     initial: null,
-    final: null
+    final: null,
+    position: 0
 };
 let dictTrie = {};
 
@@ -19,6 +21,11 @@ Array.from(document.getElementsByName('tone')).forEach(
         }
     }
 );
+// position init
+positionElement.oninput = e => {
+    state.position = Number(e.target.value);
+    update();
+}
 
 // table data
 let tableLayout = JSON.parse(`{
@@ -93,13 +100,20 @@ for (let initialRow of tableLayout.initials) {
 // add words to trie
 for (let i = 0; i < dictWords.length; i++) {
     let word = dictWords[i];
-    let readings = word.split('\t')[1].split(/[\s\/,]+/);
-    for (let reading of readings) {
+    let readings = word.split('\t')[1].replace(' / ', '/').split(' ');
+    let indexedReadings = [];
+    for (let j = 0; j < readings.length; j++) {
+        let curReadings = readings[j].split('/');
+        for (let r of curReadings) {
+            indexedReadings.push([j, r]);
+        }
+    }
+    for (let reading of indexedReadings) {
         let offset = 0;
         for (let initial in dictTrie) {
-            if (reading.slice(0, initial.length) === initial &&
+            if (reading[1].slice(0, initial.length) === initial &&
                 (initial.length == 2 ||  // n, k <---> ng, gw, kw
-                 !(['g', 'w'].includes(reading.charAt(initial.length))))) {
+                 !(['g', 'w'].includes(reading[1].charAt(initial.length))))) {
                 for (let final in dictTrie[initial]) {
                     // m is not duplicated
                     if (initial === 'm' && final === 'm') {
@@ -107,10 +121,14 @@ for (let i = 0; i < dictWords.length; i++) {
                     } else {
                         offset = 0;
                     }
-                    if (reading.slice(initial.length + offset, reading.length - 1) === final) {
+                    if (reading[1].slice(initial.length + offset, reading[1].length - 1) === final) {
                         for (let tone in dictTrie[initial][final]) {
-                            if (reading.slice(reading.length - 1) == tone) {  // compare string with int
-                                dictTrie[initial][final][tone].push(i);
+                            if (reading[1].slice(reading[1].length - 1) == tone) {  // compare string with int
+                                let readingTrie = dictTrie[initial][final][tone];
+                                if (!readingTrie[reading[0]]) {
+                                    readingTrie[reading[0]] = [];
+                                }
+                                readingTrie[reading[0]].push(i);
                                 break;
                             }
                         }
@@ -125,7 +143,7 @@ for (let i = 0; i < dictWords.length; i++) {
 
 // functions
 function update() {
-    let results = dictionarySearch(state.initial, state.final, state.tone);
+    let results = dictionarySearch(state.initial, state.final, state.tone, state.position);
     clearChildren(resultsElement);
     resultsElement.appendChild(buildDom({E: 'ul',
         C: results.map(r => ({E: 'li',
@@ -146,19 +164,34 @@ function update() {
     }));
 }
 
-function dictionarySearch(initial, final, tone) {
+function dictionarySearch(initial, final, tone, position) {
     if (!initial || !final) {
         return [];
     }
 
     let words = dictTrie[initial][final];
+    // tone
     if (tone >= 1 && tone <= 6) {
-        return words[tone].map(i => dictWords[i]);
+        words = words[tone];
     } else {
         let out = [];
         for (let t = 1; t <= 6; t++) {
-            Array.prototype.push.apply(out, words[t].map(i => dictWords[i]));
+            Array.prototype.push.apply(out, words[t]);
         }
-        return out;
+        words = out;
     }
+    // position
+    if (position == -1) {
+        let out = [];
+        for (let p of words) {
+            if (!p) {
+                continue;
+            }
+            Array.prototype.push.apply(out, p.map(i => dictWords[i]))
+        }
+        words = out;
+    } else {
+        words = words[position].map(i => dictWords[i]);
+    }
+    return words;
 }
