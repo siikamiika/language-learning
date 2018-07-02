@@ -1,6 +1,7 @@
 // DOM vars
 let initialsElement = document.getElementById('initials');
 let finalsElement = document.getElementById('finals');
+let resultsElement = document.getElementById('results');
 // other vars
 let state = {
     tone: 0,
@@ -96,7 +97,9 @@ for (let i = 0; i < dictWords.length; i++) {
     for (let reading of readings) {
         let offset = 0;
         for (let initial in dictTrie) {
-            if (reading.startsWith(initial)) {
+            if (reading.slice(0, initial.length) === initial &&
+                (initial.length == 2 ||  // n, k <---> ng, gw, kw
+                 !(['g', 'w'].includes(reading.charAt(initial.length))))) {
                 for (let final in dictTrie[initial]) {
                     // m is not duplicated
                     if (initial === 'm' && final === 'm') {
@@ -106,7 +109,7 @@ for (let i = 0; i < dictWords.length; i++) {
                     }
                     if (reading.slice(initial.length + offset, reading.length - 1) === final) {
                         for (let tone in dictTrie[initial][final]) {
-                            if (reading.slice(initial.length + final.length + offset) == tone) {
+                            if (reading.slice(reading.length - 1) == tone) {  // compare string with int
                                 dictTrie[initial][final][tone].push(i);
                                 break;
                             }
@@ -122,7 +125,25 @@ for (let i = 0; i < dictWords.length; i++) {
 
 // functions
 function update() {
-    console.log(state)
+    let results = dictionarySearch(state.initial, state.final, state.tone);
+    clearChildren(resultsElement);
+    resultsElement.appendChild(buildDom({E: 'ul',
+        C: results.map(r => ({E: 'li',
+            C: {E: 'span',
+                C: [
+                    r,
+                    ' ',
+                    {E: 'button',
+                        onclick: _ => {
+                            var url = 'https://code.responsivevoice.org/getvoice.php?t='+encodeURIComponent(r.split('\t')[0])+'&tl=zh-HK&sv=g1&vn=&pitch=0.5&rate=0.3&vol=1&gender=female';
+                            new Audio(url).play();
+                        },
+                        C: '🔊'
+                    }
+                ]
+            }
+        }))
+    }));
 }
 
 function dictionarySearch(initial, final, tone) {

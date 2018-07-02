@@ -1,3 +1,9 @@
+function clearChildren(element) {
+    while (element.firstChild) {
+        element.removeChild(element.firstChild);
+    }
+}
+
 function buildDom(object, targetObject) {
     /* Builds a DOM element out of an object of the format
      * {E: 'tag',
