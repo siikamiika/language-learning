@@ -28,7 +28,7 @@ positionElement.oninput = e => {
 }
 
 // table data
-let tableLayout = JSON.parse(`{
+let tableLayout = {
     "initials": [
         "b |p |m |f| ",
         "d |t |n | |l",
@@ -47,7 +47,7 @@ let tableLayout = JSON.parse(`{
         "yu|   |   |   |yun|    |   |yut|   ",
         "  |   |   |m  |   |ng  |   |   |   "
     ]
-}`);
+}
 tableLayout.initials = tableLayout.initials
     .map(row => row.split('|').map(w => w.trim()));
 tableLayout.finals = tableLayout.finals
@@ -72,7 +72,14 @@ let finalStart = ['AA', 'A', 'E', 'I', 'O', 'U', 'Ö', 'Y', 'M'];
 for (let i = 0; i < tableLayout.finals.length; i++) {
     finalsElement.appendChild(buildDom({
         E: 'tr',
-        C: [{E: 'th', C: finalStart[i]}].concat(tableLayout.finals[i].map(f => ({E: 'td', id: `f_${f}`, onclick: _ => {state.final = f; update()}, C: f})))
+        C: [{E: 'th', C: finalStart[i]}].concat(tableLayout.finals[i].map(f => ({E: 'td',
+            id: `f_${f}`,
+            onclick: _ => {
+                state.final = f;
+                update();
+            },
+            C: f
+        })))
     }));
 }
 
@@ -91,7 +98,7 @@ for (let initialRow of tableLayout.initials) {
                 }
                 dictTrie[initial][final] = {};
                 for (let tone of [1, 2, 3, 4, 5, 6]) {
-                    dictTrie[initial][final][tone] = [];
+                    dictTrie[initial][final][tone] = {};
                 }
             }
         }
@@ -100,7 +107,7 @@ for (let initialRow of tableLayout.initials) {
 // add words to trie
 for (let i = 0; i < dictWords.length; i++) {
     let word = dictWords[i];
-    let readings = word.split('\t')[1].replace(' / ', '/').split(' ');
+    let readings = word.split('\t')[1].replace(' / ', '/').replace('，', '').split(/\s+/);
     let indexedReadings = [];
     for (let j = 0; j < readings.length; j++) {
         let curReadings = readings[j].split('/');
@@ -122,7 +129,7 @@ for (let i = 0; i < dictWords.length; i++) {
                         offset = 0;
                     }
                     if (reading[1].slice(initial.length + offset, reading[1].length - 1) === final) {
-                        for (let tone in dictTrie[initial][final]) {
+                        for (let tone of [1, 2, 3, 4, 5, 6]) {
                             if (reading[1].slice(reading[1].length - 1) == tone) {  // compare string with int
                                 let readingTrie = dictTrie[initial][final][tone];
                                 if (!readingTrie[reading[0]]) {
@@ -174,20 +181,25 @@ function dictionarySearch(initial, final, tone, position) {
     if (tone >= 1 && tone <= 6) {
         words = words[tone];
     } else {
-        let out = [];
-        for (let t = 1; t <= 6; t++) {
-            Array.prototype.push.apply(out, words[t]);
+        let out = {};
+        for (let t of [1, 2, 3, 4, 5, 6]) {
+            for (let p in words[t]) {
+                if (!out[p]) {
+                    out[p] = [];
+                }
+                Array.prototype.push.apply(out[p], words[t][p]);
+            }
         }
         words = out;
     }
     // position
     if (position == -1) {
         let out = [];
-        for (let p of words) {
+        for (let p in words) {
             if (!p) {
                 continue;
             }
-            Array.prototype.push.apply(out, p.map(i => dictWords[i]))
+            Array.prototype.push.apply(out, words[p].map(i => dictWords[i]))
         }
         words = out;
     } else {
