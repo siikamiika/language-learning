@@ -114,10 +114,13 @@ for (let i = 0; i < tableLayout.finals.length; i++) {
 
 // dictionary data
 // build trie
-for (let initialRow of tableLayout.initials) {
+let skipEmpty = false;
+for (let initialRow of [['']].concat(tableLayout.initials)) {
     for (let initial of initialRow) {
-        if (!initial) {
+        if (skipEmpty && !initial) {
             continue;
+        } else {
+            skipEmpty = true;
         }
         dictTrie[initial] = {};
         for (let finalRow of tableLayout.finals) {
@@ -133,6 +136,10 @@ for (let initialRow of tableLayout.initials) {
         }
     }
 }
+// empty initial last
+let initials = Object.keys(dictTrie);
+initials.splice(initials.indexOf(''), 1);
+initials.push('');
 // add words to trie
 for (let i = 0; i < dictWords.length; i++) {
     let word = dictWords[i];
@@ -145,21 +152,17 @@ for (let i = 0; i < dictWords.length; i++) {
         }
     }
     for (let reading of indexedReadings) {
-        let offset = 0;
-        for (let initial in dictTrie) {
+        for (let initial of initials) {
             if (reading[1].slice(0, initial.length) === initial &&
-                (initial.length == 2 ||  // n, k <---> ng, gw, kw
-                 !(['g', 'w'].includes(reading[1].charAt(initial.length))))) {
+                reading[1].slice(0, -1) !== initial) {
+                if (initial === 'n' && reading[1].slice(0, -1) === 'ng') {
+                    continue;
+                }
                 for (let final in dictTrie[initial]) {
-                    // m is not duplicated
-                    if (initial === 'm' && final === 'm') {
-                        offset = -1;
-                    } else {
-                        offset = 0;
-                    }
-                    if (reading[1].slice(initial.length + offset, reading[1].length - 1) === final) {
+                    if (reading[1].slice(initial.length, initial.length + final.length) === final &&
+                        initial.length + final.length + 1 == reading[1].length) {
                         for (let tone of [1, 2, 3, 4, 5, 6]) {
-                            if (reading[1].slice(reading[1].length - 1) == tone) {  // compare string with int
+                            if (reading[1].slice(initial.length + final.length) == tone) {  // compare string with int
                                 let readingTrie = dictTrie[initial][final][tone];
                                 if (!readingTrie[reading[0]]) {
                                     readingTrie[reading[0]] = [];
@@ -239,7 +242,10 @@ function dictionarySearch() {
 
 function searchSingle(initial, final, tone, position) {
     if (!initial) {
-        return [];
+        if (!final) {
+            return [];
+        }
+        initial = '';
     }
     let words = dictTrie[initial];
     // final
