@@ -155,7 +155,7 @@ for (let i = 0; i < dictWords.length; i++) {
         for (let initial of initials) {
             if (reading[1].slice(0, initial.length) === initial &&
                 reading[1].slice(0, -1) !== initial) {
-                if (initial === 'n' && reading[1].slice(0, -1) === 'ng') {
+                if (initial === 'n' && reading[1].slice(0, 2) === 'ng') {
                     continue;
                 }
                 for (let final in dictTrie[initial]) {
@@ -227,16 +227,16 @@ function dictionarySearch() {
     if (getState('position') == -1) {
         return searchSingle(state.initial, state.final, state.tone, state.position);
     } else {
-        let position = state.positions[0];
-        let out = searchSingle(position.initial, position.final, position.tone, 0);
-        for (let i = 1; i < state.positions.length; i++) {
-            let position = state.positions[i];
-            let searchResult = searchSingle(position.initial, position.final, position.tone, i);
-            if (searchResult.length) {
-                out = intersect2(out, searchResult);
-            }
+        let results = range(0, state.positions.length)
+            .map(i => state.positions[i])
+            .map((position, i) => searchSingle(position.initial, position.final, position.tone, i))
+            .filter(result => result.length);
+
+        if (results.length > 1) {
+            return intersect(...results);
+        } else {
+            return results[0];
         }
-        return out;
     }
 }
 

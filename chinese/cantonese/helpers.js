@@ -88,3 +88,8 @@ function buildDom(object, targetObject) {
 // https://stackoverflow.com/a/37324915/2444105
 const intersect2 = (xs,ys) => xs.filter(x => ys.some(y => y === x));
 const intersect = (xs,ys,...rest) => ys === undefined ? xs : intersect(intersect2(xs,ys),...rest);
+
+// https://stackoverflow.com/a/45355468/2444105
+function range(start, end) {
+    return new Array(end - start).fill().map((d, i) => i + start);
+}
