@@ -155,9 +155,17 @@ for (let i = 0; i < dictWords.length; i++) {
         for (let initial of initials) {
             if (reading[1].slice(0, initial.length) === initial &&
                 reading[1].slice(0, -1) !== initial) {
-                if (initial === 'n' && reading[1].slice(0, 2) === 'ng') {
+                let skip = false;
+                for (let digraph of ['gw', 'kw', 'ng']) {
+                    if (initial === digraph[0] && reading[1].slice(0, 2) == digraph) {
+                        skip = true;
+                        break;
+                    }
+                }
+                if (skip) {
                     continue;
                 }
+
                 for (let final in dictTrie[initial]) {
                     if (reading[1].slice(initial.length, initial.length + final.length) === final &&
                         initial.length + final.length + 1 == reading[1].length) {
@@ -235,7 +243,7 @@ function dictionarySearch() {
         if (results.length > 1) {
             return intersect(...results);
         } else {
-            return results[0];
+            return results[0] || [];
         }
     }
 }
