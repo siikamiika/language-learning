@@ -143,21 +143,15 @@ initials.push('');
 // add words to trie
 for (let i = 0; i < dictWords.length; i++) {
     let word = dictWords[i];
-    let readings = word.split('\t')[1].replace(' / ', '/').replace('，', '').split(/\s+/);
-    let indexedReadings = [];
-    for (let j = 0; j < readings.length; j++) {
-        let curReadings = readings[j].split('/');
-        for (let r of curReadings) {
-            indexedReadings.push([j, r]);
-        }
-    }
-    for (let reading of indexedReadings) {
+    let readings = word.split('\t')[1].split(/\s+/);
+    for (let r = 0; r < readings.length; r++) {
+        let reading = readings[r];
         for (let initial of initials) {
-            if (reading[1].slice(0, initial.length) === initial &&
-                reading[1].slice(0, -1) !== initial) {
+            if (reading.slice(0, initial.length) === initial &&
+                reading.slice(0, -1) !== initial) {
                 let skip = false;
                 for (let digraph of ['gw', 'kw', 'ng']) {
-                    if (initial === digraph[0] && reading[1].slice(0, 2) == digraph) {
+                    if (initial === digraph[0] && reading.slice(0, 2) == digraph) {
                         skip = true;
                         break;
                     }
@@ -167,15 +161,15 @@ for (let i = 0; i < dictWords.length; i++) {
                 }
 
                 for (let final in dictTrie[initial]) {
-                    if (reading[1].slice(initial.length, initial.length + final.length) === final &&
-                        initial.length + final.length + 1 == reading[1].length) {
+                    if (reading.slice(initial.length, initial.length + final.length) === final &&
+                        initial.length + final.length + 1 == reading.length) {
                         for (let tone of [1, 2, 3, 4, 5, 6]) {
-                            if (reading[1].slice(initial.length + final.length) == tone) {  // compare string with int
+                            if (reading.slice(initial.length + final.length) == tone) {  // compare string with int
                                 let readingTrie = dictTrie[initial][final][tone];
-                                if (!readingTrie[reading[0]]) {
-                                    readingTrie[reading[0]] = [];
+                                if (!readingTrie[r]) {
+                                    readingTrie[r] = [];
                                 }
-                                readingTrie[reading[0]].push(i);
+                                readingTrie[r].push(i);
                                 break;
                             }
                         }

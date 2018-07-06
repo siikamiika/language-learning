@@ -2015,7 +2015,8 @@ let dictWords = `我	ngo5
 電梯	din6 tai1
 開支	hoi1 zi1
 阿妹	aa3 mui2
-聽晚	ting1 maan5 / maan1
+聽晚	ting1 maan5
+聽晚	ting1 maan1
 後話	hau6 waa6
 醉	zeoi3
 暗	am3
@@ -2450,7 +2451,8 @@ let dictWords = `我	ngo5
 學家	hok6 gaa1
 分之	fan6 zi1
 填	tin4
-越嚟越	jyut6 lai4 jyut6 / jyut6 lei4 jyut6
+越嚟越	jyut6 lai4 jyut6
+越嚟越	jyut6 lei4 jyut6
 賠	pui4
 出入	ceot1 jap6
 公仔	gung1 zai2
@@ -8045,7 +8047,8 @@ let dictWords = `我	ngo5
 大吵大鬧	daai6 caau2 daai6 naau6
 斟生意	zam1 saang1 ji3
 你就想	nei5 zau6 soeng2
-靜靜地	zing6 zing6 dei6/ dei2
+靜靜地	zing6 zing6 dei6
+靜靜地	zing6 zing6  dei2
 老虎乸	lou5 fu2 naa2
 搞乜鬼	gaau2 mat1 gwai2
 惡狠狠	ok3 han2 han2
@@ -9630,7 +9633,8 @@ let dictWords = `我	ngo5
 輸賭	syu1 dou2
 攞命	lo2 meng6
 攞景	lo2 ging2
-㗎話	gaa3 waa2 / gaa4 waa2
+㗎話	gaa3 waa2
+㗎話	gaa4 waa2
 誘人	jau5 jan4
 驚惶	ging1 wong4
 黯然	am2 jin4
@@ -18101,7 +18105,7 @@ let dictWords = `我	ngo5
 沸	fai3
 崖	ngaai4
 鎊	bong6
-謀事在人，成事在天	mau4 si6 zoi6 jan4 ，sing4 si6 zoi6 tin1
+謀事在人，成事在天	mau4 si6 zoi6 jan4 sing4 si6 zoi6 tin1
 有情人終成眷屬	jau5 cing4 jan4 zung1 sing4 gyun3 suk6
 相請不如偶遇	soeng1 cing2 bat1 jyu4 ngau5 jyu6
 三兩下手勢	saam1 loeng5 haa5 sau2 sai3
@@ -18687,7 +18691,7 @@ let dictWords = `我	ngo5
 喬	kiu4
 噬	sai6
 邊有咁大隻蛤乸隨街跳	bin1 jau5 gam3 daai6 zek3 gap3 naa2 ceoi4 gaai1 tiu3
-千里之行，始於足下	cin1 lei5 zi1 hang4 ，ci2 jyu1 zuk1 haa6
+千里之行，始於足下	cin1 lei5 zi1 hang4 ci2 jyu1 zuk1 haa6
 火星撞地球	fo2 sing1 zong6 dei6 kau4
 仔細老婆嫩	zai2 sai3 lou5 po4 nyun6
 寵物小精靈	cung2 mat6 siu2 zing1 ling4
@@ -19553,7 +19557,8 @@ let dictWords = `我	ngo5
 連鎖店	lin4 so2 dim3
 北京話	bak1 ging1 waa2
 選拔賽	syun2 bat6 coi3
-黃黚黚	wong4 gam4 gam4 / wong4 kam4 kam4
+黃黚黚	wong4 gam4 gam4
+黃黚黚	wong4 kam4 kam4
 雞毛掃	gai1 mou4 sou2
 企人邊	kei5 jan4 bin1
 紅樓夢	hung4 lau4 mung6
@@ -21020,7 +21025,8 @@ let dictWords = `我	ngo5
 加添	gaa1 tim1
 登時	dang1 si4
 熟絡	suk6 lok3
-迫力	bik1 lik6 / bik6 lik1
+迫力	bik1 lik6
+迫力	bik6 lik1
 跟尾	gan1 mei5
 過太	gwo3 taai3
 隔鄰	gaak3 leon4
@@ -23401,7 +23407,7 @@ let dictWords = `我	ngo5
 鹵	lou5
 瘡	cong1
 泄	sit3
-麻雀雖小，五臟俱全	maa4 zoek3 seoi1 siu2 ，ng5 zong6 keoi1 cyun4
+麻雀雖小，五臟俱全	maa4 zoek3 seoi1 siu2 ng5 zong6 keoi1 cyun4
 咁多人死唔見你死	gam3 do1 jan4 sei2 m4 gin3 nei5 sei2
 小心駛得萬年船	siu2 sam1 sai2 dak1 maan6 nin4 syun4
 手指拗出唔拗入	sau2 zi2 aau2 ceot1 m4 aau2 jap6
@@ -24261,7 +24267,8 @@ let dictWords = `我	ngo5
 側目	zak1 muk6
 財氣	coi4 hei3
 拋下	paau1 haa6
-拿到	naa4 dou3 / dou2
+拿到	naa4 dou3
+拿到	naa4 dou2
 庵堂	am1 tong4
 手抽	sau2 cau1
 安插	on1 caap3
@@ -25110,9 +25117,9 @@ let dictWords = `我	ngo5
 闌干	laan4 gon1
 牛唔飲水唔撳得牛頭低	ngau4 m4 jam2 seoi2 m4 gam6 dak1 ngau4 tau4 dai1
 國務院港澳事務辦公室	gwok3 mou6 jyun2 gong2 ou3 si6 mou6 baan6 gung1 sat1
-善有善報，惡有惡報	sin6 jau5 sin6 bou3 ，ok3 jau5 ok3 bou3
+善有善報，惡有惡報	sin6 jau5 sin6 bou3 ok3 jau5 ok3 bou3
 有頭毛冇人想生鬎鬁	jau5 tau4 mou4 mou5 jan4 soeng2 saang1 laat6 lei1
-水能載舟，亦能覆舟	seoi2 nang4 zoi3 zau1 ，jik6 nang4 fuk1 zau1
+水能載舟，亦能覆舟	seoi2 nang4 zoi3 zau1 jik6 nang4 fuk1 zau1
 你做初一我做十五	nei5 zou6 co1 jat1 ngo5 zou6 sap6 ng5
 執輸行頭慘過敗家	zap1 syu1 hong4 tau4 caam2 gwo3 baai6 gaa1
 青出於藍而勝於藍	cing1 ceot1 jyu1 laam4 ji4 sing3 jyu1 laam4
@@ -31981,7 +31988,8 @@ let dictWords = `我	ngo5
 彌撒	nei4 saat3
 片糖	pin3 tong4
 數獨	sou3 duk6
-肉刺	juk6 cek3 / ci3
+肉刺	juk6 cek3
+肉刺	juk6 ci3
 鬥快	dau3 faai3
 凶兆	hung1 siu6
 開坑	hoi1 haang1
@@ -32573,9 +32581,9 @@ let dictWords = `我	ngo5
 褪	tan3
 一人計短，二人計長	jat1 jan4 gai3 dyun2 ji6 jan4 gai3 zoeng2
 一講曹操，曹操就到	jat1 gong2 cou4 cou1 cou4 cou1 zau6 dou3
-近朱者赤，近墨者黑	gan6 zyu1 ze2 cek3 ，gan6 mak6 ze2 hak1
-螳螂捕蟬，黃雀在後	tong4 long4 bou6 sim4 ，wong4 zoek3 zoi6 hau6
-精誠所至，金石為開	zing1 sing4 so2 zi3 ，gam1 sek6 wai4 hoi1
+近朱者赤，近墨者黑	gan6 zyu1 ze2 cek3 gan6 mak6 ze2 hak1
+螳螂捕蟬，黃雀在後	tong4 long4 bou6 sim4 wong4 zoek3 zoi6 hau6
+精誠所至，金石為開	zing1 sing4 so2 zi3 gam1 sek6 wai4 hoi1
 有錢出錢，有力出力	jau5 cin2 ceot1 cin2 jau5 lik6 ceot1 lik6
 癩蛤蟆想食天鵝肉	laai3 haa1 mou1 soeng2 sik6 tin1 ngo4 juk6
 船到橋頭自然直	syun4 dou3 kiu4 tau4 zi6 jin4 zik6
@@ -32583,7 +32591,7 @@ let dictWords = `我	ngo5
 辛苦搵嚟自在食	san1 fu2 wan3 lai4 zi6 zoi6 sik6
 老虎頭上釘蝨乸	lou5 fu2 tau4 soeng6 deng1 sat1 naa2
 醉翁之意不在酒	zeoi3 jung1 zi1 ji3 bat1 zoi6 zau2
-滿招損，謙受益	mun5 ziu1 syun2 ，him1 sau6 jik1
+滿招損，謙受益	mun5 ziu1 syun2 him1 sau6 jik1
 恨不相逢未嫁時	han6 bat1 soeng1 fung4 mei6 gaa3 si4
 打爛砂盆問到篤	daa2 laan6 saa1 pun4 man6 dou3 duk1
 打醒十二個精神	daa2 sing2 sap6 ji6 go3 zing1 san4
@@ -35299,7 +35307,8 @@ let dictWords = `我	ngo5
 㕵㕵狗	gwok3 gwok3 gau2
 㗎仔	gaa4 zai2
 㗎佬	gaa4 lou2
-㗎咋	gaa3 zaa3 / zaa4
+㗎咋	gaa3 zaa3
+㗎咋	gaa3 zaa4
 㗎妹	gaa2 mui6
 㗾哆	heoi1 do1
 㚻姦	gei1 gaan1
@@ -35334,7 +35343,7 @@ let dictWords = `我	ngo5
 一丁不識	jat1 ding1 bat1 sik1
 一丁點	jat1 ding1 dim2
 一下兒	jat1 haa5 ji4
-一不做，二不休	jat1 bat1 zou6, ji6 bat1 jau1
+一不做，二不休	jat1 bat1 zou6 ji6 bat1 jau1
 一不小心	jat1 bat1 siu2 sam1
 一世英名	jat1 sai3 jing1 ming4
 一並	jat1 bing6
@@ -35347,7 +35356,7 @@ let dictWords = `我	ngo5
 一二八事變	jat1 ji6 baat3 si6 bin3
 一些些	jat1 se1 se1
 一人做事一人當	jat1 jan4 zou6 si6 jat1 jan4 dong1
-一人得道，雞犬升天	jat1 jan4 dak1 dou6 ，gai1 hyun2 sing1 tin1
+一人得道，雞犬升天	jat1 jan4 dak1 dou6 gai1 hyun2 sing1 tin1
 一介	jat1 gaai3
 一介不取	jat1 gaai3 bat1 ceoi2
 一代不如一代	jat1 doi6 bat1 jyu4 jat1 doi6
@@ -35360,7 +35369,7 @@ let dictWords = `我	ngo5
 一來到	jat1 lai4 dou3
 一個中國政策	jat1 go3 zung1 gwok3 zing3 caak3
 一個個	jat1 go3 go3
-一個做好，一個做醜	jat1 go3 zou6 hou2 ，jat1 go3 zou6 cau2
+一個做好，一個做醜	jat1 go3 zou6 hou2 jat1 go3 zou6 cau2
 一個勁兒	jat1 go3 ging6 ji4
 一個崩	jat1 go3 bang1
 一個巴仙	jat1 go3 baa1 sin1
@@ -35375,7 +35384,7 @@ let dictWords = `我	ngo5
 一倍	jat1 pui5
 一倡三歎	jat1 coeng3 saam1 taan3
 一側化	jat1 zak1 faa3
-一傳十，十傳百	jat1 cyun4 sap6, sap6 cyun4 baak3
+一傳十，十傳百	jat1 cyun4 sap6 sap6 cyun4 baak3
 一價	jat1 gaa3
 一元	jat1 jyun4
 一元化	jat1 jyun4 faa3
@@ -35389,7 +35398,7 @@ let dictWords = `我	ngo5
 一分一毫	jat1 fan1 jat1 hou4
 一分一秒	jat1 fan1 jat1 miu5
 一分為二	jat1 fan1 wai4 ji6
-一分耕耘，一分收穫	jat1 fan1 gaang1 wan4 ，jat1 fan1 sau1 wok6
+一分耕耘，一分收穫	jat1 fan1 gaang1 wan4 jat1 fan1 sau1 wok6
 一分錢兩分貨	jat1 fan1 cin4 loeng5 fan1 fo3
 一切向錢看	jat1 cai3 hoeng3 cin2 hon3
 一切如舊	jat1 cai3 jyu4 gau6
@@ -35397,7 +35406,7 @@ let dictWords = `我	ngo5
 一切險	jat1 :cai3 him2
 一刻千金	jat1 hak1 cin1 gam1
 一則	jat1 zak1
-一則以喜，一則以憂	jat1 zak1 ji5 hei2, jat1 zak1 ji5 jau1
+一則以喜，一則以憂	jat1 zak1 ji5 hei2 jat1 zak1 ji5 jau1
 一動不動	jat1 dung6 bat1 dung6
 一動不如一靜	jat1 dung6 bat1 jyu4 jat1 zing6
 一匙	jat1 ci4
@@ -35460,7 +35469,7 @@ let dictWords = `我	ngo5
 一夫一妻	jat1 fu1 jat1 cai1
 一夫一妻制	jat1 fu1 jat1 cai1 zai3
 一夫當關	jat1 fu1 dong1 gwaan1
-一夫當關，萬夫莫開	jat1 fu1 dong1 gwaan1 ，maan6 fu1 mok6 hoi1
+一夫當關，萬夫莫開	jat1 fu1 dong1 gwaan1 maan6 fu1 mok6 hoi1
 一如往昔	jat1 jyu4 wong5 sik1
 一如所料	jat1 jyu4 so2 liu6
 一如既往	jat1 jyu4 gei3 wong5
@@ -35483,7 +35492,7 @@ let dictWords = `我	ngo5
 一官半職	jat1 gun1 bun3 zik1
 一家子	jat1 gaa1 zi2
 一審	jat1 sam2
-一寸光陰一寸金，寸金難買寸光陰	jat1 cyun3 gwong1 jam1 jat1 cyun3 gam1 ，cyun3 gam1 naan4 maai5 cyun3 gwong1 jam1
+一寸光陰一寸金，寸金難買寸光陰	jat1 cyun3 gwong1 jam1 jat1 cyun3 gam1 cyun3 gam1 naan4 maai5 cyun3 gwong1 jam1
 一對一鬥牛	jat1 deoi3 jat1 dau3 ngau4
 一對兒	jat1 deoi3 ji4
 一小撮	jat1 siu2 cyut3
@@ -35524,7 +35533,7 @@ let dictWords = `我	ngo5
 一應俱全	jat1 jing3 keoi1 cyun4
 一房一廳	jat1 fong2 jat1 teng1
 一手交錢	jat1 sau2 gaau1 cin2
-一手交錢，一手交貨	jat1 sau2 gaau1 cin2 ，jat1 sau2 gaau1 fo3
+一手交錢，一手交貨	jat1 sau2 gaau1 cin2 jat1 sau2 gaau1 fo3
 一手遮天	jat1 sau2 ze1 tin1
 一技旁身	jat1 gei6 pong4 san1
 一把好手	jat1 baa2 hou2 sau2
@@ -35552,10 +35561,10 @@ let dictWords = `我	ngo5
 一改故轍	jat1 goi2 gu3 cit3
 一文不名	jat1 man4 bat1 ming4
 一日三秋	jat1 jat6 saam1 cau1
-一日不見，如隔三秋	jat1 jat6 bat1 gin3 ，jyu4 gaak3 saam1 cau1
+一日不見，如隔三秋	jat1 jat6 bat1 gin3 jyu4 gaak3 saam1 cau1
 一日之計在於晨	jat1 jat6 zi1 gai3 zoi6 jyu1 san4
 一日之雅	jat1 jat6 zi1 ngaa5
-一日為師，終身為父	jat1 jat6 wai4 si1 ，zung1 san1 wai4 fu6
+一日為師，終身為父	jat1 jat6 wai4 si1 zung1 san1 wai4 fu6
 一星半點	jat1 sing1 bun3 dim2
 一時半刻	jat1 si4 bun3 hak1
 一時半晌	jat1 si4 bun3 hoeng2
@@ -35573,7 +35582,7 @@ let dictWords = `我	ngo5
 一望而知	jat1 mong6 ji4 zi1
 一朝天子一朝臣	jat1 ciu4 tin1 zi2 jat1 ciu4 san4
 一朝被蛇咬	jat1 ziu1 bei6 se4 ngaau5
-一朝被蛇咬，十年怕井繩	jat1 ziu1 bei6 se4 ngaau5 ，sap6 nin4 paa3 zeng2 sing4
+一朝被蛇咬，十年怕井繩	jat1 ziu1 bei6 se4 ngaau5 sap6 nin4 paa3 zeng2 sing4
 一木難支	jat1 muk6 naan4 zi1
 一本萬利	jat1 bun2 maan6 lei6
 一本通書睇到老	jat1 bun2 tung1 syu1 tai2 dou3 lou5
@@ -35600,7 +35609,7 @@ let dictWords = `我	ngo5
 一次函數	jat1 ci3 haam4 sou3
 一次方程	jat1 ci3 fong1 cing4
 一次方程式	jat1 ci3 fong1 cing4 sik1
-一次生，兩次熟	jat1 ci3 saang1 ，loeng5 ci3 suk6
+一次生，兩次熟	jat1 ci3 saang1 loeng5 ci3 suk6
 一次總付	jat1 ci3 zung2 fu6
 一次起兩次止	jat1 ci3 hei2 loeng5 ci3 zi2
 一步一個腳印	jat1 bou6 jat1 go3 goek3 jan3
@@ -35620,7 +35629,7 @@ let dictWords = `我	ngo5
 一池秋水	jat1 ci4 cau1 seoi2
 一決勝負	jat1 kyut3 sing3 fu6
 一沉百踩	jat1 cam4 baak3 caai2
-一波未平，一波又起	jat1 bo1 mei6 ping4 ，jat1 bo1 jau6 hei2
+一波未平，一波又起	jat1 bo1 mei6 ping4 jat1 bo1 jau6 hei2
 一派	jat1 paai3
 一派胡言	jat1 paai3 wu4 jin4
 一派謊言	jat1 paai3 fong1 jin4
@@ -35634,7 +35643,7 @@ let dictWords = `我	ngo5
 一無所動	jat1 mou4 so2 dung6
 一無所聞	jat1 mou4 so2 man4
 一無所長	jat1 mou4 so2 coeng4
-一物治一物，糯米治木蝨	jat1 mat6 zi6 jat1 mat6 ，no6 mai5 zi6 muk6 sat1
+一物治一物，糯米治木蝨	jat1 mat6 zi6 jat1 mat6 no6 mai5 zi6 muk6 sat1
 一物降一物	jat1 mat6 hong4 jat1 mat6
 一理通，百理明	jat1 lei5 tung1 baak3 lei5 ming4
 一琴一鶴	jat1 kam4 jat1 hok6
@@ -35698,7 +35707,7 @@ let dictWords = `我	ngo5
 一線微光	jat1 sin3 mei4 gwong1
 一總	jat1 zung2
 一而再	jat1 ji4 zoi3
-一而再，再而三	jat1 ji4 zoi3, zoi3 ji4 saam1
+一而再，再而三	jat1 ji4 zoi3 zoi3 ji4 saam1
 一聲不吭	jat1 sing1 bat1 hang1
 一聲不響	jat1 sing1 bat1 hoeng2
 一肚子	jat1 tou5 zi2
@@ -35726,7 +35735,7 @@ let dictWords = `我	ngo5
 一色	jat1 sik1
 一葉知秋	jat1 jip6 zi1 cau1
 一葉障目	jat1 jip6 zoeng3 muk6
-一著不慎，滿盤皆輸	jat1 zoek6 bat1 san6 ，mun5 pun4 gaai1 syu1
+一著不慎，滿盤皆輸	jat1 zoek6 bat1 san6 mun5 pun4 gaai1 syu1
 一處	jat1 cyu3
 一號木桿	jat1 hou6 muk6 gon1
 一號電池	jat1 hou6 din6 ci4
@@ -35745,7 +35754,7 @@ let dictWords = `我	ngo5
 一言千金	jat1 jin4 cin1 gam1
 一言堂	jat1 jin4 tong4
 一言抄百總	jat1 jin4 caau1 baak3 zung2
-一言既出，駟馬難追	jat1 jin4 gei3 ceot1 ，si3 maa5 naan4 zeoi1
+一言既出，駟馬難追	jat1 jin4 gei3 ceot1 si3 maa5 naan4 zeoi1
 一言為重	jat1 jin4 wai4 cung5
 一語不發	jat1 jyu5 bat1 faat3
 一語破的	jat1 jyu5 po3 dik1
@@ -35776,7 +35785,7 @@ let dictWords = `我	ngo5
 一遞一個	jat1 dai6 jat1 go3
 一遞一聲	jat1 dai6 jat1 sing1
 一邊倒	jat1 bin1 dou2
-一部二十四史，不知從何說起	jat1 bou6 ji6 sap6 sei3 si2, bat1 zi1 cung4 ho4 syut3 hei2
+一部二十四史，不知從何說起	jat1 bou6 ji6 sap6 sei3 si2 bat1 zi1 cung4 ho4 syut3 hei2
 一醉方休	jat1 zeoi3 fong1 jau1
 一醉解千愁	jat1 zeoi3 gaai2 cin1 sau4
 一錘子買賣	jat1 ceoi4 zi2 maai5 maai6
@@ -35797,7 +35806,7 @@ let dictWords = `我	ngo5
 一雙	jat1 soeng1
 一雙鞋	jat1 soeng1 haai4
 一雞死一雞鳴	jat1 gai1 sei2 jat1 gai1 ming4
-一雞死，一雞鳴	jat1 gai1 sei2 ，jat1 gai1 ming4
+一雞死，一雞鳴	jat1 gai1 sei2 jat1 gai1 ming4
 一雨成秋	jat1 jyu5 sing4 cau1
 一霎	jat1 saap3
 一霎時	jat1 saap3 si4
@@ -35965,7 +35974,7 @@ let dictWords = `我	ngo5
 七點鐘	cat1 dim2 zung1
 七龍珠	cat1 lung4 zyu1
 万俟	mak6 kei4
-丈二和尚，摸不著頭腦	zoeng6 ji6 wo4 soeng2 ，mo2 bat1 zoek6 tau4 nou5
+丈二和尚，摸不著頭腦	zoeng6 ji6 wo4 soeng2 mo2 bat1 zoek6 tau4 nou5
 丈二金剛摸不著頭腦	zoeng6 ji6 gam1 gong1 mo2 bat1 zoek6 tau4 nou5
 丈人	zoeng6 jan4
 丈母	zoeng6 mou5
@@ -35988,8 +35997,8 @@ let dictWords = `我	ngo5
 三人性交	saam1 jan4 sing3 gaau1
 三人成虎	saam1 jan4 sing4 fu2
 三人行	saam1 jan4 hang4
-三人行，則必有我師	saam1 jan4 hang4 ，zak1 bit1 jau5 ngo5 si1
-三人行，必有我師	saam1 jan4 hang4 ，bit1 jau5 ngo5 si1
+三人行，則必有我師	saam1 jan4 hang4 zak1 bit1 jau5 ngo5 si1
+三人行，必有我師	saam1 jan4 hang4 bit1 jau5 ngo5 si1
 三仇	saam1 sau4
 三仔	saam1 zai2
 三代同堂	saam1 doi6 tung4 tong4
@@ -36003,11 +36012,11 @@ let dictWords = `我	ngo5
 三個世界	saam1 go3 sai3 gaai3
 三個代表	saam1 go3 doi6 biu2
 三個女人一臺戲	saam1 go3 neoi5 jan4 jat1 toi4 hei3
-三個臭皮匠，勝過一個諸葛亮	saam1 go3 cau3 pei4 zoeng6, sing3 gwo3 jat1 go3 zyu1 got3 loeng6
-三個臭皮匠，合成一個諸葛亮	saam1 go3 cau3 pei4 zoeng6 ，hap6 sing4 jat1 go3 zyu1 got3 loeng6
-三個臭皮匠，賽過一個諸葛亮	saam1 go3 cau3 pei4 zoeng6 ，coi3 gwo3 jat1 go3 zyu1 got3 loeng6
-三個臭皮匠，賽過諸葛亮	saam1 go3 cau3 pei4 zoeng6 ，coi3 gwo3 zyu1 got3 loeng6
-三個臭皮匠，頂個諸葛亮	saam1 go3 cau3 pei4 zoeng6 ，ding2 go3 zyu1 got3 loeng6
+三個臭皮匠，勝過一個諸葛亮	saam1 go3 cau3 pei4 zoeng6 sing3 gwo3 jat1 go3 zyu1 got3 loeng6
+三個臭皮匠，合成一個諸葛亮	saam1 go3 cau3 pei4 zoeng6 hap6 sing4 jat1 go3 zyu1 got3 loeng6
+三個臭皮匠，賽過一個諸葛亮	saam1 go3 cau3 pei4 zoeng6 coi3 gwo3 jat1 go3 zyu1 got3 loeng6
+三個臭皮匠，賽過諸葛亮	saam1 go3 cau3 pei4 zoeng6 coi3 gwo3 zyu1 got3 loeng6
+三個臭皮匠，頂個諸葛亮	saam1 go3 cau3 pei4 zoeng6 ding2 go3 zyu1 got3 loeng6
 三個骨	saam1 go3 gwat1
 三價	saam1 gaa3
 三元區	saam1 jyun4 keoi1
@@ -36033,7 +36042,7 @@ let dictWords = `我	ngo5
 三十八度線	saam1 sap6 baat3 dou6 sin3
 三十六字母	saam1 sap6 luk6 zi6 mou5
 三十六計	saam1 sap6 luk6 gai3
-三十六計，走為上策	saam1 sap6 luk6 gai3 ，zau2 wai4  soeng6 caak3
+三十六計，走為上策	saam1 sap6 luk6 gai3 zau2 wai4  soeng6 caak3
 三十而立	saam1 sap6 ji4 laap6
 三原	saam1 jyun4
 三原則	saam1 jyun4 zak1
@@ -36060,9 +36069,9 @@ let dictWords = `我	ngo5
 三地門	saam1 dei6 mun4
 三地門鄉	saam1 dei6 mun4 hoeng1
 三大紀律八項注意	saam1 daai6 gei2 leot6 baat3 hong6 zyu3 ji3
-三天不打，上房揭瓦	saam1 tin1 bat1 daa2 ，soeng6 fong4 kit3 ngaa5
+三天不打，上房揭瓦	saam1 tin1 bat1 daa2 soeng6 fong4 kit3 ngaa5
 三天兩頭	saam1 tin1 loeng5 tau4
-三天打魚，兩天曬網	saam1 tin1 daa2 jyu4 ，loeng5 tin1 saai3 mong5
+三天打魚，兩天曬網	saam1 tin1 daa2 jyu4 loeng5 tin1 saai3 mong5
 三夷教	saam1 ji4 gaau3
 三官大帝	saam1 gun1 daai6 dai3
 三家村	saam1 gaa1 cyun1
@@ -36323,7 +36332,7 @@ let dictWords = `我	ngo5
 三Ｃ	saam1 si1
 三Ｐ	saam1 Ｐ
 三Ｔ	saam1 Ｔ
-上一次當，學一次乖	soeng5 jat1 ci3 dong3, hok6 jat1 ci3 gwaai1
+上一次當，學一次乖	soeng5 jat1 ci3 dong3 hok6 jat1 ci3 gwaai1
 上一號	soeng5 jat1 hou6
 上一頁	soeng6 jat1 jip6
 上上之策	soeng6 soeng6 zi1 caak3
@@ -36367,7 +36376,7 @@ let dictWords = `我	ngo5
 上夜	soeng5 je6
 上天入地	soeng5 tin1 jap6 dei6
 上天堂	soeng5 tin1 tong4
-上天無路，入地無門	soeng5 tin1 mou4 lou6 ，jap6 dei6 mou4 mun4
+上天無路，入地無門	soeng5 tin1 mou4 lou6 jap6 dei6 mou4 mun4
 上夸克	soeng6 kwaa1 hak1
 上將軍	soeng6 zoeng1 gwan1
 上尉	soeng6 wai3
@@ -36386,8 +36395,8 @@ let dictWords = `我	ngo5
 上方寶劍	soeng6 fong1 bou2 gim3
 上昇	soeng6 sing1
 上星	soeng6 sing1
-上有天堂，下有蘇杭	soeng6 jau5 tin1 tong4 ，haa6 jau5 sou1 hong4
-上有政策，下有對策	soeng6 jau5 zing3 caak3 ，haa6 jau5 deoi3 caak3
+上有天堂，下有蘇杭	soeng6 jau5 tin1 tong4 haa6 jau5 sou1 hong4
+上有政策，下有對策	soeng6 jau5 zing3 caak3 haa6 jau5 deoi3 caak3
 上有老下有小	soeng6 jau5 lou5 haa6 jau5 siu2
 上杭	soeng6 hong4
 上杭縣	soeng6 hong4 jyun6
@@ -36632,7 +36641,7 @@ let dictWords = `我	ngo5
 不久前	bat1 gau2 cin4
 不乏其人	bat1 fat6 kei4 jan4
 不乾不淨	bat1 gon1 bat1 zeng6
-不乾不淨，吃了沒病	bat1 gon1 bat1 zeng6, hek3 liu5 mut6 beng6
+不乾不淨，吃了沒病	bat1 gon1 bat1 zeng6 hek3 liu5 mut6 beng6
 不予理會	bat1 jyu5 lei5 wui6
 不予置評	bat1 jyu5 zi3 ping4
 不予評論	bat1 jyu5 ping4 leon6
@@ -36643,8 +36652,8 @@ let dictWords = `我	ngo5
 不令人鼓舞	bat1 ling6 jan4 gu2 mou5
 不以人廢言	bat1 ji5 jan4 fai3 jin4
 不以為意	bat1 ji5 wai4 ji3
-不以物喜，不以己悲	bat1 ji5 mat6 hei2 ，bat1 ji5 gei2 bei1
-不以規矩，不能成方圓	bat1 ji5 kwai1 geoi2 ，bat1 nang4 sing4 fong1 jyun4
+不以物喜，不以己悲	bat1 ji5 mat6 hei2 bat1 ji5 gei2 bei1
+不以規矩，不能成方圓	bat1 ji5 kwai1 geoi2 bat1 nang4 sing4 fong1 jyun4
 不以詞害誌	bat1 ji5 ci4 hoi6 zi3
 不以辭害志	bat1 ji5 ci4 hoi6 zi3
 不佞	bat1 ning6
@@ -36664,7 +36673,7 @@ let dictWords = `我	ngo5
 不偏斜	bat1 pin1 ce4
 不偏極	bat1 pin1 gik6
 不做聲	bat1 zou6 seng1
-不做虧心事，不怕鬼敲門	bat1 zou6 kwai1 sam1 si6 ，bat1 paa3 gwai2 haau1 mun4
+不做虧心事，不怕鬼敲門	bat1 zou6 kwai1 sam1 si6 bat1 paa3 gwai2 haau1 mun4
 不備	bat1 bei6
 不傳	bat1 cyun4
 不傷脾胃	bat1 soeng1 pei4 wai6
@@ -36678,7 +36687,7 @@ let dictWords = `我	ngo5
 不免一死	bat1 min5 jat1 sei2
 不入時宜	bat1 jap6 si4 ji4
 不入虎穴	bat1 jap6 fu2 jyut6
-不入虎穴，焉得虎子	bat1 jap6 fu2 jyut6 ，jin1 dak1 fu2 zi2
+不入虎穴，焉得虎子	bat1 jap6 fu2 jyut6 jin1 dak1 fu2 zi2
 不公正	bat1 gung1 zing3
 不兼容性	bat1 gim1 jung4 sing3
 不准許	bat1 zeon2 heoi2
@@ -36804,7 +36813,7 @@ let dictWords = `我	ngo5
 不如人意	bat1 jyu4 jan4 ji3
 不孕症	bat1 jan6 zing3
 不孚眾望	bat1 fu1 zung3 mong6
-不孝有三，無後為大	bat1 haau3 jau5 saam1 ，mou4 hau6 wai4 daai6
+不孝有三，無後為大	bat1 haau3 jau5 saam1 mou4 hau6 wai4 daai6
 不安其室	bat1 on1 kei4 sat1
 不安分	bat1 on1 fan6
 不安好心	bat1 on1 hou2 sam1
@@ -36849,12 +36858,12 @@ let dictWords = `我	ngo5
 不忿	bat1 fan6
 不怎麼	bat1 zam2 mo1
 不怎麼樣	bat1 zam2 mo1 joeng6
-不怕一萬，就怕萬一	bat1 paa3 jat1 maan6 ，zau6 paa3 maan6 jat1
-不怕不識貨，只怕貨比貨	bat1 paa3 bat1 sik1 fo3, zi2 paa3 fo3 bei2 fo3
-不怕不識貨，就怕貨比貨	bat1 paa3 bat1 sik1 fo3 ，zau6 paa3 fo3 bei2 fo3
-不怕官，只怕管	bat1 paa3 gun1 ，zi2 paa3 gun2
-不怕慢，就怕站	bat1 paa3 maan6, zau6 paa3 zaam6
-不怕神一樣的對手，就怕豬一樣的隊友	bat1 paa3 san4 jat1 joeng6 dik1 deoi3 sau2, zau6 paa3 zyu1 jat1 joeng6 dik1 deoi6 jau5
+不怕一萬，就怕萬一	bat1 paa3 jat1 maan6 zau6 paa3 maan6 jat1
+不怕不識貨，只怕貨比貨	bat1 paa3 bat1 sik1 fo3 zi2 paa3 fo3 bei2 fo3
+不怕不識貨，就怕貨比貨	bat1 paa3 bat1 sik1 fo3 zau6 paa3 fo3 bei2 fo3
+不怕官，只怕管	bat1 paa3 gun1 zi2 paa3 gun2
+不怕慢，就怕站	bat1 paa3 maan6 zau6 paa3 zaam6
+不怕神一樣的對手，就怕豬一樣的隊友	bat1 paa3 san4 jat1 joeng6 dik1 deoi3 sau2 zau6 paa3 zyu1 jat1 joeng6 dik1 deoi6 jau5
 不怠	bat1 toi5
 不急之務	bat1 gap1 zi1 mou6
 不恤	bat1 seot1
@@ -36948,7 +36957,7 @@ let dictWords = `我	ngo5
 不死心	bat1 sei2 sam1
 不比	bat1 bei2
 不求收獲	bat1 kau4 sau1 wok6
-不求有功，但求無過	bat1 kau4 jau5 gung1 ，daan6 kau4 mou4 gwo3
+不求有功，但求無過	bat1 kau4 jau5 gung1 daan6 kau4 mou4 gwo3
 不治而癒	bat1 zi6 ji4 jyu6
 不沾鍋	bat1 zim1 wo1
 不法分子	bat1 faat3 fan6 zi2
@@ -37042,7 +37051,7 @@ let dictWords = `我	ngo5
 不絕於途	bat1 zyut6 jyu1 tou4
 不給力	bat1 kap1 lik6
 不經一事	bat1 ging1 jat1 si6
-不經一事，不長一智	bat1 ging1 jat1 si6 ，bat1 zoeng2 jat1 zi3
+不經一事，不長一智	bat1 ging1 jat1 si6 bat1 zoeng2 jat1 zi3
 不經之談	bat1 ging1 zi1 taam4
 不經濟	bat1 ging1 zai3
 不緊要	bat1 gan2 jiu3
@@ -37058,7 +37067,7 @@ let dictWords = `我	ngo5
 不能抵抗	bat1 nang4 dai2 kong3
 不能自已	bat1 nang4 zi6 ji5
 不自在	bat1 zi6 zoi6
-不自由，毋寧死	bat1 zi6 jau4 ，mou4 ning4 sei2
+不自由，毋寧死	bat1 zi6 jau4 mou4 ning4 sei2
 不自量	bat1 zi6 loeng6
 不自量力	bat1 zi6 loeng6 lik6
 不興	bat1 hing1
@@ -38432,8 +38441,8 @@ let dictWords = `我	ngo5
 了若指掌	liu5 joek6 zi2 zoeng2
 予人口實	jyu5 jan4 hau2 sat6
 予以照顧	jyu5 ji5 ziu3 gu3
-事不關己，己不勞心	si6 bat1 gwaan1 gei2, gei2 bat1 lou4 sam1
-事不關己，高高掛起	si6 bat1 gwaan1 gei2 ，gou1 gou1 gwaa3 hei2
+事不關己，己不勞心	si6 bat1 gwaan1 gei2 gei2 bat1 lou4 sam1
+事不關己，高高掛起	si6 bat1 gwaan1 gei2 gou1 gou1 gwaa3 hei2
 事乾	si6 gon1
 事件相關電位	si6 gin2 soeng1 gwaan1 din6 wai2
 事倍功半	si6 pui5 gung1 bun3
@@ -39256,12 +39265,12 @@ let dictWords = `我	ngo5
 人一世，物一世	jan4 jat1 sai3 mat6 jat1 sai3
 人丁	jan4 ding1
 人不可貌相	jan4 bat1 ho2 maau6 soeng3
-人不可貌相，海水不可斗量	jan4 bat1 ho2 maau6 soeng3 ，hoi2 seoi2 bat1 ho2 dau2 loeng6
-人不為己，天誅地滅	jan4 bat1 wai6 gei2 ，tin1 zyu1 dei6 mit6
+人不可貌相，海水不可斗量	jan4 bat1 ho2 maau6 soeng3 hoi2 seoi2 bat1 ho2 dau2 loeng6
+人不為己，天誅地滅	jan4 bat1 wai6 gei2 tin1 zyu1 dei6 mit6
 人不知鬼不覺	jan4 bat1 zi1 gwai2 bat1 gok3
 人中龍鳳	jan4 zung1 lung4 fung6
-人之初，性本善	jan4 zi1 co1 ，sing3 bun2 sin6
-人之將死，其言也善	jan4 zi1 zoeng1 sei2 ，kei4 jin4 jaa5 sin6
+人之初，性本善	jan4 zi1 co1 sing3 bun2 sin6
+人之將死，其言也善	jan4 zi1 zoeng1 sei2 kei4 jin4 jaa5 sin6
 人事不知	jan4 si6 bat1 zi1
 人事管理	jan4 si6 gun2 lei5
 人事處	jan4 si6 cyu3
@@ -39293,7 +39302,7 @@ let dictWords = `我	ngo5
 人喊馬嘶	jan4 haam3 maa5 sai1
 人嚟	jan4 lai4
 人困馬乏	jan4 kwan3 maa5 fat6
-人在江湖，身不由己	jan4 zoi6 gong1 wu4 ，san1 bat1 jau4 gei2
+人在江湖，身不由己	jan4 zoi6 gong1 wu4 san1 bat1 jau4 gei2
 人地生疏	jan4 dei6 sang1 so1
 人壽年豐	jan4 sau6 nin4 fung1
 人多好做作	jan4 do1 hou2 zou6 zok3
@@ -39315,8 +39324,8 @@ let dictWords = `我	ngo5
 人工耳蝸	jan4 gung1 ji5 wo1
 人工費	jan4 gung1 fai3
 人工電子耳	jan4 gung1 din6 zi2 ji5
-人往高處爬，水往低處流	jan4 wong5 gou1 cyu3 paa4, seoi2 wong5 dai1 cyu3 lau4
-人往高處走，水往低處流	jan4 wong5 gou1 cyu3 zau2 ，seoi2 wong5 dai1 cyu3 lau4
+人往高處爬，水往低處流	jan4 wong5 gou1 cyu3 paa4 seoi2 wong5 dai1 cyu3 lau4
+人往高處走，水往低處流	jan4 wong5 gou1 cyu3 zau2 seoi2 wong5 dai1 cyu3 lau4
 人心所向	jan4 sam1 so2 hoeng3
 人心果	jan4 sam1 gwo2
 人心隔肚皮	jan4 sam1 gaak3 tou5 pei4
@@ -39340,7 +39349,7 @@ let dictWords = `我	ngo5
 人族	jan4 zuk6
 人是鐵飯是鋼	jan4 si6 tit3 faan6 si6 gong3
 人有三衰六旺	jan4 jau5 saam1 seoi1 luk6 wong6
-人有失手，馬有失蹄	jan4 jau5 sat1 sau2, maa5 jau5 sat1 tai4
+人有失手，馬有失蹄	jan4 jau5 sat1 sau2 maa5 jau5 sat1 tai4
 人有我有	jan4 jau5 ngo5 jau5
 人板	jan4 baan2
 人格化	jan4 gaak3 faa3
@@ -39352,7 +39361,7 @@ let dictWords = `我	ngo5
 人權鬥士	jan4 kyun4 dau3 si6
 人武	jan4 mou5
 人比人，比死人	jan4 bei2 jan4 bei2 sei2 jan4
-人比人，氣死人	jan4 bei2 jan4 ，hei3 sei2 jan4
+人比人，氣死人	jan4 bei2 jan4 hei3 sei2 jan4
 人民代表	jan4 man4 doi6 biu2
 人民內部矛盾	jan4 man4 noi6 bou6 maau4 teon5
 人民公敵	jan4 man4 gung1 dik6
@@ -39380,25 +39389,25 @@ let dictWords = `我	ngo5
 人氣急升	jan4 hei3 gap1 sing1
 人流手術	jan4 lau4 sau2 seot6
 人滿為患	jan4 mun5 wai4 waan6
-人為刀俎，我為魚肉	jan4 wai4 dou1 zo2 ，ngo5 wai4 jyu4 juk6
+人為刀俎，我為魚肉	jan4 wai4 dou1 zo2 ngo5 wai4 jyu4 juk6
 人為土	jan4 wai4 tou2
-人為財死，鳥為食亡	jan4 wai6 coi4 sei2 ，niu5 wai6 sik6 mong4
+人為財死，鳥為食亡	jan4 wai6 coi4 sei2 niu5 wai6 sik6 mong4
 人無千日好	jan4 mou4 cin1 jat6 hou2
-人無千日好，花無百日紅	jan4 mou4 cin1 jat6 hou2 ，faa1 mou4 baak3 jat6 hung4
+人無千日好，花無百日紅	jan4 mou4 cin1 jat6 hou2 faa1 mou4 baak3 jat6 hung4
 人無完人	jan4 mou4 jyun4 jan4
-人無遠慮，必有近憂	jan4 mou4 jyun5 leoi6 ，bit1 jau5 gan6 jau1
+人無遠慮，必有近憂	jan4 mou4 jyun5 leoi6 bit1 jau5 gan6 jau1
 人煙稀少	jan4 jin1 hei1 siu2
 人犯	jan4 faan6
 人猿	jan4 jyun4
 人琴俱亡	jan4 kam4 keoi1 mong4
-人生一世，草木一春	jan4 sang1 jat1 sai3 ，cou2 muk6 jat1 ceon1
+人生一世，草木一春	jan4 sang1 jat1 sai3 cou2 muk6 jat1 ceon1
 人生何處不相逢	jan4 sang1 ho4 cyu3 bat1 soeng1 fung4
 人生地不熟	jan4 sang1 dei6 bat1 suk6
 人生如夢	jan4 sang1 jyu4 mung6
 人生如朝露	jan4 sang1 jyu4 ziu1 lou6
 人生朝露	jan4 sang1 ziu1 lou6
 人生盛衰	jan4 sang1 sing6 seoi1
-人生短暫，學術無涯	jan4 sang1 dyun2 zaam6 ，hok6 seot6 mou4 ngaai4
+人生短暫，學術無涯	jan4 sang1 dyun2 zaam6 hok6 seot6 mou4 ngaai4
 人畜共患症	jan4 cuk1 gung6 waan6 zing3
 人盡其才	jan4 zeon6 kei4 coi4
 人盡其材	jan4 zeon6 kei4 coi4
@@ -39414,7 +39423,7 @@ let dictWords = `我	ngo5
 人緣兒	jan4 jyun4 ji4
 人羣	jan4 kwan4
 人老珠黃	jan4 lou5 zyu1 wong4
-人老精，鬼老靈	jan4 lou5 zeng1 ，gwai2 lou5 leng4
+人老精，鬼老靈	jan4 lou5 zeng1 gwai2 lou5 leng4
 人聲鼎沸	jan4 sing1 ding2 fai3
 人肉搜索	jan4 juk6 sau2 saak3
 人肉搜索引擎	jan4 juk6 sau2 saak3 jan5 king4
@@ -39451,7 +39460,7 @@ let dictWords = `我	ngo5
 人間地獄	jan4 gaan1 dei6 juk6
 人間天堂	jan4 gaan1 tin1 tong4
 人際關系	jan4 zai3 gwaan1 hai6
-人非生而知之者，熟能無惑	jan4 fei1 sang1 ji4 zi1 zi1 ze2 ，suk6 nang4 mou4 waak6
+人非生而知之者，熟能無惑	jan4 fei1 sang1 ji4 zi1 zi1 ze2 suk6 nang4 mou4 waak6
 人面桃花	jan4 min6 tou4 faa1
 人面獸心	jan4 min6 sau3 sam1
 人頭涌涌	jan4 tau4 jung2 jung2
@@ -39520,7 +39529,7 @@ let dictWords = `我	ngo5
 仁濟醫院	jan4 zai3 ji1 jyun2
 仁獸	jan4 sau3
 仁者無敵	jan4 ze2 mou4 dik6
-仁者見仁，智者見智	jan4 ze2 gin3 jan4 ，zi3 ze2 gin3 zi3
+仁者見仁，智者見智	jan4 ze2 gin3 jan4 zi3 ze2 gin3 zi3
 仁至義盡	jan4 zi3 ji6 zeon6
 仁言利博	jan4 jin4 lei6 bok3
 仂語	lak6 jyu5
@@ -39530,7 +39539,7 @@ let dictWords = `我	ngo5
 仆嚫	puk1 can3
 仆直	buk6 zik6
 仆轉	puk1 zyun3
-仇人相見，分外眼紅	sau4 jan4 soeng1 gin3 ，fan6 ngoi6 ngaan5 hung4
+仇人相見，分外眼紅	sau4 jan4 soeng1 gin3 fan6 ngoi6 ngaan5 hung4
 仇外	sau4 ngoi6
 仇外心理	sau4 ngoi6 sam1 lei5
 仇富	sau4 fu3
@@ -39756,7 +39765,7 @@ let dictWords = `我	ngo5
 以億計	ji5 jik1 gai3
 以儆效尤	ji5 ging2 haau6 jau4
 以免藉口	ji5 min5 ze3 hau2
-以其人之道，還治其人之身	ji5 kei4 jan4 zi1 dou6 ，waan4 zi6 kei4 jan4 zi1 san1
+以其人之道，還治其人之身	ji5 kei4 jan4 zi1 dou6 waan4 zi6 kei4 jan4 zi1 san1
 以利亞	ji5 lei6 aa3
 以利亞撒	ji5 lei6 aa3 saat3
 以利亞敬	ji5 lei6 aa3 ging3
@@ -39771,8 +39780,8 @@ let dictWords = `我	ngo5
 以太網路	ji5 taai3 mong5 lou6
 以失敗而告終	ji5 sat1 baai6 ji4 gou3 zung1
 以夷制夷	ji5 ji4 zai3 ji4
-以子之矛，攻子之盾	ji5 zi2 zi1 maau4 ，gung1 zi2 zi1 teon5
-以小人之心，度君子之腹	ji5 siu2 jan4 zi1 sam1 ，dok6 gwan1 zi2 zi1 fuk1
+以子之矛，攻子之盾	ji5 zi2 zi1 maau4 gung1 zi2 zi1 teon5
+以小人之心，度君子之腹	ji5 siu2 jan4 zi1 sam1 dok6 gwan1 zi2 zi1 fuk1
 以小擠大	ji5 siu2 zai1 daai6
 以少勝多	ji5 siu2 sing3 do1
 以工代賑	ji5 gung1 doi6 zan3
@@ -39807,9 +39816,9 @@ let dictWords = `我	ngo5
 以法蓮	ji5 faat3 lin4
 以湯沃沸	ji5 tong1 juk1 fai3
 以理服人	ji5 lei5 fuk6 jan4
-以直報怨，以德報德	ji5 zik6 bou3 jyun3, ji5 dak1 bou3 dak1
+以直報怨，以德報德	ji5 zik6 bou3 jyun3 ji5 dak1 bou3 dak1
 以眥睚殺人	ji5 zaai6 ngaai4 saat3 jan4
-以眼還眼，以牙還牙	ji5 ngaan5 waan4 ngaan5 ，ji5 ngaa4 waan4 ngaa4
+以眼還眼，以牙還牙	ji5 ngaan5 waan4 ngaan5 ji5 ngaa4 waan4 ngaa4
 以示警戒	ji5 si6 ging2 gaai3
 以禮相待	ji5 lai5 soeng1 doi6
 以老大自居	ji5 lou5 daai6 zi6 geoi1
@@ -39822,7 +39831,7 @@ let dictWords = `我	ngo5
 以西	ji5 sai1
 以西結書	ji5 sai1 git3 syu1
 以言代法	ji5 jin4 doi6 faat3
-以言代法，以權壓法	ji5 jin4 doi6 faat3 ，ji5 kyun4 aat3 faat3
+以言代法，以權壓法	ji5 jin4 doi6 faat3 ji5 kyun4 aat3 faat3
 以資	ji5 zi1
 以資證明	ji5 zi1 zing3 ming4
 以賽亞書	ji5 coi3 aa3 syu1
@@ -39889,7 +39898,7 @@ let dictWords = `我	ngo5
 任安	jam6 on1
 任情	jam6 cing4
 任意球	jam6 ji3 kau4
-任憑風浪起，穩坐釣魚臺	jam6 pang4 fung1 long6 hei2 ，wan2 co5 diu3 jyu4 toi4
+任憑風浪起，穩坐釣魚臺	jam6 pang4 fung1 long6 hei2 wan2 co5 diu3 jyu4 toi4
 任所	jam6 so2
 任氣	jam6 hei3
 任縣	jam6 jyun6
@@ -40333,7 +40342,7 @@ let dictWords = `我	ngo5
 低音結他	dai1 jam1 git3 taa1
 低領口	dai1 leng5 hau2
 低頭不語	dai1 tau4 bat1 jyu5
-低頭切肉，把眼看人	dai1 tau4 cit3 juk6 ，baa2 ngaan5 hon3 jan4
+低頭切肉，把眼看人	dai1 tau4 cit3 juk6 baa2 ngaan5 hon3 jan4
 低頭族	dai1 tau4 zuk6
 低頭認罪	dai1 tau4 jing6 zeoi6
 低飛	dai1 fei1
@@ -40527,13 +40536,13 @@ let dictWords = `我	ngo5
 佞臣	ning6 san4
 佟佳江	tung4 gaai1 gong1
 你個頭	nei5 go3 tau4
-你做初一，我做十五	nei5 zou6 co1 jat1 ，ngo5 zou6 sap6 ng5
+你做初一，我做十五	nei5 zou6 co1 jat1 ngo5 zou6 sap6 ng5
 你啲人	nei5 di1 jan4
-你有張良計，我有過牆梯	nei5 jau5 zoeng1 loeng4 gai3 ，ngo5 jau5 gwo3 coeng4 tai1
+你有張良計，我有過牆梯	nei5 jau5 zoeng1 loeng4 gai3 ngo5 jau5 gwo3 coeng4 tai1
 你東我西	nei5 dung1 ngo5 sai1
 你看著辦吧	nei5 hon3 zoek6 baan6 baa4
 你諗你	nei5 nam2 nei5
-你走你的陽關道，我過我的獨木橋	nei5 zau2 nei5 dik1 joeng4 gwaan1 dou6 ，ngo5 gwo3 ngo5 dik1 duk6 muk6 kiu4
+你走你的陽關道，我過我的獨木橋	nei5 zau2 nei5 dik1 joeng4 gwaan1 dou6 ngo5 gwo3 ngo5 dik1 duk6 muk6 kiu4
 你追我趕	nei5 zeoi1 ngo5 gon2
 佣錢	jung2 cin2
 佤族	ngaa5 zuk6
@@ -40657,7 +40666,7 @@ let dictWords = `我	ngo5
 來回來去地	loi4 wui4 loi4 heoi3 dei6
 來安縣	loi4 on1 jyun6
 來客	loi4 haak3
-來得容易，去得快	loi4 dak1 jung4 ji6 ，heoi3 dak1 faai3
+來得容易，去得快	loi4 dak1 jung4 ji6 heoi3 dak1 faai3
 來得早不如來得巧	loi4 dak1 zou2 bat1 jyu4 loi4 dak1 haau2
 來復槍	loi4 fuk6 coeng1
 來復線	loi4 fuk6 sin3
@@ -40669,7 +40678,7 @@ let dictWords = `我	ngo5
 來潮	loi4 ciu4
 來火	loi4 fo2
 來火兒	loi4 fo2 ji4
-來無影，去無蹤	loi4 mou4 jing2 ，heoi3 mou4 zung1
+來無影，去無蹤	loi4 mou4 jing2 heoi3 mou4 zung1
 來犯	loi4 faan6
 來看	loi4 hon3
 來硬的	loi4 ngaang6 dik1
@@ -40680,7 +40689,7 @@ let dictWords = `我	ngo5
 來義	loi4 ji6
 來義鄉	loi4 ji6 hoeng1
 來者	loi4 ze2
-來者不善，善者不來	loi4 ze2 bat1 sin6 ，sin6 ze2 bat1 loi4
+來者不善，善者不來	loi4 ze2 bat1 sin6 sin6 ze2 bat1 loi4
 來者不拒	loi4 ze2 bat1 keoi5
 來而不往非禮也	loi4 ji4 bat1 wong5 fei1 lai5 jaa5
 來臺	loi4 toi4
@@ -40688,7 +40697,7 @@ let dictWords = `我	ngo5
 來著	loi4 zoek6
 來蘇糖	loi4 sou1 tong4
 來襲	loi4 zaap6
-來說是非者，便是是非人	loi4 syut3 si6 fei1 ze2 ，bin6 si6 si6 fei1 jan4
+來說是非者，便是是非人	loi4 syut3 si6 fei1 ze2 bin6 si6 si6 fei1 jan4
 來講	loi4 gong2
 來賓市	loi4 ban1 si5
 來路不明	loi4 lou6 bat1 ming4
@@ -41653,7 +41662,7 @@ let dictWords = `我	ngo5
 偏高	pin1 gou1
 偕	gaai1
 偕老	gaai1 lou5
-做一天和尚，撞一天鐘	zou6 jat1 tin1 wo4 soeng2 ，zong6 jat1 tin1 zung1
+做一天和尚，撞一天鐘	zou6 jat1 tin1 wo4 soeng2 zong6 jat1 tin1 zung1
 做不到	zou6 bat1 dou3
 做人世	zou6 jan4 sai3
 做人家	zou6 jan4 gaa1
@@ -42484,7 +42493,7 @@ let dictWords = `我	ngo5
 元龍	jyun4 lung4
 兄嫂	hing1 sou2
 兄弟會	hing1 dai6 wui2
-兄弟鬩於墻，外禦其侮	hing1 dai6 jik1 jyu1 coeng4 ，ngoi6 jyu6 kei4 mou5
+兄弟鬩於墻，外禦其侮	hing1 dai6 jik1 jyu1 coeng4 ngoi6 jyu6 kei4 mou5
 兄弟鬩牆	hing1 dai6 jik1 coeng4
 兄臺	hing1 toi4
 充值卡	cung1 zik6 kaat1
@@ -42541,7 +42550,7 @@ let dictWords = `我	ngo5
 先哲	sin1 zit3
 先嗰排	sin1 go2 paai4
 先大母	sin1 daai6 mou5
-先天下之憂而憂，後天下之樂而樂	sin1 tin1 haa6 zi1 jau1 ji4 jau1 ，hau6 tin1 haa6 zi1 lok6 ji4 lok6
+先天下之憂而憂，後天下之樂而樂	sin1 tin1 haa6 zi1 jau1 ji4 jau1 hau6 tin1 haa6 zi1 lok6 ji4 lok6
 先天性	sin1 tin1 sing3
 先天性缺陷	sin1 tin1 sing3 kyut3 haam6
 先天愚型	sin1 tin1 jyu4 jing4
@@ -42826,7 +42835,7 @@ let dictWords = `我	ngo5
 免遭	min5 zou1
 免開尊口	min5 hoi1 zyun1 hau2
 免黜	min5 ceot1
-兒不嫌母醜，狗不嫌家貧	ji4 bat1 jim4 mou5 cau2, gau2 bat1 jim4 gaa1 pan4
+兒不嫌母醜，狗不嫌家貧	ji4 bat1 jim4 mou5 cau2 gau2 bat1 jim4 gaa1 pan4
 兒化韻	ji4 faa3 wan5
 兒女英雄傳	ji4 neoi5 jing1 hung4 zyun6
 兒媳婦	ji4 sik1 fu5
@@ -43014,7 +43023,7 @@ let dictWords = `我	ngo5
 內華達州	noi6 waa4 daat6 zau1
 內蒙古大學	noi6 mung4 gu2 daai6 hok6
 內蒙古自治區	noi6 mung4 gu2 zi6 zi6 keoi1
-內行看門道，外行看熱鬧	noi6 hong4 hon3 mun4 dou6 ，ngoi6 hong4 hon3 jit6 naau6
+內行看門道，外行看熱鬧	noi6 hong4 hon3 mun4 dou6 ngoi6 hong4 hon3 jit6 naau6
 內衣褲	noi6 ji1 fu3
 內袋	noi6 doi6
 內裝	noi6 zong1
@@ -43183,7 +43192,7 @@ let dictWords = `我	ngo5
 兩口	loeng5 hau2
 兩口子	loeng5 hau2 zi2
 兩國之間	loeng5 gwok3 zi1 gaan1
-兩國相爭，不斬來使	loeng5 gwok3 soeng1 zang1, bat1 zaam2 loi4 si3
+兩國相爭，不斬來使	loeng5 gwok3 soeng1 zang1 bat1 zaam2 loi4 si3
 兩國關係	loeng5 gwok3 gwaan1 hai6
 兩宋	loeng5 sung3
 兩小無猜	loeng5 siu2 mou4 caai1
@@ -43233,9 +43242,9 @@ let dictWords = `我	ngo5
 兩肋插刀	loeng5 lak6 caap3 dou1
 兩著兒	loeng5 zoek6 ji4
 兩虎相爭	loeng5 fu2 soeng1 zang1
-兩虎相爭，必有一傷	loeng5 fu2 soeng1 zang1 ，bit1 jau5 jat1 soeng1
+兩虎相爭，必有一傷	loeng5 fu2 soeng1 zang1 bit1 jau5 jat1 soeng1
 兩虎相鬥	loeng5 fu2 soeng1 dau3
-兩虎相鬥，必有一傷	loeng5 fu2 soeng1 dau3 ，bit1 jau5 jat1 soeng1
+兩虎相鬥，必有一傷	loeng5 fu2 soeng1 dau3 bit1 jau5 jat1 soeng1
 兩袖清風	loeng5 zau6 cing1 fung1
 兩親	loeng5 can1
 兩訖	loeng5 ngat6
@@ -43469,7 +43478,7 @@ let dictWords = `我	ngo5
 公有化	gung1 jau5 faa3
 公案	gung1 on3
 公檢法	gung1 gim2 faat3
-公死有肉食，婆死有肉食	gung1 sei2 jau5 juk6 ji6 sik6 ，po4 sei2 jau5 juk6 sik6
+公死有肉食，婆死有肉食	gung1 sei2 jau5 juk6 ji6 sik6 po4 sei2 jau5 juk6 sik6
 公母倆	gung1 mou5 loeng5
 公毫	gung1 hou4
 公民投票	gung1 man4 tau4 piu3
@@ -43672,8 +43681,8 @@ let dictWords = `我	ngo5
 兵不厭詐	bing1 bat1 jim3 zaa3
 兵不血刃	bing1 bat1 hyut3 jan6
 兵亂	bing1 lyun6
-兵來將擋，水來土掩	bing1 loi4 zoeng3 dong2 ，seoi2 loi4 tou2 jim2
-兵來將敵，水來土堰	bing1 loi4 zoeng3 dik6 ，seoi2 loi4 tou2 jin2
+兵來將擋，水來土掩	bing1 loi4 zoeng3 dong2 seoi2 loi4 tou2 jim2
+兵來將敵，水來土堰	bing1 loi4 zoeng3 dik6 seoi2 loi4 tou2 jin2
 兵刃	bing1 jan6
 兵制	bing1 zai3
 兵卒	bing1 zeot1
@@ -43711,7 +43720,7 @@ let dictWords = `我	ngo5
 兵連禍結	bing1 lin4 wo6 git3
 兵隊	bing1 deoi2
 兵餉	bing1 hoeng2
-兵馬未動，糧草先行	bing1 maa5 mei6 dung6 ，loeng4 cou2 sin1 hang4
+兵馬未動，糧草先行	bing1 maa5 mei6 dung6 loeng4 cou2 sin1 hang4
 其來有自	kei4 loi4 jau5 zi6
 其先	kei4 sin1
 其內	kei4 noi6
@@ -43959,7 +43968,7 @@ let dictWords = `我	ngo5
 冤家對頭	jyun1 gaa1 deoi3 tau4
 冤崩爛臭	jyun1 bang1 laan6 cau3
 冤抑	jyun1 jik1
-冤有頭，債有主	jyun1 jau5 tau4 ，zaai3 jau5 zyu2
+冤有頭，債有主	jyun1 jau5 tau4 zaai3 jau5 zyu2
 冤業	jyun1 jip6
 冤臭	jyun1 cau3
 冤苦	jyun1 fu2
@@ -44022,7 +44031,7 @@ let dictWords = `我	ngo5
 冰上運動	bing1 soeng6 wan6 dung6
 冰人	bing1 jan4
 冰凌	bing1 ling4
-冰凍三尺，非一日之寒	bing1 dung3 saam1 cek3 ，fei1 jat1 jat6 zi1 hon4
+冰凍三尺，非一日之寒	bing1 dung3 saam1 cek3 fei1 jat1 jat6 zi1 hon4
 冰凝器	bing1 jing4 hei3
 冰刀	bing1 dou1
 冰品	bing1 ban2
@@ -44066,7 +44075,7 @@ let dictWords = `我	ngo5
 冰激凌	bing1 gik1 ling4
 冰火	bing1 fo2
 冰炭不相容	bing1 taan3 bat1 soeng1 jung4
-冰炭不言，冷熱自明	bing1 taan3 bat1 jin4 ，laang5 jit6 zi6 ming4
+冰炭不言，冷熱自明	bing1 taan3 bat1 jin4 laang5 jit6 zi6 ming4
 冰燈	bing1 dang1
 冰爪	bing1 zaau2
 冰片	bing1 pin3
@@ -44414,7 +44423,7 @@ let dictWords = `我	ngo5
 出席者	ceot1 zik6 ze2
 出席表決比例	ceot1 zik6 biu2 kyut3 bei2 lai6
 出廠價	ceot1 cong2 gaa3
-出得廳堂，入得廚房	ceot1 dak1 teng1 tong4 ，jap6 dak1 ceoi4 fong4
+出得廳堂，入得廚房	ceot1 dak1 teng1 tong4 jap6 dak1 ceoi4 fong4
 出恭	ceot1 gung1
 出操	ceot1 cou1
 出月	ceot1 jyut6
@@ -44527,8 +44536,8 @@ let dictWords = `我	ngo5
 刀削麵	dou1 soek3 min6
 刀口	dou1 hau2
 刀子	dou1 zi2
-刀子嘴巴，豆腐心	dou1 zi2 zeoi2 baa1 ，dau6 fu6 sam1
-刀子嘴，豆腐心	dou1 zi2 zeoi2 ，dau6 fu6 sam1
+刀子嘴巴，豆腐心	dou1 zi2 zeoi2 baa1 dau6 fu6 sam1
+刀子嘴，豆腐心	dou1 zi2 zeoi2 dau6 fu6 sam1
 刀字邊	dou1 zi6 bin1
 刀山火海	dou1 saan1 fo2 hoi2
 刀斧手	dou1 fu2 sau2
@@ -44556,7 +44565,7 @@ let dictWords = `我	ngo5
 刁藩都	diu1 faan4 dou1
 刁藩都方程	diu1 faan4 dou1 fong1 cing4
 刃	jan6
-分久必合，合久必分	fan1 gau2 bit1 hap6, hap6 gau2 bit1 fan1
+分久必合，合久必分	fan1 gau2 bit1 hap6 hap6 gau2 bit1 fan1
 分付	fan1 fu6
 分佈圖	fan1 bou3 tou4
 分佈式	fan1 bou3 sik1
@@ -45177,14 +45186,14 @@ let dictWords = `我	ngo5
 前一天	cin4 jat1 tin1
 前三甲	cin4 saam1 gaap3
 前不久	cin4 bat1 gau2
-前不巴村，後不巴店	cin4 bat1 baa1 cyun1 ，hau6 bat1 baa1 dim3
-前不著村，後不著店	cin4 bat1 zoek6 cyun1, hau6 bat1 zoek6 dim3
-前不見古人，後不見來者	cin4 bat1 gin3 gu2 jan4 ，hau6 bat1 gin3 loi4 ze2
+前不巴村，後不巴店	cin4 bat1 baa1 cyun1 hau6 bat1 baa1 dim3
+前不著村，後不著店	cin4 bat1 zoek6 cyun1 hau6 bat1 zoek6 dim3
+前不見古人，後不見來者	cin4 bat1 gin3 gu2 jan4 hau6 bat1 gin3 loi4 ze2
 前世姻緣	cin4 sai3 jan1 jyun4
 前世撈亂骨頭	cin4 sai3 lou1 lyun6 gwat1 tau4
-前事不忘，後事之師	cin4 si6 bat1 mong4 ，hau6 si6 zi1 si1
+前事不忘，後事之師	cin4 si6 bat1 mong4 hau6 si6 zi1 si1
 前些	cin4 se1
-前人栽樹，後人乘涼	cin4 jan4 zoi1 syu6 ，hau6 jan4 sing4 loeng4
+前人栽樹，後人乘涼	cin4 jan4 zoi1 syu6 hau6 jan4 sing4 loeng4
 前仆后繼	cin4 puk1 hau6 gai3
 前仆後繼	cin4 fu6 hau6 gai3
 前仰後合	cin4 joeng5 hau6 hap6
@@ -45282,7 +45291,7 @@ let dictWords = `我	ngo5
 前言不對後語	cin4 jin4 bat1 deoi3 hau6 jyu5
 前趙	cin4 ziu6
 前車主	cin4 ce1 zyu2
-前車之覆，後車之鑒	cin4 ce1 zi1 fuk1 ，hau6 ce1 zi1 gaam3
+前車之覆，後車之鑒	cin4 ce1 zi1 fuk1 hau6 ce1 zi1 gaam3
 前車之鑒	cin4 ce1 zi1 gaam3
 前輟	cin4 zyut3
 前輪	cin4 leon4
@@ -45302,8 +45311,8 @@ let dictWords = `我	ngo5
 前鋸肌	cin4 geoi3 gei1
 前鎮	cin4 zan3
 前鎮區	cin4 zan3 keoi1
-前門打虎，後門打狼	cin4 mun4 daa2 fu2 ，hau6 mun4 daa2 long4
-前門拒虎，後門進狼	cin4 mun4 keoi5 fu2 ，hau6 mun4 zeon3 long4
+前門打虎，後門打狼	cin4 mun4 daa2 fu2 hau6 mun4 daa2 long4
+前門拒虎，後門進狼	cin4 mun4 keoi5 fu2 hau6 mun4 zeon3 long4
 前頭	cin4 tau4
 前額	cin4 ngaak6
 前首相	cin4 sau2 soeng3
@@ -46070,7 +46079,7 @@ let dictWords = `我	ngo5
 勛	fan1
 勛業	fan1 jip6
 勛績	fan1 zek3
-勝不驕，敗不餒	sing3 bat1 giu1 ，baai6 bat1 neoi5
+勝不驕，敗不餒	sing3 bat1 giu1 baai6 bat1 neoi5
 勝之不武	sing3 zi1 bat1 mou5
 勝仗	sing3 zoeng3
 勝任能力	sing1 jam6 nang4 lik6
@@ -46221,7 +46230,8 @@ let dictWords = `我	ngo5
 勻稱	wan4 cing3
 勻速	wan4 cuk1
 勻速運動	wan4 cuk1 wan6 dung6
-勼	gau1 / kau1
+勼	gau1
+勼	kau1
 勾人	ngau1 jan4
 勾兌	ngau1 deoi3
 勾出	ngau1 ceot1
@@ -46772,8 +46782,8 @@ let dictWords = `我	ngo5
 十字頭螺刀	sap6 zi6 tau4 lo4 dou1
 十常侍	sap6 soeng4 si6
 十干	sap6 gon1
-十年唔耕，九年唔種	sap6 nin4 m4 gaang1 ，gau2 nin4 m4 zung3
-十年樹木，百年樹人	sap6 nin4 syu6 muk6 ，baak3 nin4 syu6 jan4
+十年唔耕，九年唔種	sap6 nin4 m4 gaang1 gau2 nin4 m4 zung3
+十年樹木，百年樹人	sap6 nin4 syu6 muk6 baak3 nin4 syu6 jan4
 十幾個月	sap6 gei2 go3 jyut6
 十成九穩	sap6 sing4 gau2 wan2
 十戒	sap6 gaai3
@@ -46833,7 +46843,7 @@ let dictWords = `我	ngo5
 千慮一失	cin1 leoi6 jat1 sat1
 千慮一得	cin1 leoi6 jat1 dak1
 千挑萬選	cin1 tiu1 maan6 syun2
-千揀萬揀,揀着個爛燈盞	cin1 gaan2 maan6 gaan2 ,gaan2 zoek6 go3 laan6 dang1 zaan2
+千揀萬揀,揀着個爛燈盞	cin1 gaan2 maan6 gaan2 gaan2 zoek6 go3 laan6 dang1 zaan2
 千斤頂	cin1 gan1 ding2
 千瓦	cin1 ngaa5
 千瘡百孔	cin1 cong1 baak3 hung2
@@ -46849,18 +46859,18 @@ let dictWords = `我	ngo5
 千赫	cin1 haak1
 千赫茲	cin1 haak1 zi1
 千足蟲	cin1 zuk1 cung4
-千軍易得，一將難求	cin1 gwan1 ji6 dak1 ，jat1 zoeng3 naan4 kau4
+千軍易得，一將難求	cin1 gwan1 ji6 dak1 jat1 zoeng3 naan4 kau4
 千載一時	cin1 zoi2 jat1 si4
-千里之堤，潰於蟻穴	cin1 lei5 zi1 tai4 ，kui2 jyu1 ngai5 jyut6
+千里之堤，潰於蟻穴	cin1 lei5 zi1 tai4 kui2 jyu1 ngai5 jyut6
 千里姻緣兜錯圈	cin1 lei5 jan1 jyun4 dau1 co3 hyun1
 千里寄鵝毛	cin1 lei5 gei3 ngo4 mou4
-千里搭長棚，沒有不散的宴席	cin1 lei5 daap3 coeng4 paang4 ，mut6 jau5 bat1 saan3 dik1 jin3 zik6
+千里搭長棚，沒有不散的宴席	cin1 lei5 daap3 coeng4 paang4 mut6 jau5 bat1 saan3 dik1 jin3 zik6
 千里眼	cin1 lei5 ngaan5
 千里迢迢	cin1 lei5 tiu4 tiu4
 千里送鵝毛	cin1 lei5 sung3 ngo4 mou4
-千里送鵝毛，物輕情意重	cin1 lei5 sung3 ngo4 mou4 ，mat6 hing1 cing4 ji3 zung6
-千里送鵝毛，禮輕人意重	cin1 lei5 sung3 ngo4 mou4 ，lai5 hing1 jan4 ji3 zung6
-千里送鵝毛，禮輕情意重	cin1 lei5 sung3 ngo4 mou4 ，lai5 hing1 cing4 ji3 zung6
+千里送鵝毛，物輕情意重	cin1 lei5 sung3 ngo4 mou4 mat6 hing1 cing4 ji3 zung6
+千里送鵝毛，禮輕人意重	cin1 lei5 sung3 ngo4 mou4 lai5 hing1 jan4 ji3 zung6
+千里送鵝毛，禮輕情意重	cin1 lei5 sung3 ngo4 mou4 lai5 hing1 cing4 ji3 zung6
 千里達及托巴哥	cin1 lei5 daat6 kap6 tok3 baa1 go1
 千里達和多巴哥	cin1 lei5 daat6 wo4 do1 baa1 go1
 千里鵝毛	cin1 lei5 ngo4 mou4
@@ -47022,8 +47032,8 @@ let dictWords = `我	ngo5
 卌	se3
 卑下	bei1 haa6
 卑不足道	bei1 bat1 zuk1 dou6
-卑之，毋甚高論	bei1 zi1 ，mou4 sam6 gou1 leon6
-卑之，無甚高論	bei1 zi1 ，mou4 sam6 gou1 leon6
+卑之，毋甚高論	bei1 zi1 mou4 sam6 gou1 leon6
+卑之，無甚高論	bei1 zi1 mou4 sam6 gou1 leon6
 卑劣	bei1 lyut3
 卑卑不足道	bei1 bei1 bat1 zuk1 dou6
 卑南	bei1 naam4
@@ -47953,8 +47963,8 @@ let dictWords = `我	ngo5
 又吵又鬧	jau6 caau2 jau6 naau6
 又稱	jau6 cing1
 又紅又腫	jau6 hung4 jau6 zung2
-又要馬兒好，又要馬兒不吃草	jau6 jiu3 maa5 ji4 hou2 ，jau6 jiu3 maa5 ji4 bat1 hek3 cou2
-又要馬兒跑，又要馬兒不吃草	jau6 jiu3 maa5 ji4 paau2, jau6 jiu3 maa5 ji4 bat1 hek3 cou2
+又要馬兒好，又要馬兒不吃草	jau6 jiu3 maa5 ji4 hou2 jau6 jiu3 maa5 ji4 bat1 hek3 cou2
+又要馬兒跑，又要馬兒不吃草	jau6 jiu3 maa5 ji4 paau2 jau6 jiu3 maa5 ji4 bat1 hek3 cou2
 又話	jau6 waa6
 叉子	caa1 zi2
 叉尾太陽鳥	caa1 mei5 taai3 joeng4 niu5
@@ -47968,7 +47978,7 @@ let dictWords = `我	ngo5
 叉頭	caa1 tau4
 及時性	kap6 si4 sing3
 及時處理	kap6 si4 cyu2 lei5
-及時處理，事半功倍	kap6 si4 cyu2 lei5 ，si6 bun3 gung1 pui5
+及時處理，事半功倍	kap6 si4 cyu2 lei5 si6 bun3 gung1 pui5
 及格線	kap6 gaak3 sin3
 及笄	kap6 gai1
 及第粥	kap6 dai6 zuk1
@@ -48180,12 +48190,12 @@ let dictWords = `我	ngo5
 叔祖母	suk1 zou2 mou5
 叔記	suk1 gei3
 取之不盡	ceoi2 zi1 bat1 zeon6
-取之不盡，用之不竭	ceoi2 zi1 bat1 zeon6 ，jung6 zi1 bat1 kit3
+取之不盡，用之不竭	ceoi2 zi1 bat1 zeon6 jung6 zi1 bat1 kit3
 取保候審	ceoi2 bou2 hau6 sam2
 取保釋放	ceoi2 bou2 sik1 fong3
 取信	ceoi2 seon3
 取其精華	ceoi2 kei4 zing1 waa4
-取其精華，去其糟粕	ceoi2 kei4 zing1 waa4 ，heoi3 kei4 zou1 pok3
+取其精華，去其糟粕	ceoi2 kei4 zing1 waa4 heoi3 kei4 zou1 pok3
 取出	ceoi2 ceot1
 取名	ceoi2 meng2
 取巧	ceoi2 haau2
@@ -48215,7 +48225,7 @@ let dictWords = `我	ngo5
 受之有愧	sau6 zi1 jau5 kwai5
 受事	sau6 si6
 受享	sau6 hoeng2
-受人錢財，替人消災	sau6 jan4 cin4 coi4 ，tai3 jan4 siu1 zoi1
+受人錢財，替人消災	sau6 jan4 cin4 coi4 tai3 jan4 siu1 zoi1
 受任	sau6 jam6
 受保人	sau6 bou2 jan4
 受俸	sau6 fung2
@@ -48543,16 +48553,16 @@ let dictWords = `我	ngo5
 叩門	kau3 mun4
 叩關	kau3 gwaan1
 叩首	kau3 sau2
-只可意會，不可言傳	zi2 ho2 ji3 wui6 ，bat1 ho2 jin4 cyun4
+只可意會，不可言傳	zi2 ho2 ji3 wui6 bat1 ho2 jin4 cyun4
 只欠東風	zi2 him3 dung1 fung1
 只爭旦夕	zi2 zang1 daan3 zik6
 只爭朝夕	zi2 zang1 ziu1 zik6
-只知其一，不知其二	zi2 zi1 kei4 jat1 ，bat1 zi1 kei4 ji6
+只知其一，不知其二	zi2 zi1 kei4 jat1 bat1 zi1 kei4 ji6
 只管	zi2 gun2
-只要功夫深，鐵杵磨成針	zi2 jiu3 gung1 fu1 sam1 ，tit3 cyu5 mo4 sing4 zam1
+只要功夫深，鐵杵磨成針	zi2 jiu3 gung1 fu1 sam1 tit3 cyu5 mo4 sing4 zam1
 只見樹木不見森林	zi2 gin3 syu6 muk6 bat1 gin3 sam1 lam4
 只言片語	zi2 jin4 pin3 jyu5
-只許州官放火，不許百姓點燈	zi2 heoi2 zau1 gun1 fong3 fo2 ，bat1 heoi2 baak3 sing3 dim2 dang1
+只許州官放火，不許百姓點燈	zi2 heoi2 zau1 gun1 fong3 fo2 bat1 heoi2 baak3 sing3 dim2 dang1
 只說不做	zi2 syut3 bat1 zou6
 只讀	zi2 duk6
 叫作	giu3 zok3
@@ -48590,7 +48600,7 @@ let dictWords = `我	ngo5
 可不	ho2 bat1
 可不是	ho2 bat1 si6
 可不是嗎	ho2 bat1 si6 maa1
-可以意會，不可言傳	ho2 ji5 ji3 wui6 ，bat1 ho2 jin4 cyun4
+可以意會，不可言傳	ho2 ji5 ji3 wui6 bat1 ho2 jin4 cyun4
 可作	ho2 zok3
 可供軍用	ho2 gung1 gwan1 jung6
 可信任	ho2 seon3 jam6
@@ -48879,7 +48889,7 @@ let dictWords = `我	ngo5
 叼	diu1
 吁	heoi1
 吁吁	heoi1 heoi1
-吃一塹，長一智	hek3 jat1 cim3 ，zoeng2 jat1 zi3
+吃一塹，長一智	hek3 jat1 cim3 zoeng2 jat1 zi3
 吃不上	hek3 bat1 soeng6
 吃不下	hek3 bat1 haa6
 吃不了兜著走	hek3 bat1 liu5 dau1 zoek6 zau2
@@ -48893,7 +48903,7 @@ let dictWords = `我	ngo5
 吃了定心丸	hek3 liu5 ding6 sam1 jyun2
 吃人	hek3 jan4
 吃人不吐骨頭	hek3 jan4 bat1 tou3 gwat1 tau4
-吃人家的嘴軟，拿人家的手短	hek3 jan4 gaa1 dik1 zeoi2 jyun5, naa4 jan4 gaa1 dik1 sau2 dyun2
+吃人家的嘴軟，拿人家的手短	hek3 jan4 gaa1 dik1 zeoi2 jyun5 naa4 jan4 gaa1 dik1 sau2 dyun2
 吃刀	hek3 dou1
 吃到飽	hek3 dou3 baau2
 吃口	gat6 hau2
@@ -48914,7 +48924,7 @@ let dictWords = `我	ngo5
 吃後悔藥	hek3 hau6 fui3 joek6
 吃得住	hek3 dak1 zyu6
 吃得消	hek3 dak1 siu1
-吃得苦中苦，方為人上人	hek3 dak1 fu2 zung1 fu2 ，fong1 wai4 jan4 soeng6 jan4
+吃得苦中苦，方為人上人	hek3 dak1 fu2 zung1 fu2 fong1 wai4 jan4 soeng6 jan4
 吃得開	hek3 dak1 hoi1
 吃拿卡要	hek3 naa4 kaat1 jiu3
 吃掉	hek3 diu6
@@ -48939,8 +48949,8 @@ let dictWords = `我	ngo5
 吃老本	hek3 lou5 bun2
 吃苦耐勞	hek3 fu2 noi6 lou4
 吃苦頭	hek3 fu2 tau4
-吃著碗裡，看著鍋裡	hek3 zoek6 wun2 leoi5 ，hon3 zoek6 wo1 leoi5
-吃著碗裡，瞧著鍋裡	hek3 zoek6 wun2 leoi5 ，ciu4 zoek6 wo1 leoi5
+吃著碗裡，看著鍋裡	hek3 zoek6 wun2 leoi5 hon3 zoek6 wo1 leoi5
+吃著碗裡，瞧著鍋裡	hek3 zoek6 wun2 leoi5 ciu4 zoek6 wo1 leoi5
 吃藥	hek3 joek6
 吃虧上當	hek3 kwai1 soeng5 dong3
 吃螺絲	hek3 lo4 si1
@@ -48965,7 +48975,7 @@ let dictWords = `我	ngo5
 吃香喝辣	hek3 hoeng1 hot3 laat6
 吃齋	hek3 zaai1
 各不相同	gok3 bat1 soeng1 tung4
-各人自掃門前雪，莫管他家瓦上霜	gok3 jan4 zi6 sou3 mun4 cin4 syut3 ，mok6 gun2 taa1 gaa1 ngaa5 soeng6 soeng1
+各人自掃門前雪，莫管他家瓦上霜	gok3 jan4 zi6 sou3 mun4 cin4 syut3 mok6 gun2 taa1 gaa1 ngaa5 soeng6 soeng1
 各別	gok3 bit6
 各取所需	gok3 ceoi2 so2 seoi1
 各執己見	gok3 zap1 gei2 gin3
@@ -49251,7 +49261,7 @@ let dictWords = `我	ngo5
 吊門	diu3 mun4
 吊門桔	diu3 mun4 gat1
 吊骨	diu3 gwat1
-同一個世界，同一個夢想	tung4 jat1 go3 sai3 gaai3 ，tung4 jat1 go3 mung6 soeng2
+同一個世界，同一個夢想	tung4 jat1 go3 sai3 gaai3 tung4 jat1 go3 mung6 soeng2
 同一個鼻哥窿出氣	tung4 jat1 go3 bei6 go1 lung1 ceot1 hei3
 同一掛	tung4 jat1 gwaa3
 同人唔同命，同遮唔同柄	tung4 jan4 m4 tung4 ming6 tung4 ze1 m4 tung4 beng3
@@ -49509,13 +49519,13 @@ let dictWords = `我	ngo5
 君之	gwan1 zi1
 君位	gwan1 wai6
 君士坦丁堡	gwan1 si6 taan2 ding1 bou2
-君子一言，駟馬難追	gwan1 zi2 jat1 jin4 ，si3 maa5 naan4 zeoi1
+君子一言，駟馬難追	gwan1 zi2 jat1 jin4 si3 maa5 naan4 zeoi1
 君子不計小人過	gwan1 zi2 bat1 gai3 siu2 jan4 gwo3
 君子之交	gwan1 zi2 zi1 gaau1
 君子之交淡如水	gwan1 zi2 zi1 gaau1 daam6 jyu4 seoi2
 君子協定	gwan1 zi2 hip3 ding6
-君子坦蕩蕩，小人長戚戚	gwan1 zi2 taan2 dong6 dong6 ，siu2 jan4 coeng4 cik1 cik1
-君子報仇，十年不晚	gwan1 zi2 bou3 sau4 ，sap6 nin4 bat1 maan5
+君子坦蕩蕩，小人長戚戚	gwan1 zi2 taan2 dong6 dong6 siu2 jan4 coeng4 cik1 cik1
+君子報仇，十年不晚	gwan1 zi2 bou3 sau4 sap6 nin4 bat1 maan5
 君子蘭	gwan1 zi2 laan4
 君子遠庖廚	gwan1 zi2 jyun5 paau4 cyu4
 君山	gwan1 saan1
@@ -49689,7 +49699,8 @@ let dictWords = `我	ngo5
 吵嚷	caau2 joeng6
 吵架	caau2 gaa3
 吶	naap6
-吷	hyut3 / kyut3
+吷	hyut3
+吷	kyut3
 吸住	kap1 zyu6
 吸入劑	kap1 jap6 zai1
 吸入器	kap1 jap6 hei3
@@ -49781,7 +49792,7 @@ let dictWords = `我	ngo5
 吽牙	ngau6 ngaa4
 吾人	ng4 jan4
 吾爾開希	ng4 ji5 hoi1 hei1
-吾生也有涯，而知也無涯	ng4 sang1 jaa5 jau5 ngaai4 ，ji4 zi1 jaa5 mou4 ngaai4
+吾生也有涯，而知也無涯	ng4 sang1 jaa5 jau5 ngaai4 ji4 zi1 jaa5 mou4 ngaai4
 吾等	ng4 dang2
 吾輩	ng4 bui3
 呀諾達	aa3 nok6 daat6
@@ -49977,7 +49988,7 @@ let dictWords = `我	ngo5
 呼中	fu1 zung1
 呼中區	fu1 zung1 keoi1
 呼之即來	fu1 zi1 zik1 loi4
-呼之即來，揮之即去	fu1 zi1 zik1 loi4 ，fai1 zi1 zik1 heoi3
+呼之即來，揮之即去	fu1 zi1 zik1 loi4 fai1 zi1 zik1 heoi3
 呼來喝去	fu1 loi4 hot3 heoi3
 呼倫湖	fu1 leon4 wu4
 呼倫貝爾	fu1 leon4 bui3 ji5
@@ -50938,7 +50949,7 @@ let dictWords = `我	ngo5
 啞巴	aa2 baa1
 啞巴吃黃蓮	aa2 baa1 hek3 wong4 lin4
 啞巴吃黃連	aa2 baa1 hek3 wong4 lin4
-啞巴吃黃連，有苦說不出	aa2 baa1 hek3 wong4 lin4 ，jau5 fu2 syut3 bat1 ceot1
+啞巴吃黃連，有苦說不出	aa2 baa1 hek3 wong4 lin4 jau5 fu2 syut3 bat1 ceot1
 啞巴虧	aa2 baa1 kwai1
 啞然失笑	ak1 jin4 sat1 siu3
 啞然無生	ak1 jin4 mou4 sang1
@@ -51037,13 +51048,13 @@ let dictWords = `我	ngo5
 善思	sin6 si1
 善意的謊言	sin6 ji3 dik1 fong1 jin4
 善感	sin6 gam2
-善有善報，惡有惡報，若然不報時晨未到	sin6 jau5 sin6 bou3 ，ok3 jau5 ok3 bou3 ，joek6 jin4 bat1 bou3 si4 san4 mei6 dou3
+善有善報，惡有惡報，若然不報時晨未到	sin6 jau5 sin6 bou3 ok3 jau5 ok3 bou3 joek6 jin4 bat1 bou3 si4 san4 mei6 dou3
 善本	sin6 bun2
 善棍	sin6 gwan3
 善策	sin6 caak3
 善緣	sin6 jyun4
 善罷甘休	sin6 baa6 gam1 jau1
-善者不辯，辯者不善	sin6 ze2 bat1 bin6 ，bin6 ze2 bat1 sin6
+善者不辯，辯者不善	sin6 ze2 bat1 bin6 bin6 ze2 bat1 sin6
 善能	sin6 nang4
 善自保重	sin6 zi6 bou2 zung6
 善自為謀	sin6 zi6 wai4 mau4
@@ -51605,8 +51616,8 @@ let dictWords = `我	ngo5
 嘲哳	zaau1 zaat3
 嘲弄	zaau1 lung6
 嘲謔	zaau1 joek6
-嘴上沒毛，辦事不牢	zeoi2 soeng6 mut6 mou4 ，baan6 si6 bat1 lou4
-嘴上無毛，辦事不牢	zeoi2 soeng6 mou4 mou4, baan6 si6 bat1 lou4
+嘴上沒毛，辦事不牢	zeoi2 soeng6 mut6 mou4 baan6 si6 bat1 lou4
+嘴上無毛，辦事不牢	zeoi2 soeng6 mou4 mou4 baan6 si6 bat1 lou4
 嘴乖	zeoi2 gwaai1
 嘴啃泥	zeoi2 hang2 nai4
 嘴喵喵	zeoi2 miu2 miu2
@@ -51656,7 +51667,9 @@ let dictWords = `我	ngo5
 噆	cam3
 噆氣	cam3 hei3
 噇	cong4
-噈	zaap3 / hap6 / zuk1
+噈	zaap3
+噈	hap6
+噈	zuk1
 噉又得	gam2 jau6 dak1
 噉都得	gam2 dou1 dak1
 噉頭	gam2 tau2
@@ -51817,7 +51830,7 @@ let dictWords = `我	ngo5
 嚮導	hoeng3 dou6
 嚲	do2
 嚴了眼兒	jim4 liu5 ngaan5 ji4
-嚴以律己	jim4 ji5 leot6 gei2 ,
+嚴以律己	jim4 ji5 leot6 gei2 
 嚴以責己寬以待人	jim4 ji5 zaak3 gei2 fun1 ji5 doi6 jan4
 嚴刑拷打	jim4 jing4 haau1 daa2
 嚴厲打擊	jim4 lai6 daa2 gik1
@@ -52053,7 +52066,7 @@ let dictWords = `我	ngo5
 四項基本原則	sei3 hong6 gei1 bun2 jyun4 zak1
 四頭肌	sei3 tau4 gei1
 四驅車	sei3 keoi1 ce1
-四體不勤，五穀不分	sei3 tai2 bat1 kan4 ，ng5 guk1 bat1 fan1
+四體不勤，五穀不分	sei3 tai2 bat1 kan4 ng5 guk1 bat1 fan1
 回交	wui4 gaau1
 回京	wui4 ging1
 回信地址	wui4 seon3 dei6 zi2
@@ -52355,7 +52368,7 @@ let dictWords = `我	ngo5
 國家級	gwok3 gaa1 kap1
 國家統計局	gwok3 gaa1 tung2 gai3 guk6
 國家經濟貿易委員會	gwok3 gaa1 ging1 zai3 mau6 jik6 wai2 jyun4 wui2
-國家興亡，匹夫有責	gwok3 gaa1 hing1 mong4 ，pat1 fu1 jau5 zaak3
+國家興亡，匹夫有責	gwok3 gaa1 hing1 mong4 pat1 fu1 jau5 zaak3
 國家航天局	gwok3 gaa1 hong4 tin1 guk6
 國家航空公司	gwok3 gaa1 hong4 hung1 gung1 si1
 國家計劃委員會	gwok3 gaa1 gai3 waak6 wai2 jyun4 wui2
@@ -52800,11 +52813,11 @@ let dictWords = `我	ngo5
 在地	zoi6 dei6
 在地下	zoi6 dei6 haa6
 在天之靈	zoi6 tin1 zi1 ling4
-在天願做比翼鳥，在地願做連理枝	zoi6 tin1 jyun6 zou6 bei2 jik6 niu5 ，zoi6 dei6 jyun6 zou6 lin4 lei5 zi1
+在天願做比翼鳥，在地願做連理枝	zoi6 tin1 jyun6 zou6 bei2 jik6 niu5 zoi6 dei6 jyun6 zou6 lin4 lei5 zi1
 在室內	zoi6 sat1 naap6
-在家千日好，出門一時難	zoi6 gaa1 cin1 jat6 hou2, ceot1 mun4 jat1 si4 naan4
-在家靠父母，出外靠朋友	zoi6 gaa1 kaau3 fu6 mou5, ceot1 ngoi6 kaau3 pang4 jau5
-在家靠父母，出門靠朋友	zoi6 gaa1 kaau3 fu6 mou5 ，ceot1 mun4 kaau3 pang4 jau5
+在家千日好，出門一時難	zoi6 gaa1 cin1 jat6 hou2 ceot1 mun4 jat1 si4 naan4
+在家靠父母，出外靠朋友	zoi6 gaa1 kaau3 fu6 mou5 ceot1 ngoi6 kaau3 pang4 jau5
+在家靠父母，出門靠朋友	zoi6 gaa1 kaau3 fu6 mou5 ceot1 mun4 kaau3 pang4 jau5
 在戶外	zoi6 wu6 ngoi6
 在所不計	zoi6 so2 bat1 gai3
 在所不辭	zoi6 so2 bat1 ci4
@@ -53140,7 +53153,8 @@ let dictWords = `我	ngo5
 坡頭	bo1 tau4
 坡頭區	bo1 tau4 keoi1
 坡鹿	bo1 luk6
-坢	bun6 / pun5
+坢	bun6
+坢	pun5
 坣	bok3
 坤甸	kwan1 din6
 坦佩雷	taan2 pui3 leoi4
@@ -53340,7 +53354,7 @@ let dictWords = `我	ngo5
 城鎮化	sing4 zan3 faa3
 城鎮化水平	sing4 zan3 faa3 seoi2 ping4
 城鐵	sing4 tit3
-城門失火，殃及池魚	sing4 mun4 sat1 fo2 ，joeng1 kap6 ci4 jyu4
+城門失火，殃及池魚	sing4 mun4 sat1 fo2 joeng1 kap6 ci4 jyu4
 城門水塘	sing4 mun4 seoi2 tong4
 城門河	sing4 mun4 ho4
 城門隧道	sing4 mun4 seoi6 dou6
@@ -53537,7 +53551,8 @@ let dictWords = `我	ngo5
 埼玉	kei4 juk6
 埼玉縣	kei4 juk6 jyun6
 埽	sou3
-堁	fo2 / fo3
+堁	fo2
+堁	fo3
 堂倌	tong4 gun1
 堂口	tong4 hau2
 堂吉訶德	tong4 gat1 ho1 dak1
@@ -53888,7 +53903,9 @@ let dictWords = `我	ngo5
 填飽	tin4 baau2
 塬	jyun4
 塬地	jyun4 dei6
-塴	bang1 / baang6 / bing3
+塴	bang1
+塴	baang6
+塴	bing3
 塵世	can4 sai3
 塵俗	can4 zuk6
 塵囂	can4 hiu1
@@ -54169,7 +54186,7 @@ let dictWords = `我	ngo5
 士族	si6 zuk6
 士林	si6 lam4
 士林區	si6 lam4 keoi1
-士為知己者死，女為悅己者容	si6 wai6 zi1 gei2 ze2 sei2, neoi5 wai6 jyut6 gei2 ze2 jung4
+士為知己者死，女為悅己者容	si6 wai6 zi1 gei2 ze2 sei2 neoi5 wai6 jyut6 gei2 ze2 jung4
 士農工商	si6 nung4 gung1 soeng1
 壬午	jam4 ng5
 壬子	jam4 zi2
@@ -54274,7 +54291,8 @@ let dictWords = `我	ngo5
 夏邑縣	haa6 jap1 jyun6
 夏門	haa6 mun4
 夏黃公	haa6 wong4 gung1
-夒	naau4 / nou4
+夒	naau4
+夒	nou4
 夔	kwai4
 夔夔	kwai4 kwai4
 夔州	kwai4 zau1
@@ -54762,7 +54780,7 @@ let dictWords = `我	ngo5
 大乘	daai6 sing6
 大乘佛教	daai6 sing4 fat6 gaau3
 大事不妙	daai6 si6 bat1 miu6
-大事化小，小事化了	daai6 si6 faa3 siu2 ，siu2 si6 faa3 liu5
+大事化小，小事化了	daai6 si6 faa3 siu2 siu2 si6 faa3 liu5
 大事化小，小事化無	daai6 si6 faa3 siu2 siu2 si6 faa3 mou4
 大五碼	daai6 ng5 maa5
 大五趾跳鼠	daai6 ng5 zi2 tiu3 syu2
@@ -54828,7 +54846,7 @@ let dictWords = `我	ngo5
 大力鉗	daai6 lik6 kim2
 大加那利島	daai6 gaa1 naa5 lei6 dou2
 大勇若怯	daai6 jung5 joek6 hip3
-大勇若怯，大智若愚	daai6 jung5 joek6 hip3 ，daai6 zi3 joek6 jyu4
+大勇若怯，大智若愚	daai6 jung5 joek6 hip3 daai6 zi3 joek6 jyu4
 大動干戈	daai6 dung6 gon1 gwo1
 大動脈	daai6 dung6 mak6
 大勝	daai6 sing3
@@ -55369,7 +55387,7 @@ let dictWords = `我	ngo5
 大蘿蔔	daai6 lo4 baak6
 大虎頭蜂	daai6 fu2 tau4 fung1
 大處著眼	daai6 cyu3 zoek6 ngaan5
-大處著眼，小處著手	daai6 cyu3 zoek6 ngaan5 ，siu2 cyu3 zoek6 sau2
+大處著眼，小處著手	daai6 cyu3 zoek6 ngaan5 siu2 cyu3 zoek6 sau2
 大蛇丸	daai6 se4 jyun2
 大蛇屙尿	daai6 se4 o1 niu6
 大蛇屙屎	daai6 se4 o1 si2
@@ -55486,7 +55504,7 @@ let dictWords = `我	ngo5
 大雜燴	daai6 zaap6 wui6
 大雜院	daai6 zaap6 jyun2
 大雞唔食細米	daai6 gai1 m4 sik6 sai3 mai5
-大難不死，必有後福	daai6 naan6 bat1 sei2 ，bit1 jau5 hau6 fuk1
+大難不死，必有後福	daai6 naan6 bat1 sei2 bit1 jau5 hau6 fuk1
 大雨如注	daai6 jyu5 jyu4 zyu3
 大雪紛飛	daai6 syut3 fan1 fei1
 大青山	daai6 cing1 saan1
@@ -55564,8 +55582,8 @@ let dictWords = `我	ngo5
 天下烏鴉一般黑	tin1 haa6 wu1 aa1 jat1 bun1 hak1
 天下無雙	tin1 haa6 mou4 soeng1
 天下無難事	tin1 haa6 mou4 naan4 si6 
-天下無難事，只怕有心人	tin1 haa6 mou4 naan4 si6 ， zi2 paa3 jau5 sam1 jan4
-天下興亡，匹夫有責	tin1 haa6 hing1 mong4 ，pat1 fu1 jau5 zaak3
+天下無難事，只怕有心人	tin1 haa6 mou4 naan4 si6  zi2 paa3 jau5 sam1 jan4
+天下興亡，匹夫有責	tin1 haa6 hing1 mong4 pat1 fu1 jau5 zaak3
 天主教會	tin1 zyu2 gaau3 wui2
 天主的羔羊	tin1 zyu2 dik1 gou1 joeng4
 天之驕子	tin1 zi1 giu1 zi2
@@ -55575,7 +55593,7 @@ let dictWords = `我	ngo5
 天人合一	tin1 jan4 hap6 jat1
 天人感應	tin1 jan4 gam2 jing3
 天仙局	tin1 sin1 guk6
-天低吳楚，眼空無物	tin1 dai1 ng4 co2 ，ngaan5 hung1 mou4 mat6
+天低吳楚，眼空無物	tin1 dai1 ng4 co2 ngaan5 hung1 mou4 mat6
 天佑吾人基業	tin1 jau6 ng4 jan4 gei1 jip6
 天使報喜節	tin1 si3 bou3 hei2 zit3
 天候	tin1 hau6
@@ -55672,7 +55690,7 @@ let dictWords = `我	ngo5
 天曉得	tin1 hiu2 dak1
 天曚光	tin1 mong1 gwong1
 天有不測風雲	tin1 jau5 bat1 caak1 fung1 wan4
-天有不測風雲，人有旦夕禍福	tin1 jau5 bat1 caak1 fung1 wan4 ，jan4 jau5 daan3 zik6 wo6 fuk1
+天有不測風雲，人有旦夕禍福	tin1 jau5 bat1 caak1 fung1 wan4 jan4 jau5 daan3 zik6 wo6 fuk1
 天朝	tin1 ciu4
 天枰座	tin1 ping4 zo6
 天柱	tin1 cyu5
@@ -55760,8 +55778,8 @@ let dictWords = `我	ngo5
 天篷	tin1 pung4
 天糊	tin1 wu2
 天網恢恢	tin1 mong5 fui1 fui1
-天網恢恢，疏而不失	tin1 mong5 fui1 fui1 ，so1 ji4 bat1 sat1
-天網恢恢，疏而不漏	tin1 mong5 fui1 fui1 ，so1 ji4 bat1 lau6
+天網恢恢，疏而不失	tin1 mong5 fui1 fui1 so1 ji4 bat1 sat1
+天網恢恢，疏而不漏	tin1 mong5 fui1 fui1 so1 ji4 bat1 lau6
 天線寶寶	tin1 sin3 bou2 bou2
 天罡星	tin1 gong1 sing1
 天翻地覆	tin1 faan1 dei6 fuk1
@@ -55782,7 +55800,7 @@ let dictWords = `我	ngo5
 天蠍	tin1 kit3
 天蠍座	tin1 kit3 zo6
 天行赤眼	tin1 hang4 cek3 ngaan5
-天要落雨，娘要嫁人	tin1 jiu3 lok6 jyu5 , noeng4 jiu3 gaa3 jan4
+天要落雨，娘要嫁人	tin1 jiu3 lok6 jyu5  noeng4 jiu3 gaa3 jan4
 天誅	tin1 zyu1
 天誅地滅	tin1 zyu1 dei6 mit6
 天象	tin1 zoeng6
@@ -55847,9 +55865,9 @@ let dictWords = `我	ngo5
 太僕寺卿	taai3 buk6 zi6 hing1
 太僕寺旗	taai3 buk6 zi6 kei4
 太公兵法	taai3 gung1 bing1 faat3
-太公分豬肉,	taai3 gung1 fan1 zyu1 juk6,
+太公分豬肉,	taai3 gung1 fan1 zyu1 juk6
 太公望	taai3 gung1 mong6
-太公釣魚，願者上鉤	taai3 gung1 diu3 jyu4 ，jyun6 ze2 soeng5 ngau1
+太公釣魚，願者上鉤	taai3 gung1 diu3 jyu4 jyun6 ze2 soeng5 ngau1
 太初	taai3 co1
 太半	taai3 bun3
 太原	taai3 jyun4
@@ -56001,10 +56019,10 @@ let dictWords = `我	ngo5
 夯砣	haang1 to4
 失主	sat1 zyu2
 失之交臂	sat1 zi1 gaau1 bei3
-失之東隅，收之桑榆	sat1 zi1 dung1 jyu4 ，sau1 zi1 song1 jyu4
-失之毫厘，謬以千里	sat1 zi1 hou4 lei4 ，mau6 ji5 cin1 lei5
-失之毫釐，差之千里	sat1 zi1 hou4 lei4 ，caa1 zi1 cin1 lei5
-失之毫釐，差以千里	sat1 zi1 hou4 lei4 ，caa1 ji5 cin1 lei5
+失之東隅，收之桑榆	sat1 zi1 dung1 jyu4 sau1 zi1 song1 jyu4
+失之毫厘，謬以千里	sat1 zi1 hou4 lei4 mau6 ji5 cin1 lei5
+失之毫釐，差之千里	sat1 zi1 hou4 lei4 caa1 zi1 cin1 lei5
+失之毫釐，差以千里	sat1 zi1 hou4 lei4 caa1 ji5 cin1 lei5
 失儀	sat1 ji4
 失勢	sat1 sai3
 失口	sat1 hau2
@@ -56557,7 +56575,7 @@ let dictWords = `我	ngo5
 好久不見	hou2 gau2 bat1 gin3
 好了傷疤忘了疼	hou2 liu5 soeng1 baa1 mong4 liu5 tung3
 好事不出門，壞事傳千里	hou2 si6 bat1 ceot1 mun4 waai6 si6 cyun4 cin1 lei5
-好事不出門，惡事傳千里	hou2 si6 bat1 ceot1 mun4 ，ok3 si6 cyun4 cin1 lei5
+好事不出門，惡事傳千里	hou2 si6 bat1 ceot1 mun4 ok3 si6 cyun4 cin1 lei5
 好事之徒	hou3 si6 zi1 tou4
 好事者	hou3 si6 ze2
 好人難做	hou2 jan4 naan4 zou6
@@ -56566,7 +56584,7 @@ let dictWords = `我	ngo5
 好似係	hou2 ci5 hai6
 好佬怕爛佬	hou2 lou2 paa3 laan6 lou2
 好使好用	hou2 sai2 hou2 jung6
-好借好還，再借不難	hou2 ze3 hou2 waan4 ，zoi3 ze3 bat1 naan4
+好借好還，再借不難	hou2 ze3 hou2 waan4 zoi3 ze3 bat1 naan4
 好傢伙	hou2 gaa1 fo2
 好傾	hou2 king1
 好兵帥克	hou2 bing1 seoi3 hak1
@@ -56589,10 +56607,10 @@ let dictWords = `我	ngo5
 好奇尚異	hou3 kei4 soeng6 ji6
 好奇會吃苦頭的	hou3 kei4 wui2 hek3 fu2 tau4 dik1
 好好兒	hou2 hou2 ji4
-好好學習，天天向上	hou2 hou2 hok6 zaap6 ，tin1 tin1 hoeng3 soeng6
+好好學習，天天向上	hou2 hou2 hok6 zaap6 tin1 tin1 hoeng3 soeng6
 好好的	hou2 hou2 dik1
 好孩子	hou2 haai4 zi2
-好學近乎知，力行近乎仁，知恥近乎勇	hou3 hok6 gan6 fu4 zi1 ，lik6 hang4 gan6 fu4 jan4 ，zi1 ci2 gan6 fu4 jung5
+好學近乎知，力行近乎仁，知恥近乎勇	hou3 hok6 gan6 fu4 zi1 lik6 hang4 gan6 fu4 jan4 zi1 ci2 gan6 fu4 jung5
 好家伙	hou2 gaa1 fo2
 好少何	hou2 siu2 ho2
 好少理	hou2 siu2 lei5
@@ -56667,7 +56685,7 @@ let dictWords = `我	ngo5
 好鳥	hou2 niu5
 好Ｙｅａｈ	hou2 Y5 e5 a5 h5
 如上所述	jyu4 soeng6 so2 seot6
-如人飲水，冷暖自知	jyu4 jan4 jam2 seoi2 ，laang5 nyun5 zi6 zi1
+如人飲水，冷暖自知	jyu4 jan4 jam2 seoi2 laang5 nyun5 zi6 zi1
 如假包換	jyu4 gaa2 baau1 wun6
 如入無人之境	jyu4 jap6 mou4 jan4 zi1 ging2
 如其所好	jyu4 kei4 so2 hou3
@@ -56744,7 +56762,8 @@ let dictWords = `我	ngo5
 妊神星	jam4 san4 sing1
 妍媸	jin4 ci1
 妍麗	jin4 lai6
-妎	hai6 / gaai3
+妎	hai6
+妎	gaai3
 妒嫉	dou3 zat6
 妒恨	dou3 han6
 妒火中燒	dou3 fo2 zung1 siu1
@@ -56950,7 +56969,8 @@ let dictWords = `我	ngo5
 姬鷸	gei1 wat6
 姮娥	hang4 ngo4
 姻婭	jan1 aa3
-姼	ci2 / si4
+姼	ci2
+姼	si4
 姿容	zi1 jung4
 姿式	zi1 sik1
 姿態婀娜	zi1 taai3 o2 no5
@@ -57109,9 +57129,11 @@ let dictWords = `我	ngo5
 婉辭	jyun2 ci4
 婊	biu2
 婊子	biu2 zi2
-婑	wo2 / wo1
+婑	wo2
+婑	wo1
 婕妤	zit6 jyu4
-婘	gyun3 / kyun4
+婘	gyun3
+婘	kyun4
 婚介	fan1 gaai3
 婚典	fan1 din2
 婚前性行為	fan1 cin4 sing3 hang4 wai4
@@ -57129,7 +57151,8 @@ let dictWords = `我	ngo5
 婚紗攝影	fan1 saa1 sip3 jing2
 婚配	fan1 pui3
 婚齡	fan1 ling4
-婠	waan1 / wun1
+婠	waan1
+婠	wun1
 婢女	pei5 neoi5
 婦人之仁	fu5 jan4 zi1 jan4
 婦女主任	fu5 neoi5 zyu2 jam6
@@ -57199,10 +57222,12 @@ let dictWords = `我	ngo5
 嫁接	gaa3 zip3
 嫁裝	gaa3 zong1
 嫁資	gaa3 zi1
-嫁雞隨雞，嫁狗隨狗	gaa3 gai1 ceoi4 gai1 ，gaa3 gau2 ceoi4 gau2
+嫁雞隨雞，嫁狗隨狗	gaa3 gai1 ceoi4 gai1 gaa3 gau2 ceoi4 gau2
 嫂嫂	sou2 sou2
 嫄	jyun4
-嫇	ming4 / ming5 / mang4
+嫇	ming4
+嫇	ming5
+嫇	mang4
 嫉妒	zat6 dou3
 嫉恨	zat6 han6
 嫉惡如仇	zat6 ok3 jyu4 sau4
@@ -57303,7 +57328,7 @@ let dictWords = `我	ngo5
 孀閨	soeng1 gwai1
 孌童戀	lyun5 tung4 lyun2
 孌童者	lyun5 tung4 ze2
-子不嫌母醜，狗不嫌家貧	zi2 bat1 jim4 mou5 cau2, gau2 bat1 jim4 gaa1 pan4
+子不嫌母醜，狗不嫌家貧	zi2 bat1 jim4 mou5 cau2 gau2 bat1 jim4 gaa1 pan4
 子丑	zi2 cau2
 子京	zi2 ging1
 子代	zi2 doi6
@@ -57685,7 +57710,7 @@ let dictWords = `我	ngo5
 學友	hok6 jau5
 學名	hok6 meng2
 學士學位	hok6 si6 hok6 wai2
-學如逆水行舟，不進則退	hok6 jyu4 jik6 seoi2 hang4 zau1 ，bat1 zeon3 zak1 teoi3
+學如逆水行舟，不進則退	hok6 jyu4 jik6 seoi2 hang4 zau1 bat1 zeon3 zak1 teoi3
 學妹	hok6 mui2
 學姐	hok6 ze2
 學富五車	hok6 fu3 ng5 ce1
@@ -57714,8 +57739,8 @@ let dictWords = `我	ngo5
 學習刻苦	hok6 zaap6 hak1 fu2
 學習障礙	hok6 zaap6 zoeng3 ngoi6
 學而不厭	hok6 ji4 bat1 jim3
-學而不厭，誨人不倦	hok6 ji4 bat1 jim3, fui3 jan4 bat1 gyun6
-學而不思則罔，思而不學則殆	hok6 ji4 bat1 si1 zak1 mong5 ，si1 ji4 bat1 hok6 zak1 toi5
+學而不厭，誨人不倦	hok6 ji4 bat1 jim3 fui3 jan4 bat1 gyun6
+學而不思則罔，思而不學則殆	hok6 ji4 bat1 si1 zak1 mong5 si1 ji4 bat1 hok6 zak1 toi5
 學而優則仕	hok6 ji4 jau1 zak1 si6
 學能測驗	hok6 nang4 cak1 jim6
 學舌	hok6 sit6
@@ -57786,7 +57811,7 @@ let dictWords = `我	ngo5
 守更	sau2 gaang1
 守服	sau2 fuk6
 守株待兔	sau2 zyu1 doi6 tou3
-守株待兔，緣木求魚	sau2 zyu1 doi6 tou3 ，jyun4 muk6 kau4 jyu4
+守株待兔，緣木求魚	sau2 zyu1 doi6 tou3 jyun4 muk6 kau4 jyu4
 守株緣木	sau2 zyu1 jyun4 muk6
 守業	sau2 jip6
 守正不阿	sau2 zing3 bat1 o1
@@ -58433,7 +58458,7 @@ let dictWords = `我	ngo5
 宰牲節	zoi2 sang1 zit3
 宰相	zoi2 soeng3
 害人不淺	hoi6 jan4 bat1 cin2
-害人之心不可有，防人之心不可無	hoi6 jan4 zi1 sam1 bat1 ho2 jau5, fong4 jan4 zi1 sam1 bat1 ho2 mou4
+害人之心不可有，防人之心不可無	hoi6 jan4 zi1 sam1 bat1 ho2 jau5 fong4 jan4 zi1 sam1 bat1 ho2 mou4
 害人害物	hoi6 jan4 hoi6 mat6
 害人精	hoi6 jan4 zing1
 害人蟲	hoi6 jan4 cung4
@@ -58513,7 +58538,7 @@ let dictWords = `我	ngo5
 家的	gaa1 dik1
 家祖	gaa1 zou2
 家童	gaa1 tung4
-家累千金，坐不垂堂	gaa1 leoi6 cin1 gam1 ，zo6 bat1 seoi4 tong4
+家累千金，坐不垂堂	gaa1 leoi6 cin1 gam1 zo6 bat1 seoi4 tong4
 家給人足	gaa1 kap1 jan4 zuk1
 家維邨	gaa1 wai4 cyun1
 家老	gaa1 lou5
@@ -58536,7 +58561,7 @@ let dictWords = `我	ngo5
 家醜	gaa1 cau2
 家醜不出外傳	gaa1 cau2 bat1 ceot1 ngoi6 cyun4
 家醜不可外傳	gaa1 cau2 bat1 ho2 ngoi6 cyun4
-家醜不可外傳，流言切莫輕信	gaa1 cau2 bat1 ho2 ngoi6 cyun4 ，lau4 jin4 cit3 mok6 hing1 seon3
+家醜不可外傳，流言切莫輕信	gaa1 cau2 bat1 ho2 ngoi6 cyun4 lau4 jin4 cit3 mok6 hing1 seon3
 家醜不可外揚	gaa1 cau2 bat1 ho2 ngoi6 joeng4
 家長制	gaa1 zoeng2 zai3
 家陣時	gaa1 zan6 si2
@@ -58927,7 +58952,7 @@ let dictWords = `我	ngo5
 實體層	sat6 tai2 cang4
 實體店	sat6 tai2 dim3
 實鼓實鑿	sat6 gu2 sat6 zok6
-寧做雞頭，不做鳳尾	ning4 zou6 gai1 tau4, bat1 zou6 fung6 mei5
+寧做雞頭，不做鳳尾	ning4 zou6 gai1 tau4 bat1 zou6 fung6 mei5
 寧化	ning4 faa3
 寧化縣	ning4 faa3 jyun6
 寧南	ning4 naam4
@@ -58950,7 +58975,7 @@ let dictWords = `我	ngo5
 寧德	ning4 dak1
 寧德地區	ning4 dak1 dei6 keoi1
 寧德市	ning4 dak1 si5
-寧拆十座廟，不毀一樁婚	ning4 caak3 sap6 zo6 miu2, bat1 wai2 jat1 zong1 fan1
+寧拆十座廟，不毀一樁婚	ning4 caak3 sap6 zo6 miu2 bat1 wai2 jat1 zong1 fan1
 寧教人打仔，莫教人分妻	ning4 gaau3 jan4 daa2 zai2 mok6 gaau3 jan4 fan1 cai1
 寧明	ning4 ming4
 寧明縣	ning4 ming4 jyun6
@@ -58971,8 +58996,8 @@ let dictWords = `我	ngo5
 寧洱縣	ning4 ji5 jyun6
 寧海	ning4 hoi2
 寧海縣	ning4 hoi2 jyun6
-寧為玉碎，不為瓦全	ning4 wai4 juk6 seoi3 ，bat1 wai4 ngaa5 cyun4
-寧為雞頭，不為鳳尾	ning4 wai4 gai1 tau4, bat1 wai4 fung6 mei5
+寧為玉碎，不為瓦全	ning4 wai4 juk6 seoi3 bat1 wai4 ngaa5 cyun4
+寧為雞頭，不為鳳尾	ning4 wai4 gai1 tau4 bat1 wai4 fung6 mei5
 寧縣	ning4 jyun6
 寧缺勿濫	ning4 kyut3 mat6 laam6
 寧缺毋濫	ning4 kyut3 mou4 laam6
@@ -59656,7 +59681,7 @@ let dictWords = `我	ngo5
 小昊	siu2 hou6
 小星頭啄木鳥	siu2 sing1 tau4 doek3 muk6 niu5
 小昭寺	siu2 ciu1 zi6
-小時了了，大未必佳	siu2 si4 liu5 liu5, daai6 mei6 bit1 gaai1
+小時了了，大未必佳	siu2 si4 liu5 liu5 daai6 mei6 bit1 gaai1
 小時候兒	siu2 si4 hau6 ji4
 小時工	siu2 si4 gung1
 小曲	siu2 kuk1
@@ -59685,9 +59710,9 @@ let dictWords = `我	ngo5
 小泡	siu2 paau1
 小波	siu2 bo1
 小洞不堵沉大船	siu2 dung6 bat1 dou2 cam4 daai6 syun4
-小洞不堵，大洞受苦	siu2 dung6 bat1 dou2 ，daai6 dung6 sau6 fu2
-小洞不堵，大洞吃苦	siu2 dung6 bat1 dou2 ，daai6 dung6 hek3 fu2
-小洞不堵，大洞難補	siu2 dung6 bat1 dou2 ，daai6 dung6 naan4 bou2
+小洞不堵，大洞受苦	siu2 dung6 bat1 dou2 daai6 dung6 sau6 fu2
+小洞不堵，大洞吃苦	siu2 dung6 bat1 dou2 daai6 dung6 hek3 fu2
+小洞不堵，大洞難補	siu2 dung6 bat1 dou2 daai6 dung6 naan4 bou2
 小洞不補大洞吃苦	siu2 dung6 bat1 bou2 daai6 dung6 hek3 fu2
 小涌	siu2 jung2
 小淘氣	siu2 tou4 hei3
@@ -59892,10 +59917,10 @@ let dictWords = `我	ngo5
 少刻	siu2 hak1
 少塊肉	siu2 faai3 juk6
 少塊膶	siu2 faai3 jeon2
-少壯不努力，老大徒傷悲	siu3 zong3 bat1 nou5 lik6 ，lou5 daai6 tou4 soeng1 bei1
+少壯不努力，老大徒傷悲	siu3 zong3 bat1 nou5 lik6 lou5 daai6 tou4 soeng1 bei1
 少女峰	siu3 neoi5 fung1
 少女時代	siu3 neoi5 si4 doi6
-少女露笑臉，婚事半成全	siu3 neoi5 lou6 siu3 lim5 ，fan1 si6 bun3 sing4 cyun4
+少女露笑臉，婚事半成全	siu3 neoi5 lou6 siu3 lim5 fan1 si6 bun3 sing4 cyun4
 少安毋躁	siu2 on1 mou4 cou3
 少安無躁	siu2 on1 mou4 cou3
 少尉	siu3 wai3
@@ -60031,7 +60056,7 @@ let dictWords = `我	ngo5
 尹潽善	wan5 pou2 sin6
 尺子	cek3 zi2
 尺寸過大	cek3 cyun3 gwo3 daai6
-尺有所短，寸有所長	cek3 jau5 so2 dyun2 ，cyun3 jau5 so2 coeng4
+尺有所短，寸有所長	cek3 jau5 so2 dyun2 cyun3 jau5 so2 coeng4
 尺短寸長	cek3 dyun2 cyun3 coeng4
 尺蠖	cek3 wok6
 尺蠖蛾	cek3 wok6 ngo4
@@ -60418,7 +60443,7 @@ let dictWords = `我	ngo5
 山不轉水轉	saan1 bat1 zyun3 seoi2 zyun3
 山不轉路轉	saan1 bat1 zyun2 lou6 zyun2
 山丘	saan1 jau1
-山中無老虎，猴子稱大王	saan1 zung1 mou4 lou5 fu2 ，hau4 zi2 cing1 daai6 wong4
+山中無老虎，猴子稱大王	saan1 zung1 mou4 lou5 fu2 hau4 zi2 cing1 daai6 wong4
 山中聖訓	saan1 zung1 sing3 fan3
 山丹	saan1 daan1
 山丹丹	saan1 daan1 daan1
@@ -60570,7 +60595,8 @@ let dictWords = `我	ngo5
 屹	ngat6
 屹然	ngat6 jin4
 屺	hei2
-岈	haa1 / ngaa1
+岈	haa1
+岈	ngaa1
 岋	ngap6
 岌岌貢	kap1 kap1 gung3
 岌嶪	kap1 jip6
@@ -60590,7 +60616,8 @@ let dictWords = `我	ngo5
 岔調	caa3 diu6
 岔路	caa3 lou6
 岔道	caa3 dou6
-岞	zok3 / zok6
+岞	zok3
+岞	zok6
 岡上肌	gong1 soeng6 gei1
 岡下肌	gong1 haa6 gei1
 岡仁波齊	gong1 jan4 bo1 cai4
@@ -60852,7 +60879,8 @@ let dictWords = `我	ngo5
 嵐皋	laam4 gou1
 嵐皋縣	laam4 gou1 jyun6
 嵐縣	laam4 jyun6
-嵑	hot3 / kit3
+嵑	hot3
+嵑	kit3
 嵗	seoi3
 嵛	jyu4
 嵞山	tou4 saan1
@@ -60866,7 +60894,9 @@ let dictWords = `我	ngo5
 嵷	sung2
 嵹	koeng4
 嵺	liu4
-嵽	dai6 / dai3 / dit6
+嵽	dai6
+嵽	dai3
+嵽	dit6
 嶁	lau5
 嶂	zoeng3
 嶄	zaam2
@@ -60890,7 +60920,8 @@ let dictWords = `我	ngo5
 嶧	jik6
 嶧城	jik6 sing4
 嶧城區	jik6 sing4 keoi1
-嶱	got3 / ho1
+嶱	got3
+嶱	ho1
 嶴	ou3
 嶺上開花	leng5 soeng6 hoi1 faa1
 嶺南文化	ling5 naam4 man4 faa3
@@ -61035,7 +61066,7 @@ let dictWords = `我	ngo5
 工業設計	gung1 jip6 cit3 gai3
 工業邨	gung1 jip6 cyun1
 工業部	gung1 jip6 bou6
-工欲善其事，必先利其器	gung1 juk6 sin6 kei4 si6 ，bit1 sin1 lei6 kei4 hei3
+工欲善其事，必先利其器	gung1 juk6 sin6 kei4 si6 bit1 sin1 lei6 kei4 hei3
 工礦	gung1 kwong3
 工礦用地	gung1 kwong3 jung6 dei6
 工科學生	gung1 fo1 hok6 saang1
@@ -61197,8 +61228,8 @@ let dictWords = `我	ngo5
 差不多的	caa1 bat1 do1 dik1
 差不離	caa1 bat1 lei4
 差不離兒	caa1 bat1 lei4 ji4
-差之毫釐，失之千里	caa1 zi1 hou4 lei4 ，sat1 zi1 cin1 lei5
-差之毫釐，謬以千里	caa1 zi1 hou4 lei4 ，mau6 ji5 cin1 lei5
+差之毫釐，失之千里	caa1 zi1 hou4 lei4 sat1 zi1 cin1 lei5
+差之毫釐，謬以千里	caa1 zi1 hou4 lei4 mau6 ji5 cin1 lei5
 差使	caai1 si3
 差分	caa1 fan1
 差分方程	caa1 fan1 fong1 cing4
@@ -61232,7 +61263,7 @@ let dictWords = `我	ngo5
 己卯	gei2 maau5
 己型肝炎	gei2 jing4 gon1 jim4
 己巳	gei2 zi6
-己所不欲，勿施於人	gei2 so2 bat1 juk6 ，mat6 si1 jyu1 jan4
+己所不欲，勿施於人	gei2 so2 bat1 juk6 mat6 si1 jyu1 jan4
 己方	gei2 fong1
 己糖	gei2 tong4
 己酉	gei2 jau5
@@ -61748,7 +61779,7 @@ let dictWords = `我	ngo5
 師從	si1 cung4
 師承	si1 sing4
 師法	si1 faat3
-師父領進門，修行在個人	si1 fu6 ling5 zeon3 mun4 ，sau1 hang6 zoi6 go3 jan4
+師父領進門，修行在個人	si1 fu6 ling5 zeon3 mun4 sau1 hang6 zoi6 go3 jan4
 師生	si1 sang1
 師範大學	si1 faan6 daai6 hok6
 師範學校	si1 faan6 hok6 haau6
@@ -61792,7 +61823,7 @@ let dictWords = `我	ngo5
 帶紅色	daai3 hung4 sik1
 帶累	daai3 leoi6
 帶給	daai3 kap1
-帶著希望去旅行，比到達終點更美好	daai3 zoek6 hei1 mong6 heoi3 leoi5 hang4 ，bei2 dou3 daat6 zung1 dim2 gang1 mei5 hou2
+帶著希望去旅行，比到達終點更美好	daai3 zoek6 hei1 mong6 heoi3 leoi5 hang4 bei2 dou3 daat6 zung1 dim2 gang1 mei5 hou2
 帶薪	daai3 san1
 帶薪休假	daai3 san1 jau1 gaa3
 帶調	daai3 diu6
@@ -62014,7 +62045,7 @@ let dictWords = `我	ngo5
 平旦	ping4 daan3
 平昌	ping4 coeng1
 平昌縣	ping4 coeng1 jyun6
-平時不燒香，臨時抱佛腳	ping4 si4 bat1 siu1 hoeng1 ，lam4 si4 pou5 fat6 goek3
+平時不燒香，臨時抱佛腳	ping4 si4 bat1 siu1 hoeng1 lam4 si4 pou5 fat6 goek3
 平月	ping4 jyut6
 平板手機	ping4 baan2 sau2 gei1
 平板玻璃	ping4 baan2 bo1 lei1
@@ -62052,7 +62083,7 @@ let dictWords = `我	ngo5
 平滑肌	ping4 waat6 gei1
 平潭	ping4 taam4
 平潭縣	ping4 taam4 jyun6
-平生不做虧心事，半夜敲門心不驚	ping4 sang1 bat1 zou6 kwai1 sam1 si6 ，bun3 je6 haau1 mun4 sam1 bat1 geng1
+平生不做虧心事，半夜敲門心不驚	ping4 sang1 bat1 zou6 kwai1 sam1 si6 bun3 je6 haau1 mun4 sam1 bat1 geng1
 平疇	ping4 cau4
 平白	ping4 baak6
 平白無故	ping4 baak6 mou4 gu3
@@ -62215,7 +62246,7 @@ let dictWords = `我	ngo5
 幻術	waan6 seot6
 幻覺劑	waan6 gok3 zai1
 幻象	waan6 zoeng6
-幼吾幼，以及人之幼	jau3 ng4 jau3 ，ji5 kap6 jan4 zi1 jau3
+幼吾幼，以及人之幼	jau3 ng4 jau3 ji5 kap6 jan4 zi1 jau3
 幼妹	jau3 mui2
 幼弟	jau3 dai6
 幼教	jau3 gaau3
@@ -63022,7 +63053,7 @@ let dictWords = `我	ngo5
 弳度	ging3 dou6
 張三	zoeng1 saam1
 張三李四	zoeng1 saam1 lei5 sei3
-張三，李四，王五，趙六	zoeng1 saam1 ，lei5 sei3 ，wong4 ng5 ，ziu6 luk6
+張三，李四，王五，趙六	zoeng1 saam1 lei5 sei3 wong4 ng5 ziu6 luk6
 張丹	zoeng1 daan1
 張之洞	zoeng1 zi1 dung6
 張二鴻	zoeng1 ji6 hung4
@@ -63054,7 +63085,7 @@ let dictWords = `我	ngo5
 張家界	zoeng1 gaa1 gaai3
 張家界市	zoeng1 gaa1 gaai3 si5
 張家輝	zoeng1 gaa1 fai1
-張家長，李家短	zoeng1 gaa1 coeng4 ，lei5 gaa1 dyun2
+張家長，李家短	zoeng1 gaa1 coeng4 lei5 gaa1 dyun2
 張寧	zoeng1 ning4
 張寶	zoeng1 bou2
 張居正	zoeng1 geoi1 zing3
@@ -63232,7 +63263,8 @@ let dictWords = `我	ngo5
 彈道導彈	daan2 dou6 dou6 daan2
 彈雨	daan6 jyu5
 彈頭	daan2 tau4
-彋	wang4 / gwang1
+彋	wang4
+彋	gwang1
 彌勒	nei4 lak6
 彌勒佛	nei4 lak6 fat6
 彌勒縣	nei4 lak6 jyun6
@@ -63710,7 +63742,7 @@ let dictWords = `我	ngo5
 得證	dak1 zing3
 得逞	dak1 cing2
 得道多助	dak1 dou6 do1 zo6
-得道多助，失道寡助	dak1 dou6 do1 zo6 ，sat1 dou6 gwaa2 zo6
+得道多助，失道寡助	dak1 dou6 do1 zo6 sat1 dou6 gwaa2 zo6
 得閒冇屎屙	dak1 haan4 mou5 si2 o1
 得閒飲茶	dak1 haan4 jam2 caa4
 得隴望蜀	dak1 lung5 mong6 suk6
@@ -63730,7 +63762,7 @@ let dictWords = `我	ngo5
 從化	cung4 faa3
 從化市	cung4 faa3 si5
 從句	cung4 geoi3
-從善如登，從惡如崩	cung4 sin6 jyu4 dang1, cung4 ok3 jyu4 bang1
+從善如登，從惡如崩	cung4 sin6 jyu4 dang1 cung4 ok3 jyu4 bang1
 從嚴懲處	cung4 jim4 cing4 cyu2
 從天而降	cung4 tin1 ji4 gong3
 從寬處理	cung4 fun1 cyu2 lei5
@@ -64100,7 +64132,7 @@ let dictWords = `我	ngo5
 心摺	sam1 zip3
 心曲	sam1 kuk1
 心有餘而力不足	sam1 jau5 jyu4 ji4 lik6 bat1 zuk1
-心有餘，力不足	sam1 jau5 jyu4 ，lik6 bat1 zuk1
+心有餘，力不足	sam1 jau5 jyu4 lik6 bat1 zuk1
 心材	sam1 coi4
 心梗	sam1 gang2
 心毒	sam1 duk6
@@ -64350,7 +64382,9 @@ let dictWords = `我	ngo5
 快高長大	faai3 gou1 zoeng2 daai6
 快點兒	faai3 dim2 ji4
 忱	sam4
-忳	tyun4 / zeon1 / tan4
+忳	tyun4
+忳	zeon1
+忳	tan4
 念力	nim6 lik6
 念口黃	nim6 hau2 wong2
 念叨	nim6 dou1
@@ -64387,7 +64421,8 @@ let dictWords = `我	ngo5
 忽魯謨斯	fat1 lou5 mou4 si1
 忿忿	fan5 fan5
 忿懣	fan5 mun6
-怊	ciu1 / tiu4
+怊	ciu1
+怊	tiu4
 怎搞	zam2 gaau2
 怎生	zam2 sang1
 怎的	zam2 dik1
@@ -64855,7 +64890,8 @@ let dictWords = `我	ngo5
 悠然神往	jau4 jin4 san4 wong5
 悠著	jau4 zoek6
 悠遠	jau4 jyun5
-悢	loeng6 / long5
+悢	loeng6
+悢	long5
 患兒	waan6 ji4
 患得患失	waan6 dak1 waan6 sat1
 患晚期	waan6 maan5 kei4
@@ -65161,7 +65197,7 @@ let dictWords = `我	ngo5
 意大利雲吞	ji3 daai6 lei6 wan4 tan1
 意大利青瓜	ji3 daai6 lei6 ceng1 gwaa1
 意大利麵	ji3 daai6 lei6 min6
-意存筆先，畫盡意在	ji3 cyun4 bat1 sin1 ，waa2 zeon6 ji3 zoi6
+意存筆先，畫盡意在	ji3 cyun4 bat1 sin1 waa2 zeon6 ji3 zoi6
 意式濃縮咖啡	ji3 sik1 nung4 suk1 gaa3 fe1
 意念移物	ji3 nim6 ji4 mat6
 意態	ji3 taai3
@@ -65813,7 +65849,8 @@ let dictWords = `我	ngo5
 戀腳癖者	lyun2 goek3 pik1 ze2
 戀舊	lyun2 gau6
 戀舊情結	lyun2 gau6 cing4 git3
-戃	cong2 / tong2
+戃	cong2
+戃	tong2
 戇喪	ngong6 song3
 戇居佬	ngong6 geoi1 lou2
 戇督	ngong6 duk1
@@ -65865,9 +65902,9 @@ let dictWords = `我	ngo5
 戎馬生涯	jung4 maa5 sang1 ngaai4
 成丁	sing4 ding1
 成串	sing4 cyun3
-成也蕭何，敗也蕭何	sing4 jaa5 siu1 ho4 ，baai6 jaa5 siu1 ho4
+成也蕭何，敗也蕭何	sing4 jaa5 siu1 ho4 baai6 jaa5 siu1 ho4
 成了	sing4 liu5
-成事不足，敗事有餘	sing4 si6 bat1 zuk1 ，baai6 si6 jau5 jyu4
+成事不足，敗事有餘	sing4 si6 bat1 zuk1 baai6 si6 jau5 jyu4
 成交價	sing4 gaau1 gaa3
 成交量	sing4 gaau1 loeng6
 成交額	sing4 gaau1 ngaak2
@@ -65879,7 +65916,7 @@ let dictWords = `我	ngo5
 成份股	sing4 fan6 gu2
 成佛	sing4 fat6
 成像	sing4 zoeng6
-成則為王，敗則為寇	sing4 zak1 wai4 wong4 ，baai6 zak1 wai4 kau3
+成則為王，敗則為寇	sing4 zak1 wai4 wong4 baai6 zak1 wai4 kau3
 成功鎮	sing4 gung1 zan3
 成千成萬	sing4 cin1 sing4 maan6
 成千累萬	sing4 cin1 leoi5 maan6
@@ -65937,7 +65974,7 @@ let dictWords = `我	ngo5
 成羣	sing4 kwan4
 成群結隊	sing4 kwan4 git3 deoi6
 成考移民	sing4 haau2 ji4 man4
-成者為王，敗者為寇	sing4 ze2 wai4 wong4, baai6 ze2 wai4 kau3
+成者為王，敗者為寇	sing4 ze2 wai4 wong4 baai6 ze2 wai4 kau3
 成華	sing4 waa4
 成華區	sing4 waa4 keoi1
 成藥	sing4 joek6
@@ -66049,8 +66086,8 @@ let dictWords = `我	ngo5
 戰況	zin3 fong3
 戰火紛飛	zin3 fo2 fan1 fei1
 戰無不勝	zin3 mou4 bat1 sing3
-戰無不勝，攻無不克	zin3 mou4 bat1 sing3 ，gung1 mou4 bat1 hak1
-戰無不勝，攻無不取	zin3 mou4 bat1 sing3 ，gung1 mou4 bat1 ceoi2
+戰無不勝，攻無不克	zin3 mou4 bat1 sing3 gung1 mou4 bat1 hak1
+戰無不勝，攻無不取	zin3 mou4 bat1 sing3 gung1 mou4 bat1 ceoi2
 戰爭罪	zin3 zang1 zeoi6
 戰爭與和平	zin3 zang1 jyu5 wo4 ping4
 戰略伙伴	zin3 loek6 fo2 bun6
@@ -66638,7 +66675,7 @@ let dictWords = `我	ngo5
 打薄剪刀	daa2 bok6 zin2 dou1
 打蘭	daa2 laan4
 打蛇不死	daa2 se4 bat1 sei2
-打蛇不死，後患無窮	daa2 se4 bat1 sei2 ，hau6 waan6 mou4 kung4
+打蛇不死，後患無窮	daa2 se4 bat1 sei2 hau6 waan6 mou4 kung4
 打蛇餅	daa2 se4 beng2
 打蛋器	daa2 daan2 hei3
 打蟲	daa2 cung4
@@ -66751,7 +66788,10 @@ let dictWords = `我	ngo5
 托里拆利	tok3 lei5 caak3 lei6
 托里縣	tok3 lei5 jyun6
 托馬斯	tok3 maa5 si1
-扚	dik1 / lik6 / diu2 / joek6
+扚	dik1
+扚	lik6
+扚	diu2
+扚	joek6
 扛	kong1
 扛槍	kong1 coeng1
 扠𢰸	caa5 wo5
@@ -67443,7 +67483,8 @@ let dictWords = `我	ngo5
 抽頭	cau1 tau4
 抽風	cau1 fung1
 抽風機	cau1 fung1 gei1
-抾	gip3 / keoi1
+抾	gip3
+抾	keoi1
 抿	man5
 抿子	man5 zi2
 拂	fat1
@@ -68123,7 +68164,7 @@ let dictWords = `我	ngo5
 指揮中心	zi2 fai1 zung1 sam1
 指揮官	zi2 fai1 gun1
 指揮家	zi2 fai1 gaa1
-指揮有方，人人樂從	zi2 fai1 jau5 fong1 ，jan4 jan4 lok6 cung4
+指揮有方，人人樂從	zi2 fai1 jau5 fong1 jan4 jan4 lok6 cung4
 指揮棒	zi2 fai1 paang5
 指揮者	zi2 fai1 ze2
 指摹	zi2 mou4
@@ -68258,7 +68299,7 @@ let dictWords = `我	ngo5
 挨年近晚	aai1 nin4 gan6 maan5
 挨憑	aai1 bang6
 挨戶	aai1 wu6
-挨戶，挨家	aai1 wu6 ，aai1 gaa1
+挨戶，挨家	aai1 wu6 aai1 gaa1
 挨打	aai1 daa2
 挨打受氣	ngaai4 daa2 sau6 hei3
 挨打受罵	ngaai4 daa2 sau6 maa6
@@ -68282,7 +68323,7 @@ let dictWords = `我	ngo5
 挨邊	aai1 bin1
 挨邊兒	aai1 bin1 ji4
 挨門	aai1 mun4
-挨門，挨戶	aai1 mun4 ，aai1 wu6
+挨門，挨戶	aai1 mun4 aai1 wu6
 挨頭子	aai1 tau4 zi2
 挨飢抵餓	ngaai4 gei1 dai2 ngo6
 挨餓	aai1 ngo6
@@ -68437,7 +68478,7 @@ let dictWords = `我	ngo5
 捨己救人	se2 gei2 gau3 jan4
 捨己為人	se2 gei2 wai6 jan4
 捨己為公	se2 gei2 wai6 gung1
-捨得一身剮，敢把皇帝拉下馬	se2 dak1 jat1 san1 gwaa2 ，gam2 baa2 wong4 dai3 laai1 haa6 maa5
+捨得一身剮，敢把皇帝拉下馬	se2 dak1 jat1 san1 gwaa2 gam2 baa2 wong4 dai3 laai1 haa6 maa5
 捨我其誰	se2 ngo5 kei4 seoi4
 捨本逐末	se2 bun2 zuk6 mut6
 捨正從邪	se2 zing3 cung4 ce4
@@ -68449,7 +68490,8 @@ let dictWords = `我	ngo5
 捨近求遠	se2 gan6 kau4 jyun5
 捫心無愧	mun4 sam1 mou4 kwai3
 捫心自問	mun4 sam1 zi6 man6
-捯	dou3 / dou2
+捯	dou3
+捯	dou2
 捱延	ngaai4 jin4
 捱得	ngaai4 dak1
 捱生捱死	ngaai4 sang1 ngaai4 sei2
@@ -68476,7 +68518,8 @@ let dictWords = `我	ngo5
 捲髮	gyun2 faat3
 捲髮器	gyun2 faat3 hei3
 捲鬚	gyun2 sou1
-捳	ngok6 / ok6
+捳	ngok6
+捳	ok6
 捶子	ceoi4 zi2
 捶打	ceoi4 daa2
 捶擊	ceoi4 gik1
@@ -69206,7 +69249,8 @@ let dictWords = `我	ngo5
 揣在懷裡	cyun2 zoi6 waai4 leoi5
 揣度	cyun2 dok6
 揣想	cyun2 soeng2
-揤	zat1 / zeot1
+揤	zat1
+揤	zeot1
 揦住	laa2 zyu6
 揦埋口面	laa2 maai4 hau2 min6
 揦子	laa2 zi2
@@ -69711,7 +69755,7 @@ let dictWords = `我	ngo5
 撐桿跳高	caang1 gon1 tiu3 gou1
 撐檯腳	caang3 toi2 goek3
 撐死	caang1 sei2
-撐死膽大的，餓死膽小的	caang3 sei2 daam2 daai6 dik1, ngo6 sei2 daam2 siu2 dik1
+撐死膽大的，餓死膽小的	caang3 sei2 daam2 daai6 dik1 ngo6 sei2 daam2 siu2 dik1
 撐破	caang1 po3
 撐竿跳	caang1 gon1 tiu3
 撐竿跳高	caang1 gon1 tiu3 gou1
@@ -70569,7 +70613,7 @@ let dictWords = `我	ngo5
 攻擊線	gung1 gik1 sin3
 攻滅	gung1 mit6
 攻無不克	gung1 mou4 bat1 hak1
-攻無不克，戰無不勝	gung1 mou4 bat1 hak1 ，zin3 mou4 bat1 sing3
+攻無不克，戰無不勝	gung1 mou4 bat1 hak1 zin3 mou4 bat1 sing3
 攻略	gung1 loek6
 攻砭	gung1 bin1
 攻訐	gung1 kit3
@@ -70579,7 +70623,7 @@ let dictWords = `我	ngo5
 攻鼻揦脷	gung1 bei6 laa2 lei6
 放一馬	fong3 jat1 maa5
 放下包袱	fong3 haa6 baau1 fuk6
-放下屠刀，立地成佛	fong3 haa6 tou4 dou1 ，laap6 dei6 sing4 fat6
+放下屠刀，立地成佛	fong3 haa6 tou4 dou1 laap6 dei6 sing4 fat6
 放下心頭大石	fong3 haa6 sam1 tau4 daai6 sek6
 放不下	fong3 bat1 haa6
 放不下心	fong3 bat1 haa6 sam1
@@ -72159,7 +72203,7 @@ let dictWords = `我	ngo5
 旗語	kei4 jyu5
 旗魚	kei4 jyu2
 旗鼓相當	kei4 gu2 soeng1 dong1
-既來之，則安之	gei3 loi4 zi1 ，zak1 on1 zi1
+既來之，則安之	gei3 loi4 zi1 zak1 on1 zi1
 既往	gei3 wong5
 既得期間	gei3 dak1 kei4 gaan1
 既成事實	gei3 sing4 si6 sat6
@@ -72186,7 +72230,7 @@ let dictWords = `我	ngo5
 日冕	jat6 min5
 日冕層	jat6 min5 cang4
 日出康城	jat6 ceot1 hong1 sing4
-日出而作，日入而息	jat6 ceot1 ji4 zok3 ，jat6 jap6 ji4 sik1
+日出而作，日入而息	jat6 ceot1 ji4 zok3 jat6 jap6 ji4 sik1
 日刊	jat6 hon2
 日化	jat6 faa3
 日南郡	jat6 naam4 gwan6
@@ -72296,7 +72340,7 @@ let dictWords = `我	ngo5
 早來	zou2 loi4
 早出晚歸	zou2 ceot1 maan5 gwai1
 早勃	zou2 but6
-早動手，早收穫	zou2 dung6 sau2 ，zou2 sau1 wok6
+早動手，早收穫	zou2 dung6 sau2 zou2 sau1 wok6
 早在	zou2 zoi6
 早報	zou2 bou3
 早場	zou2 coeng4
@@ -72496,8 +72540,8 @@ let dictWords = `我	ngo5
 明朝體	ming4 ciu4 tai2
 明末清初	ming4 mut6 cing1 co1
 明杖	ming4 zoeng6
-明槍好躲，暗箭難防	ming4 coeng1 hou2 do2 ，am3 zin3 naan4 fong4
-明槍易躲，暗箭難防	ming4 coeng1 ji6 do2 ，am3 zin3 naan4 fong4
+明槍好躲，暗箭難防	ming4 coeng1 hou2 do2 am3 zin3 naan4 fong4
+明槍易躲，暗箭難防	ming4 coeng1 ji6 do2 am3 zin3 naan4 fong4
 明槍暗箭	ming4 coeng1 am3 zin3
 明武宗	ming4 mou5 zung1
 明水縣	ming4 seoi2 jyun6
@@ -72516,7 +72560,7 @@ let dictWords = `我	ngo5
 明瓦	ming4 ngaa5
 明皎	ming4 gaau2
 明眸皓齒	ming4 mau4 hou6 ci2
-明知山有虎，偏向虎山行	ming4 zi1 saan1 jau5 fu2 ，pin1 hoeng3 fu2 saan1 haang4
+明知山有虎，偏向虎山行	ming4 zi1 saan1 jau5 fu2 pin1 hoeng3 fu2 saan1 haang4
 明碼	ming4 maa5
 明礬	ming4 faan4
 明窗淨几	ming4 coeng1 zing6 gei1
@@ -72609,7 +72653,7 @@ let dictWords = `我	ngo5
 星探	sing1 taam3
 星散	sing1 saan3
 星星之火	sing1 sing1 zi1 fo2
-星星之火，可以燎原	sing1 sing1 zi1 fo2 ，ho2 ji5 liu4 jyun4
+星星之火，可以燎原	sing1 sing1 zi1 fo2 ho2 ji5 liu4 jyun4
 星星點點	sing1 sing1 dim2 dim2
 星曆	sing1 lik6
 星曜	sing1 jiu6
@@ -72703,7 +72747,7 @@ let dictWords = `我	ngo5
 春江花月夜	ceon1 gong1 faa1 jyut6 je6
 春灌	ceon1 gun3
 春燈謎	ceon1 dang1 mai4
-春生，夏長，秋收，冬藏	ceon1 sang1 ，haa6 zoeng2 ，cau1 sau1 ，dung1 cong4
+春生，夏長，秋收，冬藏	ceon1 sang1 haa6 zoeng2 cau1 sau1 dung1 cong4
 春畫	ceon1 waa2
 春秋三傳	ceon1 cau1 saam1 zyun6
 春秋五霸	ceon1 cau1 ng5 baa3
@@ -72765,7 +72809,7 @@ let dictWords = `我	ngo5
 昭陽	ciu1 joeng4
 昭陽區	ciu1 joeng4 keoi1
 昭雪	ciu1 syut3
-是可忍，孰不可忍	si6 ho2 jan2 ，suk6 bat1 ho2 jan2
+是可忍，孰不可忍	si6 ho2 jan2 suk6 bat1 ho2 jan2
 是味兒	si6 mei6 ji4
 是啥說啥	si6 saa2 syut3 saa2
 是日例湯	si6 jat6 lai6 tong1
@@ -72795,7 +72839,7 @@ let dictWords = `我	ngo5
 時不我待	si4 bat1 ngo5 doi6
 時不我與	si4 bat1 ngo5 jyu5
 時乖命蹇	si4 gwaai1 ming6 gin2
-時代不同，風尚不同	si4 doi6 bat1 tung4 ，fung1 soeng6 bat1 tung4
+時代不同，風尚不同	si4 doi6 bat1 tung4 fung1 soeng6 bat1 tung4
 時代廣場	si4 doi6 gwong2 coeng4
 時代華納	si4 doi6 waa4 naap6
 時代雜誌	si4 doi6 zaap6 zi3
@@ -73103,7 +73147,7 @@ let dictWords = `我	ngo5
 智珠在握	zi3 zyu1 zoi6 aak1
 智異山	zi3 ji6 saan1
 智神星	zi3 san4 sing1
-智者千慮，必有一失	zi3 ze2 cin1 leoi6 ，bit1 jau5 jat1 sat1
+智者千慮，必有一失	zi3 ze2 cin1 leoi6 bit1 jau5 jat1 sat1
 智育	zi3 juk6
 智能卡	zi3 nang4 kaat1
 智能設計	zi3 nang4 cit3 gai3
@@ -73430,7 +73474,7 @@ let dictWords = `我	ngo5
 更闌	gaang1 laan4
 更高性能	gang3 gou1 sing3 nang4
 書不盡言	syu1 bat1 zeon6 jin4
-書中自有黃金屋，書中自有顏如玉	syu1 zung1 zi6 jau5 wong4 gam1 uk1 ，syu1 zung1 zi6 jau5 ngaan4 jyu4 juk6
+書中自有黃金屋，書中自有顏如玉	syu1 zung1 zi6 jau5 wong4 gam1 uk1 syu1 zung1 zi6 jau5 ngaan4 jyu4 juk6
 書亭	syu1 ting4
 書信集	syu1 seon3 zaap6
 書到用時方恨少	syu1 dou3 jung6 si4 fong1 han6 siu2
@@ -73541,7 +73585,7 @@ let dictWords = `我	ngo5
 曾祖父母	zang1 zou2 fu6 mou5
 曾紀澤	zang1 gei2 zaak6
 曾經滄海	cang4 ging1 cong1 hoi2
-曾經滄海難為水，除卻巫山不是雲	cang4 ging1 cong1 hoi2 naan4 wai4 seoi2 ，ceoi4 koek3 mou4 saan1 bat1 si6 wan4
+曾經滄海難為水，除卻巫山不是雲	cang4 ging1 cong1 hoi2 naan4 wai4 seoi2 ceoi4 koek3 mou4 saan1 bat1 si6 wan4
 曾繁仁	zang1 faan4 jan4
 曾都	zang1 dou1
 曾都區	zang1 dou1 keoi1
@@ -73741,17 +73785,17 @@ let dictWords = `我	ngo5
 有何貴幹	jau5 ho4 gwai3 gon3
 有作用	jau5 zok3 jung6
 有便宜唔使頸	jau5 pin4 ji4 m4 sai2 geng2
-有借有還，再借不難	jau5 ze3 jau5 waan4, zoi3 ze3 bat1 naan4
+有借有還，再借不難	jau5 ze3 jau5 waan4 zoi3 ze3 bat1 naan4
 有傷風化	jau5 soeng1 fung1 faa3
 有傾有講	jau5 king1 jau5 gong2
 有價證券	jau5 gaa3 zing3 hyun3
 有償	jau5 soeng4
 有兩下子	jau5 loeng5 haa6 zi2
 有兩度	jau5 loeng5 dou6
-有其師，必有其徒	jau5 kei4 si1 ，bit1 jau5 kei4 tou4
+有其師，必有其徒	jau5 kei4 si1 bit1 jau5 kei4 tou4
 有其父必有其子	jau5 kei4 fu6 bit1 jau5 kei4 zi2
 有冇攪錯	jau5 mou5 gaau2 cok3
-有則改之，無則加勉	jau5 zak1 goi2 zi1 ，mou4 zak1 gaa1 min5
+有則改之，無則加勉	jau5 zak1 goi2 zi1 mou4 zak1 gaa1 min5
 有加	jau5 gaa1
 有助於	jau5 zo6 jyu1
 有勞得獎	jau5 lou4 dak1 zoeng2
@@ -73803,7 +73847,7 @@ let dictWords = `我	ngo5
 有悖於	jau5 bui6 jyu1
 有情人	jau5 cing4 jan4
 有意栽花花不發，無心插柳柳成蔭	jau5 ji3 zoi1 faa1 faa1 bat1 faat3 mou4 sam1 caap3 lau5 lau5 sing4 jam3
-有意栽花花不發，無心插柳柳成陰	jau5 ji3 zoi1 faa1 faa1 bat1 faat3 ，mou4 sam1 caap3 lau5 lau5 sing4 jam1
+有意栽花花不發，無心插柳柳成陰	jau5 ji3 zoi1 faa1 faa1 bat1 faat3 mou4 sam1 caap3 lau5 lau5 sing4 jam1
 有慢	jau5 maan6
 有我喺度	jau5 ngo5 hai2 dou6
 有所得必有所失	jau5 so2 dak1 bit1 jau5 so2 sat1
@@ -73894,8 +73938,8 @@ let dictWords = `我	ngo5
 有神冇氣	jau5 san4 mou5 hei3
 有神論	jau5 san4 leon6
 有神論者	jau5 san4 leon6 ze2
-有福同享，有禍同當	jau5 fuk1 tung4 hoeng2 ，jau5 wo6 tung4 dong1
-有福同享，有難同當	jau5 fuk1 tung4 hoeng2 ，jau5 naan6 tung4 dong1
+有福同享，有禍同當	jau5 fuk1 tung4 hoeng2 jau5 wo6 tung4 dong1
+有福同享，有難同當	jau5 fuk1 tung4 hoeng2 jau5 naan6 tung4 dong1
 有稜有角	jau5 ling4 jau5 gok3
 有節制	jau5 zit3 zai3
 有粘性	jau5 nim1 sing3
@@ -77121,8 +77165,8 @@ let dictWords = `我	ngo5
 樹身	syu6 san1
 樹陰	syu6 jam1
 樹頭	syu6 tau4
-樹高千丈，落葉歸根	syu6 gou1 cin1 zoeng6, lok6 jip6 gwai1 gan1
-樹高千丈，葉落歸根	syu6 gou1 cin1 zoeng6 ，jip6 lok6 gwai1 gan1
+樹高千丈，落葉歸根	syu6 gou1 cin1 zoeng6 lok6 jip6 gwai1 gan1
+樹高千丈，葉落歸根	syu6 gou1 cin1 zoeng6 jip6 lok6 gwai1 gan1
 樹鷚	syu6 lau6
 樹麻雀	syu6 maa4 zoek2
 樺南	waa6 naam4
@@ -77200,8 +77244,8 @@ let dictWords = `我	ngo5
 橙頭地鶇	caang2 tau4 dei6 dung1
 橙黃	caang2 wong4
 橛	gyut6
-機不可失，失不再來	gei1 bat1 ho2 sat1, sat1 bat1 zoi3 loi4
-機不可失，時不再來	gei1 bat1 ho2 sat1 ，si4 bat1 zoi3 loi4
+機不可失，失不再來	gei1 bat1 ho2 sat1 sat1 bat1 zoi3 loi4
+機不可失，時不再來	gei1 bat1 ho2 sat1 si4 bat1 zoi3 loi4
 機不離手	gei1 bat1 lei4 sau2
 機件	gei1 gin2
 機伶	gei1 ling4
@@ -77329,7 +77373,7 @@ let dictWords = `我	ngo5
 橫手	waang4 sau2
 橫批	waang4 pai1
 橫折	waang4 zit3
-橫挑鼻子，豎挑眼	waang4 tiu1 bei6 zi2 ，syu6 tiu1 ngaan5
+橫挑鼻子，豎挑眼	waang4 tiu1 bei6 zi2 syu6 tiu1 ngaan5
 橫振動	waang4 zan3 dung6
 橫掃千軍	waang4 sou3 cin1 gwan1
 橫摺	waang4 zip3
@@ -77611,10 +77655,10 @@ let dictWords = `我	ngo5
 欣弗	jan1 fat1
 欣悅	jan1 jyut6
 欣羨	jan1 sin6
-欲加之罪，何患無辭	juk6 gaa1 zi1 zeoi6 ，ho4 waan6 mou4 ci4
+欲加之罪，何患無辭	juk6 gaa1 zi1 zeoi6 ho4 waan6 mou4 ci4
 欲取姑予	juk6 ceoi2 gu1 jyu4
 欲取姑與	juk6 ceoi2 gu1 jyu5
-欲善其事，必先利其器	juk6 sin6 kei4 si6 ，bit1 sin1 lei6 kei4 hei3
+欲善其事，必先利其器	juk6 sin6 kei4 si6 bit1 sin1 lei6 kei4 hei3
 欲女	juk6 neoi5
 欲念	juk6 nim6
 欲振乏力	juk6 zan3 fat6 lik6
@@ -79915,8 +79959,8 @@ let dictWords = `我	ngo5
 沒有甚麼不可能	mut6 jau5 sam6 mo1 bat1 ho2 nang4
 沒有生育能力	mut6 jau5 sang1 juk6 nang4 lik6
 沒有臉皮	mut6 jau5 lim5 pei4
-沒有規矩，不成方圓	mut6 jau5 kwai1 geoi2 ，bat1 sing4 fong1 jyun4
-沒有規矩，何以成方圓	mut6 jau5 kwai1 geoi2 ，ho4 ji5 sing4 fong1 jyun4
+沒有規矩，不成方圓	mut6 jau5 kwai1 geoi2 bat1 sing4 fong1 jyun4
+沒有規矩，何以成方圓	mut6 jau5 kwai1 geoi2 ho4 ji5 sing4 fong1 jyun4
 沒有關係	mut6 jau5 gwaan1 hai6
 沒水	mei6 seoi2
 沒水平	mut6 seoi2 ping4
@@ -80440,7 +80484,7 @@ let dictWords = `我	ngo5
 法相宗	faat3 soeng3 zung1
 法碼	faat3 maa5
 法筵	faat3 jin4
-法網灰灰，疏而不漏	faat3 mong5 fui1 fui1 ，so1 ji4 bat1 lau6
+法網灰灰，疏而不漏	faat3 mong5 fui1 fui1 so1 ji4 bat1 lau6
 法線	faat3 sin3
 法羅群島	faat3 lo4 kwan4 dou2
 法耶德	faat3 je4 dak1
@@ -80683,7 +80727,7 @@ let dictWords = `我	ngo5
 泥腿子	nai4 teoi2 zi2
 泥膠	nai4 gaau1
 泥菩薩過江	nai4 pou4 saat3 gwo3 gong1
-泥菩薩過江，自身難保	nai4 pou4 saat3 gwo3 gong1 ，zi6 san1 naan4 bou2
+泥菩薩過江，自身難保	nai4 pou4 saat3 gwo3 gong1 zi6 san1 naan4 bou2
 泥蚶	nai4 ham1
 泥蝦	nai4 haa1
 泥質	nai4 zat1
@@ -81111,7 +81155,7 @@ let dictWords = `我	ngo5
 活便	wut6 bin6
 活像	wut6 zoeng6
 活分	wut6 fan1
-活到老，學到老	wut6 dou3 lou5 ，hok6 dou3 lou5
+活到老，學到老	wut6 dou3 lou5 hok6 dou3 lou5
 活力四射	wut6 lik6 sei3 se6
 活動中心	wut6 dung6 zung1 sam1
 活動人士	wut6 dung6 jan4 si6
@@ -81238,7 +81282,7 @@ let dictWords = `我	ngo5
 流氓軟件	lau4 man4 jyun5 gin2
 流氓集團	lau4 man4 zaap6 tyun4
 流水不腐	lau4 seoi2 bat1 fu6
-流水不腐，戶樞不蠹	lau4 seoi2 bat1 fu6 ，wu6 syu1 bat1 dou3
+流水不腐，戶樞不蠹	lau4 seoi2 bat1 fu6 wu6 syu1 bat1 dou3
 流水席	lau4 seoi2 zik6
 流水帳	lau4 seoi2 zoeng3
 流水線	lau4 seoi2 sin3
@@ -81468,7 +81512,7 @@ let dictWords = `我	ngo5
 海兔	hoi2 tou3
 海內	hoi2 noi6
 海內外	hoi2 noi6 ngoi6
-海內存知己，天涯若比鄰	hoi2 noi6 cyun4 zi1 gei2 ，tin1 ngaai4 joek6 bei2 leon4
+海內存知己，天涯若比鄰	hoi2 noi6 cyun4 zi1 gei2 tin1 ngaai4 joek6 bei2 leon4
 海刺芹	hoi2 ci3 kan4
 海勃灣	hoi2 but6 waan1
 海勃灣區	hoi2 but6 waan1 keoi1
@@ -84486,7 +84530,7 @@ let dictWords = `我	ngo5
 為啥	wai4 saa1
 為善最樂	wai4 sin6 zeoi3 lok6
 為富不仁	wai4 fu3 bat1 jan4
-為富不仁，為仁不富	wai4 fu3 bat1 jan4 ，wai4 jan4 bat1 fu3
+為富不仁，為仁不富	wai4 fu3 bat1 jan4 wai4 jan4 bat1 fu3
 為己任	wai4 gei2 jam6
 為得過	wai4 dak1 gwo3
 為德不卒	wai4 dak1 bat1 zeot1
@@ -84716,7 +84760,7 @@ let dictWords = `我	ngo5
 烽	fung1
 烽火	fung1 fo2
 烽火四起	fung1 fo2 sei3 hei2
-烽煙四起，戰火紛飛	fung1 jin1 sei3 hei2 ，zin3 fo2 fan1 fei1
+烽煙四起，戰火紛飛	fung1 jin1 sei3 hei2 zin3 fo2 fan1 fei1
 烽煙遍地	fung1 jin1 pin3 dei6
 烽燧	fung1 seoi6
 焉知	jin1 zi1
@@ -84759,12 +84803,12 @@ let dictWords = `我	ngo5
 焚膏繼晷	fan4 gou1 gai3 gwai2
 焚風	fan4 fung1
 焚香敬神	fan4 hoeng1 ging3 san4
-無一事而不學，無一時而不學，無一處而不得	mou4 jat1 si6 ji4 bat1 hok6 ，mou4 jat1 si4 ji4 bat1 hok6 ，mou4 jat1 cyu3 ji4 bat1 dak1
+無一事而不學，無一時而不學，無一處而不得	mou4 jat1 si6 ji4 bat1 hok6 mou4 jat1 si4 ji4 bat1 hok6 mou4 jat1 cyu3 ji4 bat1 dak1
 無上裝	mou4 soeng6 zong1
 無不達	mou4 bat1 daat6
 無主失物	mou4 zyu2 sat1 mat6
 無事可做	mou4 si6 ho2 zou6
-無事獻殷勤，非姦即盜	mou4 si6 hin3 jan1 kan4, fei1 gaan1 zik1 dou6
+無事獻殷勤，非姦即盜	mou4 si6 hin3 jan1 kan4 fei1 gaan1 zik1 dou6
 無事生非	mou4 si6 sang1 fei1
 無人不	mou4 jan4 bat1
 無人不曉	mou4 jan4 bat1 hiu2
@@ -85595,7 +85639,8 @@ let dictWords = `我	ngo5
 燒香拜佛	siu1 hoeng1 baai3 fat6
 燒骨	siu1 gwat1
 燒高香	siu1 gou1 hoeng1
-燒鴨	siu1 aap3 / aap2
+燒鴨	siu1 aap3
+燒鴨	siu1 aap2
 燒鹼	siu1 gaan2
 燒麥	siu1 mak6
 燕京	jin1 ging1
@@ -86102,10 +86147,10 @@ let dictWords = `我	ngo5
 牡丹江市	maau5 daan1 gong1 si5
 牡丹皮	maau5 daan1 pei4
 牡丹鄉	maau5 daan1 hoeng1
-牡丹雖好，全仗綠葉扶	maau5 daan1 seoi1 hou2 ，cyun4 zoeng6 luk6 jip6 fu4
-牡丹雖好，全仗綠葉扶持	maau5 daan1 seoi1 hou2 ，cyun4 zoeng6 luk6 jip6 fu4 ci4
-牡丹雖好，全憑綠葉扶持	maau5 daan1 seoi1 hou2 ，cyun4 pang4 luk6 jip6 fu4 ci4
-牡丹雖好，終須綠葉扶持	maau5 daan1 seoi1 hou2 ，zung1 seoi1 luk6 jip6 fu4 ci4
+牡丹雖好，全仗綠葉扶	maau5 daan1 seoi1 hou2 cyun4 zoeng6 luk6 jip6 fu4
+牡丹雖好，全仗綠葉扶持	maau5 daan1 seoi1 hou2 cyun4 zoeng6 luk6 jip6 fu4 ci4
+牡丹雖好，全憑綠葉扶持	maau5 daan1 seoi1 hou2 cyun4 pang4 luk6 jip6 fu4 ci4
+牡丹雖好，終須綠葉扶持	maau5 daan1 seoi1 hou2 zung1 seoi1 luk6 jip6 fu4 ci4
 牡牛	maau5 ngau4
 牡羊座	maau5 joeng4 zo6
 牡蠣	maau5 lai6
@@ -86151,7 +86196,7 @@ let dictWords = `我	ngo5
 物事	mat6 si6
 物以稀為貴	mat6 ji5 hei1 wai4 gwai3
 物以罕為貴	mat6 ji5 hon2 wai4 gwai3
-物以類聚，人以群分	mat6 ji5 leoi6 zeoi6 ，jan4 ji5 kwan4 fan1
+物以類聚，人以群分	mat6 ji5 leoi6 zeoi6 jan4 ji5 kwan4 fan1
 物似主人形	mat6 ci5 zyu2 jan4 jing4
 物候	mat6 hau6
 物候學	mat6 hau6 hok6
@@ -86321,7 +86366,7 @@ let dictWords = `我	ngo5
 牽著鼻子走	hin1 zoek6 bei6 zi2 zau2
 牽記	hin1 gei3
 牽頭	hin1 tau4
-牽馬到河易，強馬飲水難	hin1 maa5 dou3 ho4 ji6 ，koeng4 maa5 jam2 seoi2 naan4
+牽馬到河易，強馬飲水難	hin1 maa5 dou3 ho4 ji6 koeng4 maa5 jam2 seoi2 naan4
 牿	guk1
 犀角	sai1 gok3
 犀飛利	sai1 fei1 lei6
@@ -86470,7 +86515,7 @@ let dictWords = `我	ngo5
 狗口長不出象牙	gau2 hau2 coeng2 bat1 ceot1 zoeng6 ngaa4
 狗叫聲	gau2 giu3 seng1
 狗吃屎	gau2 hek3 si2
-狗咬呂洞賓，不識好人心	gau2 ngaau5 leoi5 dung6 ban1 ，bat1 sik1 hou2 jan4 sam1
+狗咬呂洞賓，不識好人心	gau2 ngaau5 leoi5 dung6 ban1 bat1 sik1 hou2 jan4 sam1
 狗嘴裏吐不出象牙	gau2 zeoi2 leoi5 tou3 bat1 ceot1 zoeng6 ngaa4
 狗女	gau2 neoi5
 狗娘養的	gau2 noeng4 joeng5 dik1
@@ -86894,7 +86939,7 @@ let dictWords = `我	ngo5
 率獸食人	seot1 sau3 sik6 jan4
 率由舊章	seot1 jau4 gau6 zoeng1
 率真	seot1 zan1
-玉不琢,不成器	juk6 bat1 doek3 , bat1 sing4 hei3
+玉不琢,不成器	juk6 bat1 doek3  bat1 sing4 hei3
 玉井	juk6 zeng2
 玉井鄉	juk6 zeng2 hoeng1
 玉人吹簫	juk6 jan4 ceoi1 siu1
@@ -87011,7 +87056,7 @@ let dictWords = `我	ngo5
 王士禛	wong4 si6 zan1
 王太后	wong4 taai3 hau6
 王夫之	wong4 fu1 zi1
-王婆賣瓜，自賣自誇	wong4 po4 maai6 gwaa1 ，zi6 maai6 zi6 kwaa1
+王婆賣瓜，自賣自誇	wong4 po4 maai6 gwaa1 zi6 maai6 zi6 kwaa1
 王字邊	wong4 zi6 bin1
 王孫	wong4 syun1
 王安石	wong4 on1 sek6
@@ -87688,9 +87733,9 @@ let dictWords = `我	ngo5
 瓜拿納	gwaa1 naa4 naap6
 瓜果	gwaa1 gwo2
 瓜洲	gwaa1 zau1
-瓜無滾圓，人無十全	gwaa1 mou4 gwan2 jyun4, jan4 mou4 sap6 cyun4
+瓜無滾圓，人無十全	gwaa1 mou4 gwan2 jyun4 jan4 mou4 sap6 cyun4
 瓜熟蒂落	gwaa1 suk6 dai3 lok6
-瓜田不納履，李下不整冠	gwaa1 tin4 bat1 naap6 lei5, lei5 haa6 bat1 zing2 gun1
+瓜田不納履，李下不整冠	gwaa1 tin4 bat1 naap6 lei5 lei5 haa6 bat1 zing2 gun1
 瓜田李下	gwaa1 tin4 lei5 haa6
 瓜皮帽	gwaa1 pei4 mou2
 瓜籽	gwaa1 zi2
@@ -87914,7 +87959,7 @@ let dictWords = `我	ngo5
 生卒年	sang1 zeot1 nin4
 生卒年月	sang1 zeot1 nin4 jyut6
 生吞活剝	sang1 tan1 wut6 mok1
-生命不息，戰鬥不止	sang1 ming6 bat1 sik1 ，zin3 dau3 bat1 zi2
+生命不息，戰鬥不止	sang1 ming6 bat1 sik1 zin3 dau3 bat1 zi2
 生命吠陀	sang1 ming6 fai6 to4
 生命在於運動	sang1 ming6 zoi6 jyu1 wan6 dung6
 生命多樣性	sang1 ming6 do1 joeng6 sing3
@@ -87956,7 +88001,7 @@ let dictWords = `我	ngo5
 生拉活扯	sang1 laai1 wut6 ce2
 生拉硬拽	sang1 laai1 ngaang6 jai6
 生搬硬套	saang1 bun1 ngaang6 tou3
-生於憂患，死於安樂	sang1 jyu1 jau1 waan6, sei2 jyu1 on1 lok6
+生於憂患，死於安樂	sang1 jyu1 jau1 waan6 sei2 jyu1 on1 lok6
 生日咭	saang1 jat6 kaat1
 生日派對	saang1 jat6 paai3 deoi3
 生日賀卡	saang1 jat6 ho6 kaat1
@@ -88383,7 +88428,7 @@ let dictWords = `我	ngo5
 申雪	san1 syut3
 申飭	san1 cik1
 男中音	naam4 zung1 jam1
-男人不壞，女人不愛	naam4 jan4 bat1 waai6 ，neoi5 jan4 bat1 oi3
+男人不壞，女人不愛	naam4 jan4 bat1 waai6 neoi5 jan4 bat1 oi3
 男人味	naam4 jan2 mei6
 男人膝下有黃金	naam4 jan4 sat1 haa6 jau5 wong4 gam1
 男人頭	naam4 jan4 tau4
@@ -88413,7 +88458,7 @@ let dictWords = `我	ngo5
 男左女右	naam4 zo2 neoi5 jau6
 男巫	naam4 mou4
 男廁所	naam4 ci3 so2
-男怕入錯行，女怕嫁錯郎	naam4 paa3 jap6 co3 hong4 ，neoi5 paa3 gaa3 co3 long4
+男怕入錯行，女怕嫁錯郎	naam4 paa3 jap6 co3 hong4 neoi5 paa3 gaa3 co3 long4
 男性主義	naam4 sing3 zyu2 ji6
 男性化	naam4 sing3 faa3
 男性厭惡	naam4 sing3 jim3 wu3
@@ -88477,7 +88522,7 @@ let dictWords = `我	ngo5
 留影	lau4 jing2
 留後手	lau4 hau6 sau2
 留後路	lau4 hau6 lou6
-留得青山在，不怕沒柴燒	lau4 dak1 cing1 saan1 zoi6 ，bat1 paa3 mut6 caai4 siu1
+留得青山在，不怕沒柴燒	lau4 dak1 cing1 saan1 zoi6 bat1 paa3 mut6 caai4 siu1
 留成	lau4 sing4
 留成兒	lau4 sing4 ji4
 留有餘地	lau4 jau5 jyu4 dei6
@@ -88730,7 +88775,7 @@ let dictWords = `我	ngo5
 當夜	dong1 je6
 當天事當天畢	dong1 tin1 si6 dong1 tin1 bat1
 當官	dong1 gun1
-當局者迷，旁觀者清	dong1 guk6 ze2 mai4 ，pong4 gun1 ze2 cing1
+當局者迷，旁觀者清	dong1 guk6 ze2 mai4 pong4 gun1 ze2 cing1
 當年今日	dong1 nin4 gam1 jat6
 當心	dong1 sam1
 當掉	dong3 diu6
@@ -88887,14 +88932,14 @@ let dictWords = `我	ngo5
 疾風	zat6 fung1
 疾風勁草	zat6 fung1 ging6 cou2
 疾風知勁草	zat6 fung1 zi1 ging6 cou2
-疾風知勁草，烈火見真金	zat6 fung1 zi1 ging6 cou2 ，lit6 fo2 gin3 zan1 gam1
+疾風知勁草，烈火見真金	zat6 fung1 zi1 ging6 cou2 lit6 fo2 gin3 zan1 gam1
 疾首	zat6 sau2
 疾馳	zat6 ci4
 疾馳而過	zat6 ci4 ji4 gwo3
 痂皮	gaa1 pei4
 痄腮	zaa3 soi1
 病人衫	beng6 jan4 saam1
-病來如山倒，病去如抽絲	beng6 loi4 jyu4 saan1 dou2 ，beng6 heoi3 jyu4 cau1 si1
+病來如山倒，病去如抽絲	beng6 loi4 jyu4 saan1 dou2 beng6 heoi3 jyu4 cau1 si1
 病倒	beng6 dou2
 病假條	beng6 gaa3 tiu4
 病勢	beng6 sai3
@@ -88919,7 +88964,7 @@ let dictWords = `我	ngo5
 病弱	beng6 joek6
 病征	beng6 zing1
 病從口入	beng6 cung4 hau2 jap6
-病從口入，禍從口出	beng6 cung4 hau2 jap6 ，wo6 cung4 hau2 ceot1
+病從口入，禍從口出	beng6 cung4 hau2 jap6 wo6 cung4 hau2 ceot1
 病急亂投醫	beng6 gap1 lyun6 tau4 ji1
 病態肥胖	beng6 taai3 fei4 bun6
 病懨懨	beng6 jim1 jim1
@@ -89804,9 +89849,9 @@ let dictWords = `我	ngo5
 百家姓	baak3 gaa1 sing3
 百密一疏	baak3 mat6 jat1 so1
 百寶箱	baak3 bou2 soeng1
-百尺竿頭	baak3 cek3 gon1 tau4 ,
-百尺竿頭,更進一步	baak3 cek3 gon1 tau4 , gang3 zeon3 jat1 bou6
-百尺竿頭，更盡一步	baak3 cek3 gon1 tau4 ，gang3 zeon6 jat1 bou6
+百尺竿頭	baak3 cek3 gon1 tau4 
+百尺竿頭,更進一步	baak3 cek3 gon1 tau4  gang3 zeon3 jat1 bou6
+百尺竿頭，更盡一步	baak3 cek3 gon1 tau4 gang3 zeon6 jat1 bou6
 百川	baak3 cyun1
 百川歸海	baak3 cyun1 gwai1 hoi2
 百帕	baak3 paak3
@@ -89868,7 +89913,7 @@ let dictWords = `我	ngo5
 百花園	baak3 faa1 jyun4
 百花獎	baak3 faa1 zoeng2
 百花運動	baak3 faa1 wan6 dung6
-百花齊放，百家爭鳴	baak3 faa1 cai4 fong3 ，baak3 gaa1 zang1 ming4
+百花齊放，百家爭鳴	baak3 faa1 cai4 fong3 baak3 gaa1 zang1 ming4
 百草	baak3 cou2
 百草枯	baak3 cou2 fu1
 百萬位	baak3 maan6 wai2
@@ -89989,7 +90034,8 @@ let dictWords = `我	ngo5
 皖系戰敗	wun5 hai6 zin3 baai6
 皖系軍閥	wun5 hai6 gwan1 fat6
 皚皚	ngoi4 ngoi4
-皛	kiu5 / jiu5
+皛	kiu5
+皛	jiu5
 皮下	pei4 haa6
 皮下注射	pei4 haa6 zyu3 se6
 皮下的	pei4 haa6 dik1
@@ -90708,7 +90754,7 @@ let dictWords = `我	ngo5
 看相	hon3 soeng3
 看花眼	hon3 faa1 ngaan5
 看菜吃飯	hon3 coi3 hek3 faan6
-看菜吃飯，量體裁衣	hon3 coi3 hek3 faan6 ，loeng4 tai2 coi4 ji1
+看菜吃飯，量體裁衣	hon3 coi3 hek3 faan6 loeng4 tai2 coi4 ji1
 看著不管	hon3 zoek6 bat1 gun2
 看著辦	hon3 zoek6 baan6
 看貶	hon3 bin2
@@ -90819,7 +90865,7 @@ let dictWords = `我	ngo5
 眼下	ngaan5 haa6
 眼不見為乾淨	ngaan5 bat1 gin3 wai4 gon1 zeng6
 眼不見為淨	ngaan5 bat1 gin3 wai4 zing6
-眼不見，心不煩	ngaan5 bat1 gin3, sam1 bat1 faan4
+眼不見，心不煩	ngaan5 bat1 gin3 sam1 bat1 faan4
 眼不轉睛	ngaan5 bat1 zyun2 zing1
 眼中刺	ngaan5 zung1 ci3
 眼乾症	ngaan5 gon1 zing3
@@ -90909,10 +90955,10 @@ let dictWords = `我	ngo5
 眼裡容不得沙子	ngaan5 leoi5 jung4 bat1 dak1 saa1 zi2
 眼見得	ngaan5 gin3 dak1
 眼見為實	ngaan5 gin3 wai4 sat6
-眼見為實，耳聽為虛	ngaan5 gin3 wai4 sat6 ，ji5 ting1 wai4 heoi1
+眼見為實，耳聽為虛	ngaan5 gin3 wai4 sat6 ji5 ting1 wai4 heoi1
 眼觀六路耳聽八方	ngaan5 gun1 luk6 lou6 ji5 ting1 baat3 fong1
-眼觀四處，耳聽八方	ngaan5 gun1 sei3 cyu3, ji5 ting3 baat3 fong1
-眼觀四面，耳聽八方	ngaan5 gun1 sei3 min6, ji5 ting3 baat3 fong1
+眼觀四處，耳聽八方	ngaan5 gun1 sei3 cyu3 ji5 ting3 baat3 fong1
+眼觀四面，耳聽八方	ngaan5 gun1 sei3 min6 ji5 ting3 baat3 fong1
 眼角膜	ngaan5 gok3 mok2
 眼證	ngaan5 zing3
 眼赤	ngaan5 cek3
@@ -91186,19 +91232,19 @@ let dictWords = `我	ngo5
 知交	zi1 gaau1
 知人善用	zi1 jan4 sin6 jung6
 知人知面不知心	zi1 jan4 zi1 min6 bat1 zi1 sam1
-知人者智，自知者明	zi1 jan4 ze2 zi3, zi6 zi1 ze2 ming4
-知其一,不知其二	zi1 kei4 jat1 , bat1 zi1 kei4 ji6
+知人者智，自知者明	zi1 jan4 ze2 zi3 zi6 zi1 ze2 ming4
+知其一,不知其二	zi1 kei4 jat1  bat1 zi1 kei4 ji6
 知冷知熱	zi1 laang5 zi1 jit6
 知命之年	zi1 ming6 zi1 nin4
 知啲唔知啲	zi1 di1 m4 zi1 di1
 知子莫若父	zi1 zi2 mok6 joek6 fu6
 知客	zi1 haak3
 知州	zi1 zau1
-知己知彼，百戰不殆	zi1 gei2 zi1 bei2 ，baak3 zin3 bat1 toi5
+知己知彼，百戰不殆	zi1 gei2 zi1 bei2 baak3 zin3 bat1 toi5
 知底	zi1 dai2
 知府	zi1 fu2
 知彼知己	zi1 bei2 zi1 gei2
-知彼知己，百戰不殆	zi1 bei2 zi1 gei2 ，baak3 zin3 bat1 toi5
+知彼知己，百戰不殆	zi1 bei2 zi1 gei2 baak3 zin3 bat1 toi5
 知彼知己，百戰百勝	zi1 bei2 zi1 gei2 baak3 zin3 baak3 sing3
 知微	zi1 mei4
 知微麻利	zi1 mei4 maa4 lei6
@@ -91218,7 +91264,7 @@ let dictWords = `我	ngo5
 知機	zi1 gei1
 知母	zi1 mou5
 知法犯法	zi1 faat3 faan6 faat3
-知無不言	zi1 mou4 bat1 jin4 ,
+知無不言	zi1 mou4 bat1 jin4 
 知禮	zi1 lai5
 知縣	zi1 jyun6
 知覺力	zi1 gok3 lik6
@@ -91358,7 +91404,8 @@ let dictWords = `我	ngo5
 石南花	sek6 naam4 faa1
 石印	sek6 jan3
 石原慎太郎	sek6 jyun4 san6 taai3 long4
-石叻	sek6 lik1 / sek6 nit1
+石叻	sek6 lik1
+石叻	sek6 nit1
 石咀山	sek6 zeoi2 saan1
 石咀山區	sek6 zeoi2 saan1 keoi1
 石咀山市	sek6 zeoi2 saan1 si5
@@ -92644,7 +92691,7 @@ let dictWords = `我	ngo5
 福清市	fuk1 cing1 si5
 福澤	fuk1 zaak6
 福澤諭吉	fuk1 zaak6 jyu6 gat1
-福無雙至	fuk1 mou4 soeng1 zi3 ,
+福無雙至	fuk1 mou4 soeng1 zi3 
 福煦	fuk1 heoi2
 福爾摩沙	fuk1 ji5 mo1 saa1
 福特	fuk1 dak6
@@ -92720,7 +92767,7 @@ let dictWords = `我	ngo5
 禮賓府	lai5 ban1 fu2
 禮賢下士	lai5 jin4 haa6 si6
 禮輕人意重	lai5 hing1 jan4 ji3 zung6
-禮輕人意重，千里送鵝毛	lai5 hing1 jan4 ji3 zung6 ，cin1 lei5 sung3 ngo4 mou4
+禮輕人意重，千里送鵝毛	lai5 hing1 jan4 ji3 zung6 cin1 lei5 sung3 ngo4 mou4
 禮輕情意重	lai5 hing1 cing4 ji3 zung6
 禮遇	lai5 jyu6
 禮部	lai5 bou6
@@ -92780,8 +92827,8 @@ let dictWords = `我	ngo5
 秀峰區	sau3 fung1 keoi1
 秀嶼	sau3 jyu4
 秀嶼區	sau3 jyu4 keoi1
-秀才不出門，全知天下事	sau3 coi4 bat1 ceot1 mun4, cyun4 zi1 tin1 haa6 si6
-秀才不出門，能知天下事	sau3 coi4 bat1 ceot1 mun4 ，nang4 zi1 tin1 haa6 si6
+秀才不出門，全知天下事	sau3 coi4 bat1 ceot1 mun4 cyun4 zi1 tin1 haa6 si6
+秀才不出門，能知天下事	sau3 coi4 bat1 ceot1 mun4 nang4 zi1 tin1 haa6 si6
 秀林	sau3 lam4
 秀林鄉	sau3 lam4 hoeng1
 秀氣	sau3 hei3
@@ -92952,7 +92999,8 @@ let dictWords = `我	ngo5
 科教	fo1 gaau3
 科教片	fo1 gaau3 pin2
 科教興國	fo1 gaau3 hing1 gwok3
-科文	fo1 man4 / man2
+科文	fo1 man4
+科文	fo1 man2
 科斗	fo1 dau2
 科普	fo1 pou2
 科普特人	fo1 pou2 dak6 jan4
@@ -93210,7 +93258,7 @@ let dictWords = `我	ngo5
 種植業	zung3 zik6 jip6
 種植體	zung3 zik6 tai2
 種樹	zung3 syu6
-種瓜得瓜，種豆得豆	zung3 gwaa1 dak1 gwaa1 ，zung3 dau2 dak1 dau2
+種瓜得瓜，種豆得豆	zung3 gwaa1 dak1 gwaa1 zung3 dau2 dak1 dau2
 種田	zung3 tin4
 種畜	zung2 cuk1
 種禽	zung2 kam4
@@ -93642,7 +93690,7 @@ let dictWords = `我	ngo5
 窮則思變	kung4 zak1 si1 bin3
 窮匱	kung4 gwai6
 窮國	kung4 gwok3
-窮在鬧市無人問，富在深山有遠親	kung4 zoi6 naau6 si5 mou4 jan4 man6, fu3 zoi6 sam1 saan1 jau5 jyun5 can1
+窮在鬧市無人問，富在深山有遠親	kung4 zoi6 naau6 si5 mou4 jan4 man6 fu3 zoi6 sam1 saan1 jau5 jyun5 can1
 窮奢極侈	kung4 ce1 gik6 ci2
 窮奢極欲	kung4 ce1 gik6 juk6
 窮家薄業	kung4 gaa1 bok6 jip6
@@ -93700,7 +93748,7 @@ let dictWords = `我	ngo5
 竇道	dau6 dou6
 竊喜	sit3 hei2
 竊國	sit3 gwok3
-竊國者侯，竊鉤者誅	sit3 gwok3 ze2 hau4 ，sit3 ngau1 ze2 zyu1
+竊國者侯，竊鉤者誅	sit3 gwok3 ze2 hau4 sit3 ngau1 ze2 zyu1
 竊嫌	sit3 jim4
 竊據	sit3 geoi3
 竊案	sit3 on3
@@ -93712,7 +93760,7 @@ let dictWords = `我	ngo5
 竊蛋龍	sit3 daan2 lung4
 竊蠹甲	sit3 dou3 gaap3
 竊賊	sit3 caak6
-竊鉤者誅，竊國者侯	sit3 ngau1 ze2 zyu1 ，sit3 gwok3 ze2 hau4
+竊鉤者誅，竊國者侯	sit3 ngau1 ze2 zyu1 sit3 gwok3 ze2 hau4
 立下	laap6 haa6
 立交	laap6 gaau1
 立交橋	laap6 gaau1 kiu4
@@ -93932,7 +93980,7 @@ let dictWords = `我	ngo5
 竹簽	zuk1 cim1
 竹籃	zuk1 laam4
 竹籃打水	zuk1 laam4 daa2 seoi2
-竹籃打水，一場空	zuk1 laam4 daa2 seoi2 ，jat1 coeng4 hung1
+竹籃打水，一場空	zuk1 laam4 daa2 seoi2 jat1 coeng4 hung1
 竹籤	zuk1 cim1
 竹籬笆	zuk1 lei4 baa1
 竹紗	zuk1 saa1
@@ -94342,7 +94390,7 @@ let dictWords = `我	ngo5
 管風琴	gun2 fung1 kam4
 管龠	gun2 joek6
 箭嘴	zin3 zeoi2
-箭在弦上	zin3 zoi6 jin4 soeng6 ,
+箭在弦上	zin3 zoi6 jin4 soeng6 
 箭桿	zin3 gon1
 箭毒蛙	zin3 duk6 waa1
 箭竹	zin3 zuk1
@@ -94887,7 +94935,7 @@ let dictWords = `我	ngo5
 精衛	zing1 wai6
 精衛填海	zing1 wai6 tin4 hoi2
 精製	zing1 zai3
-精誠所加，金石為開	zing1 sing4 so2 gaa1 ，gam1 sek6 wai4 hoi1
+精誠所加，金石為開	zing1 sing4 so2 gaa1 gam1 sek6 wai4 hoi1
 精講多練	zing1 gong2 do1 lin6
 精讀課	zing1 duk6 fo3
 精進	zing1 zeon3
@@ -94999,7 +95047,8 @@ let dictWords = `我	ngo5
 糯米酒	no6 mai5 zau2
 糯麥	no6 mak6
 糰子	tyun4 zi2
-糷	laan4 / laan6
+糷	laan4
+糷	laan6
 系主任	hai6 zyu2 jam6
 系出名門	hai6 ceot1 ming4 mun4
 系列放大器	hai6 lit6 fong3 daai6 hei3
@@ -96558,7 +96607,8 @@ let dictWords = `我	ngo5
 綿陽市	min4 joeng4 si5
 緄邊	gwan2 bin1
 緅	zau1
-緉	loeng5 / loeng6
+緉	loeng5
+緉	loeng6
 緊俏	gan2 ciu3
 緊密相聯	gan2 mat6 soeng1 lyun4
 緊密織物	gan2 mat6 zik1 mat6
@@ -96751,7 +96801,9 @@ let dictWords = `我	ngo5
 練習生	lin6 zaap6 sang1
 練習簿	lin6 zaap6 bou6
 練達	lin6 daat6
-緺	gwaa1 / waa1 / gwo1
+緺	gwaa1
+緺	waa1
+緺	gwo1
 緻密	zi3 mat6
 緻畸	zi3 kei1
 縈懷	jing4 waai4
@@ -97299,7 +97351,7 @@ let dictWords = `我	ngo5
 罷官	baa6 gun1
 罷論	baa6 leon6
 罷黜	baa6 zyut6
-罷黜百家，獨尊儒術	baa6 ceot1 baak3 gaa1 ，duk6 zyun1 jyu4 seot6
+罷黜百家，獨尊儒術	baa6 ceot1 baak3 gaa1 duk6 zyun1 jyu4 seot6
 罹禍	lei4 wo6
 罽	gai3
 羅一秀	lo4 jat1 sau3
@@ -97669,7 +97721,8 @@ let dictWords = `我	ngo5
 美麗新世界	mei5 lai6 san1 sai3 gaai3
 美麗華酒店	mei5 lai6 waa4 zau2 dim3
 羑	jau5
-羒	fan1 / fan4
+羒	fan1
+羒	fan4
 羔皮	gou1 pei4
 羕	joeng6
 羖	gu2
@@ -98014,8 +98067,8 @@ let dictWords = `我	ngo5
 老叟	lou5 sau2
 老古板	lou5 gu2 baan2
 老君	lou5 gwan1
-老吾老，以及人之老	lou5 ng4 lou5 ，ji5 kap6 jan4 zi1 lou5
-老吾老，以及人之老，幼吾幼，以及人之幼	lou5 ng4 lou5 ，ji5 kap6 jan4 zi1 lou5 ，jau3 ng4 jau3 ，ji5 kap6 jan4 zi1 jau3
+老吾老，以及人之老	lou5 ng4 lou5 ji5 kap6 jan4 zi1 lou5
+老吾老，以及人之老，幼吾幼，以及人之幼	lou5 ng4 lou5 ji5 kap6 jan4 zi1 lou5 jau3 ng4 jau3 ji5 kap6 jan4 zi1 jau3
 老城	lou5 sing4
 老城區	lou5 sing4 keoi1
 老墨	lou5 mak6
@@ -98107,7 +98160,7 @@ let dictWords = `我	ngo5
 老牛聲	lou5 ngau4 seng1
 老牛舐犢	lou5 ngau4 saai5 duk6
 老玉米	lou5 juk6 mai5
-老王賣瓜，自賣自誇	lou5 wong2 maai6 gwaa1 ，zi6 maai6 zi6 kwaa1
+老王賣瓜，自賣自誇	lou5 wong2 maai6 gwaa1 zi6 maai6 zi6 kwaa1
 老生	lou5 sang1
 老生常談	lou5 sang1 soeng4 taam4
 老番涼茶	lou5 faan1 loeng4 caa4
@@ -98173,7 +98226,7 @@ let dictWords = `我	ngo5
 老馬識途	lou5 maa5 sik1 tou4
 老驥	lou5 kei3
 老驥伏櫪	lou5 kei3 fuk6 lik1
-老驥伏櫪，志在千里	lou5 kei3 fuk6 lik1 ，zi3 zoi6 cin1 lei5
+老驥伏櫪，志在千里	lou5 kei3 fuk6 lik1 zi3 zoi6 cin1 lei5
 老驥嘶風	lou5 kei3 sai1 fung1
 老骨頭	lou5 gwat1 tau4
 老鳥	lou5 niu5
@@ -98185,12 +98238,12 @@ let dictWords = `我	ngo5
 老鷹星雲	lou5 jing1 sing1 wan4
 老黑	lou5 hak1
 老鼠尾巴	lou5 syu2 mei5 baa1
-老鼠拉龜，無從下手	lou5 syu2 laai1 gwai1 , mou4 cung4 haa6 sau2
-老鼠拖木鍁，大頭在後頭	lou5 syu2 to1 muk6 hin1 , daai6 tau4 zoi6 hau6 tau4
+老鼠拉龜，無從下手	lou5 syu2 laai1 gwai1  mou4 cung4 haa6 sau2
+老鼠拖木鍁，大頭在後頭	lou5 syu2 to1 muk6 hin1  daai6 tau4 zoi6 hau6 tau4
 老鼠斑	lou5 syu2 baan1
 老鼠洞	lou5 syu2 dung6
 老鼠貨	lou5 syu2 fo3
-老鼠過街，人人喊打	lou5 syu2 gwo3 gaai1 ，jan4 jan4 haam3 daa2
+老鼠過街，人人喊打	lou5 syu2 gwo3 gaai1 jan4 jan4 haam3 daa2
 老鼻子	lou5 bei6 zi2
 老齡	lou5 ling4
 老齡化	lou5 ling4 faa3
@@ -98298,11 +98351,12 @@ let dictWords = `我	ngo5
 耕田佬	gaang1 tin4 lou2
 耕畜	gaang1 cuk1
 耕當問奴	gaang1 dong1 man6 nou4
-耕當問奴，織當訪婢	gaang1 dong1 man6 nou4 ，zik1 dong1 fong2 pei5
+耕當問奴，織當訪婢	gaang1 dong1 man6 nou4 zik1 dong1 fong2 pei5
 耕種	gaang1 zung3
 耕者有其田	gaang1 ze2 jau5 kei4 tin4
 耕讀	gaang1 duk6
-耖	caau3 / caau2
+耖	caau3
+耖	caau2
 耗力	hou3 lik6
 耗子	hou3 zi2
 耗散	hou3 saan3
@@ -98365,7 +98419,7 @@ let dictWords = `我	ngo5
 耳聞不如目見	ji5 man4 bat1 jyu4 muk6 gin3
 耳聞目睹	ji5 man4 muk6 dou2
 耳聰目明	ji5 cung1 muk6 ming4
-耳聽為虛，眼見為實	ji5 ting1 wai4 heoi1 ，ngaan5 gin3 wai4 sat6
+耳聽為虛，眼見為實	ji5 ting1 wai4 heoi1 ngaan5 gin3 wai4 sat6
 耳背	ji5 bui3
 耳膜	ji5 mok2
 耳蝸	ji5 wo1
@@ -98721,8 +98775,8 @@ let dictWords = `我	ngo5
 聯集	lyun4 zaap6
 聯體別墅	lyun4 tai2 bit6 seoi5
 聰慧	cung1 wai6
-聰明一世，懵懂一時	cung1 ming4 jat1 sai3, mung2 dung2 jat1 si4
-聰明一世，糊塗一時	cung1 ming4 jat1 sai3 ，wu4 tou4 jat1 si4
+聰明一世，懵懂一時	cung1 ming4 jat1 sai3 mung2 dung2 jat1 si4
+聰明一世，糊塗一時	cung1 ming4 jat1 sai3 wu4 tou4 jat1 si4
 聰明一世，蠢鈍一時	cung1 ming4 jat1 sai3 ceon2 deon6 jat1 si4
 聰明伶俐	cung1 ming4 ling4 lei6
 聰明反被聰明誤	cung1 ming4 faan2 bei6 cung1 ming4 ng6
@@ -98818,7 +98872,7 @@ let dictWords = `我	ngo5
 聽其言觀其行	ting1 kei4 jin4 gun1 kei4 hang6
 聽出耳油	teng1 ceot1 ji5 jau4
 聽力理解	ting1 lik6 lei5 gaai2
-聽君一席話，勝讀十年書	ting1 gwan1 jat1 zik6 waa6 ，sing3 duk6 sap6 nin4 syu1
+聽君一席話，勝讀十年書	ting1 gwan1 jat1 zik6 waa6 sing3 duk6 sap6 nin4 syu1
 聽天安命	ting3 tin1 on1 ming6
 聽審	ting3 sam2
 聽審會	ting3 sam2 wui2
@@ -98848,7 +98902,7 @@ let dictWords = `我	ngo5
 聽訟	ting3 zung6
 聽診	teng1 can2
 聽診器	ting1 can2 hei3
-聽話聽聲，鑼鼓聽音	ting1 waa6 ting1 sing1 ，lo4 gu2 ting1 jam1
+聽話聽聲，鑼鼓聽音	ting1 waa6 ting1 sing1 lo4 gu2 ting1 jam1
 聽說	ting1 syut3
 聽説	ting1 syut3
 聽課	teng1 fo3
@@ -100187,7 +100241,7 @@ let dictWords = `我	ngo5
 臨淄區	lam4 zi1 keoi1
 臨深履薄	lam4 sam1 lei5 bok6
 臨淵羨魚	lam4 jyun1 sin6 jyu4
-臨淵羨魚，不如退而結網	lam4 jyun1 sin6 jyu4 ，bat1 jyu4 teoi3 ji4 git3 mong5
+臨淵羨魚，不如退而結網	lam4 jyun1 sin6 jyu4 bat1 jyu4 teoi3 ji4 git3 mong5
 臨清	lam4 cing1
 臨清市	lam4 cing1 si5
 臨渭	lam4 wai6
@@ -100548,7 +100602,7 @@ let dictWords = `我	ngo5
 致病菌	zi3 sei2 kwan2
 致癌物	zi3 ngaam4 mat6
 致癌物質	zi3 ngaam4 mat6 zat1
-臺上一分鐘，臺下十年功	toi4 soeng6 jat1 fan1 zung1 ，toi4 haa6 sap6 nin4 gung1
+臺上一分鐘，臺下十年功	toi4 soeng6 jat1 fan1 zung1 toi4 haa6 sap6 nin4 gung1
 臺中	toi4 zung1
 臺中市	toi4 zung1 si5
 臺中縣	toi4 zung1 jyun6
@@ -100638,9 +100692,9 @@ let dictWords = `我	ngo5
 舅舅	kau5 kau5
 與世俯仰	jyu5 sai3 fu2 joeng5
 與世永別	jyu5 sai3 wing5 bit6
-與人方便，自己方便	jyu5 jan4 fong1 bin6 ，zi6 gei2 fong1 bin6
+與人方便，自己方便	jyu5 jan4 fong1 bin6 zi6 gei2 fong1 bin6
 與人為善	jyu5 jan4 wai4 sin6
-與全世界為敵，冒天下之大不韙	jyu5 cyun4 sai3 gaai3 wai4 dik6 ，mou6 tin1 haa6 zi1 daai6 bat1 wai5
+與全世界為敵，冒天下之大不韙	jyu5 cyun4 sai3 gaai3 wai4 dik6 mou6 tin1 haa6 zi1 daai6 bat1 wai5
 與共	jyu5 gung6
 與別不同	jyu5 bit6 bat1 tung4
 與日俱輝	jyu5 jat6 keoi1 fai1
@@ -100775,7 +100829,7 @@ let dictWords = `我	ngo5
 舊瓶裝新酒	gau6 ping4 zong1 san1 zau2
 舊生	gau6 sang1
 舊疾	gau6 zat6
-舊的不去，新的不來	gau6 dik1 bat1 heoi3 ，san1 dik1 bat1 loi4
+舊的不去，新的不來	gau6 dik1 bat1 heoi3 san1 dik1 bat1 loi4
 舊皇曆	gau6 wong4 lik6
 舊石器時代	gau6 sek6 hei3 si4 doi6
 舊稱	gau6 cing1
@@ -100946,8 +101000,8 @@ let dictWords = `我	ngo5
 船主	syun4 zyu2
 船位	syun4 wai2
 船到橋門自會直	syun4 dou3 kiu4 mun4 zi6 wui3 zik6
-船到江心，補漏遲	syun4 dou3 gong1 sam1 ，bou2 lau6 ci4
-船到碼頭，車到站	syun4 dou3 maa5 tau4 ，ce1 dou3 zaam6
+船到江心，補漏遲	syun4 dou3 gong1 sam1 bou2 lau6 ci4
+船到碼頭，車到站	syun4 dou3 maa5 tau4 ce1 dou3 zaam6
 船埠	syun4 fau6
 船家	syun4 gaa1
 船尾座	syun4 mei5 zo6
@@ -101312,7 +101366,7 @@ let dictWords = `我	ngo5
 花斑癬	faa1 baan1 sin2
 花旗國	faa1 kei4 gwok3
 花會	faa1 wui2
-花有重開日，人無再少年	faa1 jau5 cung5 hoi1 jat6, jan4 mou4 zoi3 siu3 nin4
+花有重開日，人無再少年	faa1 jau5 cung5 hoi1 jat6 jan4 mou4 zoi3 siu3 nin4
 花朝月夕	faa1 ziu1 jyut6 zik6
 花朝節	faa1 ziu1 zit3
 花期	faa1 kei4
@@ -101396,7 +101450,8 @@ let dictWords = `我	ngo5
 花都區	faa1 dou1 keoi1
 花銷	faa1 siu1
 花錢找罪受	faa1 cin2 zaau2 zeoi6 sau6
-花門	faa1 mun4 / faa1 mun2
+花門	faa1 mun4
+花門	faa1 mun2
 花階磚	faa1 gaai1 zyun1
 花雞	faa1 gai1
 花露水	faa1 lou6 seoi2
@@ -101489,7 +101544,7 @@ let dictWords = `我	ngo5
 苟合	gau2 hap6
 苟存	gau2 cyun4
 苟安	gau2 on1
-苟富貴，勿相忘	gau2 fu3 gwai3, mat6 soeng1 mong4
+苟富貴，勿相忘	gau2 fu3 gwai3 mat6 soeng1 mong4
 苟延殘喘	gau2 jin4 caan4 cyun2
 苟活	gau2 wut6
 苡米	ji5 mai5
@@ -101507,7 +101562,7 @@ let dictWords = `我	ngo5
 若羌	joek6 goeng1
 若羌縣	joek6 goeng1 jyun6
 若翰	joek6 hon6
-若要人不知，除非己莫為	joek6 jiu3 jan4 bat1 zi1 ，ceoi4 fei1 gei2 mok6 wai4
+若要人不知，除非己莫為	joek6 jiu3 jan4 bat1 zi1 ceoi4 fei1 gei2 mok6 wai4
 若開山脈	joek6 hoi1 saan1 mak6
 苦不唧	fu2 bat1 zik1
 苦不唧兒	fu2 bat1 zik1 ji4
@@ -101537,7 +101592,7 @@ let dictWords = `我	ngo5
 苦楝	fu2 lin6
 苦活	fu2 wut6
 苦活兒	fu2 wut6 ji4
-苦海無邊，回頭是岸	fu2 hoi2 mou4 bin1 ，wui4 tau4 si6 ngon6
+苦海無邊，回頭是岸	fu2 hoi2 mou4 bin1 wui4 tau4 si6 ngon6
 苦海茫茫	fu2 hoi2 mong4 mong4
 苦熬	fu2 ngou4
 苦瓜	fu2 gwaa1
@@ -102357,12 +102412,12 @@ let dictWords = `我	ngo5
 萬丹	maan6 daan1
 萬丹鄉	maan6 daan1 hoeng1
 萬事亨通	maan6 si6 hang1 tung1
-萬事俱備，只欠東風	maan6 si6 keoi1 bei6 ，zi2 him3 dung1 fung1
+萬事俱備，只欠東風	maan6 si6 keoi1 bei6 zi2 him3 dung1 fung1
 萬事勝意	maan6 si6 sing3 ji3
 萬事大吉	maan6 si6 daai6 gat1
 萬事如意	maan6 si6 jyu4 ji3
 萬事得	maan6 si6 dak1
-萬事皆備，只欠東風	maan6 si6 gaai1 bei6 ，zi2 him3 dung1 fung1
+萬事皆備，只欠東風	maan6 si6 gaai1 bei6 zi2 him3 dung1 fung1
 萬事起頭難	maan6 si6 hei2 tau4 naan4
 萬事通	maan6 si6 tung1
 萬事達	maan6 si6 daat6
@@ -102538,7 +102593,7 @@ let dictWords = `我	ngo5
 落膈	lok6 gaak3
 落臺	lok6 toi4
 落色	lok6 sik1
-落花有意，流水無情	lok6 faa1 jau5 ji3 ，lau4 seoi2 mou4 cing4
+落花有意，流水無情	lok6 faa1 jau5 ji3 lau4 seoi2 mou4 cing4
 落花流水	lok6 faa1 lau4 seoi2
 落花生	lok6 faa1 sang1
 落草為寇	lok6 cou2 wai4 kau3
@@ -102957,7 +103012,9 @@ let dictWords = `我	ngo5
 蓖麻	bei6 maa4
 蓖麻毒素	bei6 maa4 duk6 sou3
 蓖麻籽	bei6 maa4 zi2
-蓨	sau1 / tiu1 / tiu4
+蓨	sau1
+蓨	tiu1
+蓨	tiu4
 蓬亂	pung4 lyun6
 蓬壺	pung4 wu4
 蓬安	pung4 on1
@@ -103071,7 +103128,8 @@ let dictWords = `我	ngo5
 蔥頭	cung1 tau4
 蔥鬱	cung1 wat1
 蔥黃	cung1 wong4
-蔧	seoi6 / wai6
+蔧	seoi6
+蔧	wai6
 蔫兒壞	jin1 ji4 waai6
 蔫呼呼	jin1 fu1 fu1
 蔫土匪	jin1 tou2 fei2
@@ -103221,7 +103279,7 @@ let dictWords = `我	ngo5
 薑堰	goeng1 jin2
 薑堰市	goeng1 jin2 si5
 薑太公	goeng1 taai3 gung1
-薑太公釣魚，願者上鉤	goeng1 taai3 gung1 diu3 jyu4 ，jyun6 ze2 soeng5 ngau1
+薑太公釣魚，願者上鉤	goeng1 taai3 gung1 diu3 jyu4 jyun6 ze2 soeng5 ngau1
 薑子牙	goeng1 zi2 ngaa4
 薑石年	goeng1 sek6 nin4
 薑還是老的辣	goeng1 waan4 si6 lou5 dik1 laat6
@@ -103757,8 +103815,8 @@ let dictWords = `我	ngo5
 蘿莉	lo4 lei6
 蘿莉控	lo4 lei6 hung3
 蘿蔔仔	lo4 baak6 zai2
-蘿蔔白菜，各有所愛	lo4 baak6 baak6 coi3, gok3 jau5 so2 oi3
-蘿蔔青菜，各有所愛	lo4 baak6 ceng1 coi3, gok3 jau5 so2 oi3
+蘿蔔白菜，各有所愛	lo4 baak6 baak6 coi3 gok3 jau5 so2 oi3
+蘿蔔青菜，各有所愛	lo4 baak6 ceng1 coi3 gok3 jau5 so2 oi3
 虉草	jik6 cou2
 虎不拉	fu2 bat1 laai1
 虎丘	fu2 jau1
@@ -103845,7 +103903,7 @@ let dictWords = `我	ngo5
 虛度	heoi1 dou6
 虛度光陰	heoi1 dou6 gwong1 jam1
 虛心	heoi1 sam1
-虛心使人進步，驕傲使人落後	heoi1 sam1 si2 jan4 zeon3 bou6 ，giu1 ngou6 si2 jan4 lok6 hau6
+虛心使人進步，驕傲使人落後	heoi1 sam1 si2 jan4 zeon3 bou6 giu1 ngou6 si2 jan4 lok6 hau6
 虛心好學	heoi1 sam1 hou3 hok6
 虛情假意	heoi1 cing4 gaa3 ji3
 虛應了事	heoi1 jing3 liu5 si6
@@ -104159,7 +104217,9 @@ let dictWords = `我	ngo5
 蜥易	sik1 jik6
 蜥臀目	sik1 tyun4 muk6
 蜥蜴	sik1 jik6
-蜰	fei4 / fai6 / fei2
+蜰	fei4
+蜰	fai6
+蜰	fei2
 蜱咬病	pei4 ngaau5 beng6
 蜱蟲	pei4 cung4
 蜴	jik6
@@ -104614,8 +104674,8 @@ let dictWords = `我	ngo5
 衆寡	zung3 gwaa2
 行一步睇一步	haang4 jat1 bou6 tai2 jat1 bou6
 行不從徑	hang4 bat1 cung4 ging3
-行不改姓，坐不改名	hang4 bat1 goi2 sing3 ，zo6 bat1 goi2 ming4
-行不更名，坐不改姓	hang4 bat1 gang1 ming4 ，zo6 bat1 goi2 sing3
+行不改姓，坐不改名	hang4 bat1 goi2 sing3 zo6 bat1 goi2 ming4
+行不更名，坐不改姓	hang4 bat1 gang1 ming4 zo6 bat1 goi2 sing3
 行不由徑	hang4 bat1 jau4 ging3
 行不通	haang4 bat1 tung1
 行不顧言	hang4 bat1 gu3 jin4
@@ -104638,7 +104698,7 @@ let dictWords = `我	ngo5
 行動藝術家	hang4 dung6 ngai6 seot6 gaa1
 行動計劃	hang4 dung6 gai3 waak6
 行動電話	hang4 dung6 din6 waa2
-行千里路，讀萬卷書	haang4 cin1 lei5 lou6 ，duk6 maan6 gyun2 syu1
+行千里路，讀萬卷書	haang4 cin1 lei5 lou6 duk6 maan6 gyun2 syu1
 行咇	haang4 bit1
 行唐	hang4 tong4
 行唐縣	hang4 tong4 jyun6
@@ -104718,7 +104778,7 @@ let dictWords = `我	ngo5
 行花街	haang4 faa1 gaai1
 行草	hang4 cou2
 行萬里路勝讀萬捲書	hang4 maan6 lei5 lou6 sing3 duk6 maan6 gyun2 syu1
-行萬里路，讀萬卷書	haang4 maan6 lei5 lou6 ，duk6 maan6 gyun2 syu1
+行萬里路，讀萬卷書	haang4 maan6 lei5 lou6 duk6 maan6 gyun2 syu1
 行號	hong4 hou6
 行蠱惑	haang4 gu2 waak6
 行行出狀元	hong4 hong4 ceot1 zong6 jyun4
@@ -105778,7 +105838,7 @@ let dictWords = `我	ngo5
 要靚唔要命	jiu3 leng3 m4 jiu3 meng6
 要面子	jiu3 min6 zi2
 要頸唔要命	jiu3 geng2 m4 jiu3 meng6
-要風得風，要雨得雨	jiu3 fung1 dak1 fung1, jiu3 jyu5 dak1 jyu5
+要風得風，要雨得雨	jiu3 fung1 dak1 fung1 jiu3 jyu5 dak1 jyu5
 要飯	jiu3 faan6
 覃塘	taam4 tong4
 覃塘區	taam4 tong4 keoi1
@@ -105928,7 +105988,7 @@ let dictWords = `我	ngo5
 覡	hat6
 親代	can1 doi6
 親們	can1 mun4
-親兄弟，明算帳	can1 hing1 dai6 ，ming4 syun3 zoeng3
+親兄弟，明算帳	can1 hing1 dai6 ming4 syun3 zoeng3
 親北京	can1 bak1 ging1
 親和	can1 wo4
 親和力	can1 wo4 lik6
@@ -106208,16 +106268,16 @@ let dictWords = `我	ngo5
 言多必失	jin4 do1 bit1 sat1
 言字旁	jin4 zi6 pong4
 言官	jin4 gun1
-言必信，行必果	jin4 bit1 seon3 ，hang4 bit1 gwo2
+言必信，行必果	jin4 bit1 seon3 hang4 bit1 gwo2
 言情小說	jin4 cing4 siu2 syut3
 言教不如身教	jin4 gaau3 bat1 jyu4 san1 gaau3
 言明	jin4 ming4
 言歸於好	jin4 gwai1 jyu1 hou2
 言符其實	jin4 fu4 kei4 sat6
 言簡意賅	jin4 gaan2 ji3 goi1
-言者無意，聽者有心	jin4 ze2 mou4 ji3 ，ting1 ze2 jau5 sam1
-言者無罪	jin4 ze2 mou4 zeoi6 ,
-言者無罪，聞者足戒	jin4 ze2 mou4 zeoi6 ，man4 ze2 zuk1 gaai3
+言者無意，聽者有心	jin4 ze2 mou4 ji3 ting1 ze2 jau5 sam1
+言者無罪	jin4 ze2 mou4 zeoi6 
+言者無罪，聞者足戒	jin4 ze2 mou4 zeoi6 man4 ze2 zuk1 gaai3
 言行不一	jin4 hang4 bat1 jat1
 言行若一	jin4 hang6 joek6 jat1
 言語失常症	jin4 jyu5 sat1 soeng4 zing3
@@ -106918,9 +106978,9 @@ let dictWords = `我	ngo5
 說情	syut3 cing4
 說文解字註	syut3 man4 gaai2 zi6 zyu3
 說明會	syut3 ming4 wui2
-說是一回事，做又是另外一回事	syut3 si6 jat1 wui4 si6 ，zou6 jau6 si6 ling6 ngoi6 jat1 wui4 si6
-說是一回事，而做又是另外一回事	syut3 si6 jat1 wui4 si6 ，ji4 zou6 jau6 si6 ling6 ngoi6 jat1 wui4 si6
-說時遲，那時快	syut3 si4 ci4 ，naa5 si4 faai3
+說是一回事，做又是另外一回事	syut3 si6 jat1 wui4 si6 zou6 jau6 si6 ling6 ngoi6 jat1 wui4 si6
+說是一回事，而做又是另外一回事	syut3 si6 jat1 wui4 si6 ji4 zou6 jau6 si6 ling6 ngoi6 jat1 wui4 si6
+說時遲，那時快	syut3 si4 ci4 naa5 si4 faai3
 說書	syut3 syu1
 說曹操曹操就到	syut3 cou4 cou1 cou4 cou1 zau6 dou3
 說溜嘴	syut3 lau6 zeoi2
@@ -106952,8 +107012,8 @@ let dictWords = `我	ngo5
 説謊	syut3 fong1
 誰人樂隊	seoi4 jan4 ngok6 deoi2
 誰知道	seoi4 zi1 dou6
-誰笑到最後，誰笑得最好	seoi4 siu3 dou3 zeoi3 hau6 ，seoi4 siu3 dak1 zeoi3 hou2
-誰笑在最後，誰笑得最好	seoi4 siu3 zoi6 zeoi3 hau6 ，seoi4 siu3 dak1 zeoi3 hou2
+誰笑到最後，誰笑得最好	seoi4 siu3 dou3 zeoi3 hau6 seoi4 siu3 dak1 zeoi3 hou2
+誰笑在最後，誰笑得最好	seoi4 siu3 zoi6 zeoi3 hau6 seoi4 siu3 dak1 zeoi3 hou2
 課外讀物	fo3 ngoi6 duk6 mat6
 課文啟動	fo3 man4 kai2 dung6
 課時	fo3 si4
@@ -107534,7 +107594,7 @@ let dictWords = `我	ngo5
 讀者來信	duk6 ze2 loi4 seon3
 讀者文摘	duk6 ze2 man4 zaak6
 讀者群	duk6 ze2 kwan4
-讀萬卷書，行萬里路	duk6 maan6 gyun2 syu1 ，haang4 maan6 lei5 lou6
+讀萬卷書，行萬里路	duk6 maan6 gyun2 syu1 haang4 maan6 lei5 lou6
 讀譜	duk6 pou2
 讀賣新聞	duk6 maai6 san1 man4
 讀音錯誤	duk6 jam1 co3 ng6
@@ -108931,7 +108991,7 @@ let dictWords = `我	ngo5
 走繩	zau2 sing4
 走背字	zau2 bui6 zi6
 走背字兒	zau2 bui6 zi6 ji4
-走自己的路，讓人家去說	zau2 zi6 gei2 dik1 lou6 ，joeng6 jan4 gaa1 heoi3 syut3
+走自己的路，讓人家去說	zau2 zi6 gei2 dik1 lou6 joeng6 jan4 gaa1 heoi3 syut3
 走色	zau2 sik1
 走著瞧	zau2 zoek6 ciu4
 走親戚	zau2 can1 cik1
@@ -109035,7 +109095,7 @@ let dictWords = `我	ngo5
 起𦢊	hei2 pok1
 趁亂逃脫	can3 lyun6 tou4 tyut3
 趁人之危	can3 jan4 zi1 ngai4
-趁佢病，攞佢命	can3 keoi5 beng6 , lo2 keoi5 meng6
+趁佢病，攞佢命	can3 keoi5 beng6  lo2 keoi5 meng6
 趁便	can3 bin6
 趁墟	can3 heoi1
 趁墟打市	can3 heoi1 daa2 si5
@@ -109338,15 +109398,15 @@ let dictWords = `我	ngo5
 跌風	dit3 fung1
 跎	to4
 跏趺	gaa1 fu1
-跑了和尚，跑不了寺	paau2 liu5 wo4 soeng2 ，paau2 bat1 liu5 zi6
-跑了和尚，跑不了廟	paau2 liu5 wo4 soeng2 ，paau2 bat1 liu5 miu6
+跑了和尚，跑不了寺	paau2 liu5 wo4 soeng2 paau2 bat1 liu5 zi6
+跑了和尚，跑不了廟	paau2 liu5 wo4 soeng2 paau2 bat1 liu5 miu6
 跑味	paau2 mei6
 跑味兒	paau2 mei6 ji4
 跑堂	paau2 tong4
 跑堂兒的	paau2 tong4 ji4 dik1
 跑壘	paau2 leoi5
 跑壘員	paau2 leoi5 jyun4
-跑得了和尚，跑不了廟	paau2 dak1 liu5 wo4 soeng2 ，paau2 bat1 liu5 miu6
+跑得了和尚，跑不了廟	paau2 dak1 liu5 wo4 soeng2 paau2 bat1 liu5 miu6
 跑掉	paau2 diu6
 跑步者	paau2 bou6 ze2
 跑江湖	paau2 gong1 wu4
@@ -109492,7 +109552,7 @@ let dictWords = `我	ngo5
 路透金融詞典	lou6 tau3 gam1 jung4 ci4 din2
 路透集團	lou6 tau3 zaap6 tyun4
 路遙知馬力	lou6 jiu4 zi1 maa5 lik6
-路遙知馬力，日久見人心	lou6 jiu4 zi1 maa5 lik6 ，jat6 gau2 gin3 jan4 sam1
+路遙知馬力，日久見人心	lou6 jiu4 zi1 maa5 lik6 jat6 gau2 gin3 jan4 sam1
 路霸	lou6 baa3
 跳一隻腳	tiu3 jat1 zek3 goek3
 跳井	tiu3 zeng2
@@ -109547,7 +109607,7 @@ let dictWords = `我	ngo5
 踏步不前	daap6 bou6 bat1 cin4
 踏看	daap6 hon3
 踏破鐵鞋無覓處	daap6 po3 tit3 haai4 mou4 mik6 cyu3
-踏破鐵鞋無覓處，得來全不費工夫	daap6 po3 tit3 haai4 mou4 mik6 cyu3 ，dak1 loi4 cyun4 bat1 fai3 gung1 fu1
+踏破鐵鞋無覓處，得來全不費工夫	daap6 po3 tit3 haai4 mou4 mik6 cyu3 dak1 loi4 cyun4 bat1 fai3 gung1 fu1
 踏襲	daap6 zaap6
 踏訪	daap6 fong2
 踏踏實實	daap6 daap6 sat6 sat6
@@ -109819,7 +109879,7 @@ let dictWords = `我	ngo5
 車公廟站	ce1 gung1 miu6 zaam6
 車刀	ce1 dou1
 車到山前必有路	ce1 dou3 saan1 cin4 bit1 jau5 lou6
-車到山前必有路，船到橋頭自然直	ce1 dou3 saan1 cin4 bit1 jau5 lou6 ，syun4 dou3 kiu4 tau4 zi6 jin4 zik6
+車到山前必有路，船到橋頭自然直	ce1 dou3 saan1 cin4 bit1 jau5 lou6 syun4 dou3 kiu4 tau4 zi6 jin4 zik6
 車到山前自有路	ce1 dou3 saan1 cin4 zi6 jau5 lou6
 車前草	ce1 cin4 cou2
 車厘茄	ce1 lei4 ke2
@@ -111008,7 +111068,7 @@ let dictWords = `我	ngo5
 逆旅	jik6 leoi5
 逆映射	jik6 jing2 se6
 逆次次	ngaak6 ci3 ci3
-逆水行舟，不進則退	jik6 seoi2 hang4 zau1 ，bat1 zeon3 zak1 teoi3
+逆水行舟，不進則退	jik6 seoi2 hang4 zau1 bat1 zeon3 zak1 teoi3
 逆流溯源	jik6 lau4 sou3 jyun4
 逆火	jik6 fo2
 逆產	jik6 caan2
@@ -111643,7 +111703,7 @@ let dictWords = `我	ngo5
 運算環境	wan6 syun3 waan4 ging2
 運籌學	wan6 cau4 hok6
 運籌帷幄	wan6 cau4 wai4 ak1
-運籌帷幄之中，決勝千里之外	wan6 cau4 wai4 ak1 zi1 zung1, kyut3 sing3 cin1 lei5 zi1 ngoi6
+運籌帷幄之中，決勝千里之外	wan6 cau4 wai4 ak1 zi1 zung1 kyut3 sing3 cin1 lei5 zi1 ngoi6
 運腳	wan6 goek3
 運行方式	wan6 hang4 fong1 sik1
 運行時	wan6 hang4 si4
@@ -111741,7 +111801,7 @@ let dictWords = `我	ngo5
 過程比終點更美	gwo3 cing4 bei2 zung1 dim2 gang3 mei5
 過站大廳	gwo3 zaam6 daai6 teng1
 過繼	gwo3 gai3
-過而能改，善莫大焉	gwo3 ji4 nang4 goi2 ，sin6 mok6 daai6 jin4
+過而能改，善莫大焉	gwo3 ji4 nang4 goi2 sin6 mok6 daai6 jin4
 過肩摔	gwo3 gin1 seot1
 過胖暴食症	gwo3 bun6 bou6 sik6 zing3
 過膠	gwo3 gaau1
@@ -111780,7 +111840,7 @@ let dictWords = `我	ngo5
 遒勁	cau4 ging6
 道不同不相為謀	dou6 bat1 tung4 bat1 soeng1 wai4 mau4
 道不拾遺	dou6 bat1 sap6 wai4
-道之所存，師之所存	dou6 zi1 so2 cyun4 ，si1 zi1 so2 cyun4
+道之所存，師之所存	dou6 zi1 so2 cyun4 si1 zi1 so2 cyun4
 道光帝	dou6 gwong1 dai3
 道卡斯族	dou6 kaa1 si1 zuk6
 道台	dou6 toi4
@@ -111800,7 +111860,7 @@ let dictWords = `我	ngo5
 道德敗壞	dou6 dak1 baai6 waai6
 道德淪喪	dou6 dak1 leon4 song3
 道德認識	dou6 dak1 jing6 sik1
-道所存者，乃師所存者	dou6 so2 cyun4 ze2 ，naai5 si1 so2 cyun4 ze2
+道所存者，乃師所存者	dou6 so2 cyun4 ze2 naai5 si1 so2 cyun4 ze2
 道拉吉里峰	dou6 laai1 gat1 lei5 fung1
 道指	dou6 zi2
 道教徒	dou6 gaau3 tou4
@@ -111827,8 +111887,8 @@ let dictWords = `我	ngo5
 道路工程	dou6 lou6 gung1 cing4
 道里	dou6 lei5
 道里區	dou6 lei5 keoi1
-道高一尺，魔高一丈	dou6 gou1 jat1 cek3 ，mo1 gou1 jat1 zoeng6
-道高益安，勢高益危	dou6 gou1 jik1 on1 ，sai3 gou1 jik1 ngai4
+道高一尺，魔高一丈	dou6 gou1 jat1 cek3 mo1 gou1 jat1 zoeng6
+道高益安，勢高益危	dou6 gou1 jik1 on1 sai3 gou1 jik1 ngai4
 達不到	daat6 bat1 dou3
 達仁	daat6 jan4
 達仁鄉	daat6 jan4 hoeng1
@@ -112202,7 +112262,7 @@ let dictWords = `我	ngo5
 遼陽縣	liu4 joeng4 jyun6
 遽然	geoi6 jin4
 避世絕俗	bei6 sai3 zyut6 zuk6
-避其銳氣，擊其惰歸	bei6 kei4 jeoi6 hei3 ，gik1 kei4 do6 gwai1
+避其銳氣，擊其惰歸	bei6 kei4 jeoi6 hei3 gik1 kei4 do6 gwai1
 避坑落井	bei6 haang1 lok6 zeng2
 避孕丸	bei6 jan6 jyun2
 避孕套	bei6 jan6 tou3
@@ -112788,7 +112848,7 @@ let dictWords = `我	ngo5
 配餐	pui3 caan1
 配體	pui3 tai2
 酎金	zau6 gam1
-酒不醉人人自醉，色不迷人人自迷	zau2 bat1 zeoi3 jan4 jan4 zi6 zeoi3 ，sik1 bat1 mai4 jan4 jan4 zi6 mai4
+酒不醉人人自醉，色不迷人人自迷	zau2 bat1 zeoi3 jan4 jan4 zi6 zeoi3 sik1 bat1 mai4 jan4 jan4 zi6 mai4
 酒井法子	zau2 zeng2 faat3 zi2
 酒令兒	zau2 ling6 ji4
 酒具	zau2 geoi6
@@ -113314,7 +113374,7 @@ let dictWords = `我	ngo5
 野漢子	je5 hon3 zi2
 野火	je5 fo2
 野火春風	je5 fo2 ceon1 fung1
-野火燒不盡，春風吹又生	je5 fo2 siu1 bat1 zeon6 ，ceon1 fung1 ceoi1 jau6 sang1
+野火燒不盡，春風吹又生	je5 fo2 siu1 bat1 zeon6 ceon1 fung1 ceoi1 jau6 sang1
 野炮	je5 paau3
 野營	je5 jing4
 野牛	je5 ngau4
@@ -113543,7 +113603,7 @@ let dictWords = `我	ngo5
 金灣	gam1 waan1
 金灣區	gam1 waan1 keoi1
 金烏	gam1 wu1
-金烏西墜，玉兔東昇	gam1 wu1 sai1 zeoi6 ，juk6 tou3 dung1 sing1
+金烏西墜，玉兔東昇	gam1 wu1 sai1 zeoi6 juk6 tou3 dung1 sing1
 金無足赤	gam1 mou4 zuk1 cek3
 金熊獎	gam1 hung4 zoeng2
 金燦燦	gam1 caan3 caan3
@@ -113553,8 +113613,8 @@ let dictWords = `我	ngo5
 金牛座	gam1 ngau4 zo6
 金獅獎	gam1 si1 zoeng2
 金玉	gam1 juk6
-金玉其外，敗絮其中	gam1 juk6 kei4 ngoi6 ，baai6 seoi5 kei4 zung1
-金玉其表，敗絮其中	gam1 juk6 kei4 biu2 ，baai6 seoi5 kei4 zung1
+金玉其外，敗絮其中	gam1 juk6 kei4 ngoi6 baai6 seoi5 kei4 zung1
+金玉其表，敗絮其中	gam1 juk6 kei4 biu2 baai6 seoi5 kei4 zung1
 金玉滿堂	gam1 juk6 mun5 tong4
 金玉良言	gam1 juk6 loeng4 jin4
 金球獎	gam1 kau4 zoeng2
@@ -114840,7 +114900,7 @@ let dictWords = `我	ngo5
 長泰	coeng4 taai3
 長泰縣	coeng4 taai3 jyun6
 長洲區	coeng4 zau1 keoi1
-長流水，不斷線	coeng4 lau4 seoi2, bat1 tyun5 sin3
+長流水，不斷線	coeng4 lau4 seoi2 bat1 tyun5 sin3
 長流流	coeng4 lau4 lau4
 長海	coeng4 hoi2
 長海縣	coeng4 hoi2 jyun6
@@ -114955,7 +115015,7 @@ let dictWords = `我	ngo5
 門巴族	mun4 baa1 zuk6
 門市部	mun4 si5 bou6
 門店	mun4 dim3
-門庭冷落，門堪羅雀	mun4 ting4 laang5 lok6 ，mun4 ham1 lo4 zoek3
+門庭冷落，門堪羅雀	mun4 ting4 laang5 lok6 mun4 ham1 lo4 zoek3
 門庭如市	mun4 ting4 jyu4 si5
 門庭若市	mun4 ting4 joek6 si5
 門廊	mun4 long4
@@ -115121,7 +115181,7 @@ let dictWords = `我	ngo5
 開士米	hoi1 si6 mai5
 開大價	hoi1 daai6 gaa3
 開大油門	hoi1 daai6 jau4 mun4
-開天索價，落地還錢	hoi1 tin1 saak3， lok6 dei6 waan4 cin4
+開天索價，落地還錢	hoi1 tin1 saak3 lok6 dei6 waan4 cin4
 開天避地	hoi1 tin1 bei6 dei6
 開天闢地	hoi1 tin1 pik1 dei6
 開始以前	hoi1 ci2 ji5 cin4
@@ -115288,7 +115348,7 @@ let dictWords = `我	ngo5
 開闢者	hoi1 pik1 ze2
 開除學籍	hoi1 ceoi4 hok6 zik6
 開除黨籍	hoi1 ceoi4 dong2 zik6
-開除黨籍，行政開除	hoi1 ceoi4 dong2 zik6 ，hang4 zing3 hoi1 ceoi4
+開除黨籍，行政開除	hoi1 ceoi4 dong2 zik6 hang4 zing3 hoi1 ceoi4
 開陽	hoi1 joeng4
 開陽縣	hoi1 joeng4 jyun6
 開集	hoi1 zaap6
@@ -115439,7 +115499,7 @@ let dictWords = `我	ngo5
 閻	jim4
 閻君	jim4 gwan1
 閻王	jim4 wong4
-閻王好見，小鬼難當	jim4 wong4 hou2 gin3, siu2 gwai2 naan4 dong1
+閻王好見，小鬼難當	jim4 wong4 hou2 gin3 siu2 gwai2 naan4 dong1
 閻王爺	jim4 wong4 je4
 閻老	jim4 lou5
 閻良	jim4 loeng4
@@ -115564,7 +115624,7 @@ let dictWords = `我	ngo5
 關鍵詞	gwaan1 gin6 ci4
 關門弟子	gwaan1 mun4 dai6 zi2
 關門捉賊	gwaan1 mun4 zuk3 caak6
-關關難過，關關過	gwaan1 gwaan1 naan4 gwo3, gwaan1 gwaan1 gwo3
+關關難過，關關過	gwaan1 gwaan1 naan4 gwo3 gwaan1 gwaan1 gwo3
 關防	gwaan1 fong4
 關隘	gwaan1 aai3
 關顧	gwaan1 gu3
@@ -117621,7 +117681,7 @@ let dictWords = `我	ngo5
 雷克雅未克	leoi4 hak1 ngaa5 mei6 hak1
 雷克雅維克	leoi4 hak1 ngaa5 wai4 hak1
 雷公打豆腐	leoi4 gung1 daa2 dau6 fu6
-雷公打豆腐，揀軟的欺	leoi4 gung1 daa2 dau6 fu6 ，gaan2 jyun5 dik1 hei1
+雷公打豆腐，揀軟的欺	leoi4 gung1 daa2 dau6 fu6 gaan2 jyun5 dik1 hei1
 雷公蛇	leoi4 gung1 se4
 雷公轟	leoi4 gung1 gwang1
 雷司令	leoi4 si1 ling4
@@ -117650,7 +117710,7 @@ let dictWords = `我	ngo5
 雷神之錘	leoi4 san4 zi1 ceoi4
 雷神公司	leoi4 san4 gung1 si1
 雷管	leoi4 gun2
-雷聲大，雨點小	leoi4 sing1 daai6 ，jyu5 dim2 siu2
+雷聲大，雨點小	leoi4 sing1 daai6 jyu5 dim2 siu2
 雷蒙德	leoi4 mung4 dak1
 雷蓋	leoi4 goi3
 雷諾	leoi4 nok6
@@ -118508,7 +118568,7 @@ let dictWords = `我	ngo5
 靠不住	kaau3 bat1 zyu6
 靠北	kaau3 bak1
 靠夭	kaau3 jiu2
-靠山吃山，靠水吃水	kaau3 saan1 hek3 saan1 ，kaau3 seoi2 hek3 seoi2
+靠山吃山，靠水吃水	kaau3 saan1 hek3 saan1 kaau3 seoi2 hek3 seoi2
 靠岸	kaau3 ngon6
 靠惡	kaau3 ok3
 靠盃	kaau3 bui1
@@ -118518,7 +118578,7 @@ let dictWords = `我	ngo5
 靠譜	kaau3 pou2
 靠走廊	kaau3 zau2 long4
 靠走道	kaau3 zau2 dou6
-靡不有初，鮮克有終	mei5 bat1 jau5 co1 ，sin2 hak1 jau5 zung1
+靡不有初，鮮克有終	mei5 bat1 jau5 co1 sin2 hak1 jau5 zung1
 靡有孑遺	mei5 jau5 kit3 wai4
 靡爛	mei4 laan6
 靡費	mei4 fai3
@@ -118676,7 +118736,7 @@ let dictWords = `我	ngo5
 鞞	bing2
 鞠育	guk1 juk6
 鞠躬盡力	guk1 gung1 zeon6 lik6
-鞠躬盡瘁，死而後已	guk1 gung1 zeon6 seoi6 ，sei2 ji4 hau6 ji5
+鞠躬盡瘁，死而後已	guk1 gung1 zeon6 seoi6 sei2 ji4 hau6 ji5
 鞣製	jau4 zai3
 鞣質	jau4 zat1
 鞣酸	jau4 syun1
@@ -118916,8 +118976,8 @@ let dictWords = `我	ngo5
 項目管理	hong6 muk6 gun2 lei5
 項英	hong6 jing1
 項莊舞劍	hong6 zong1 mou5 gim3
-項莊舞劍，志在沛公	hong6 zong1 mou5 gim3 ，zi3 zoi6 pui3 gung1
-項莊舞劍，意在沛公	hong6 zong1 mou5 gim3 ，ji3 zoi6 pui3 gung1
+項莊舞劍，志在沛公	hong6 zong1 mou5 gim3 zi3 zoi6 pui3 gung1
+項莊舞劍，意在沛公	hong6 zong1 mou5 gim3 ji3 zoi6 pui3 gung1
 項鏈	hong6 lin6
 項頸	hong6 geng2
 順位	seon6 wai6
@@ -119160,7 +119220,7 @@ let dictWords = `我	ngo5
 頭帕	tau4 paak3
 頭座	tau4 zo6
 頭彩	tau4 coi2
-頭懸梁，錐刺股	tau4 jyun4 loeng4 ，zeoi1 ci3 gu2
+頭懸梁，錐刺股	tau4 jyun4 loeng4 zeoi1 ci3 gu2
 頭戴式耳機	tau4 daai3 sik1 ji5 gei1
 頭房	tau4 fong2
 頭掂	tau4 dim6
@@ -119194,7 +119254,7 @@ let dictWords = `我	ngo5
 頭疼	tau4 tang4
 頭痛欲裂	tau4 tung3 juk6 lit6
 頭痛醫頭	tau4 tung3 ji1 tau4
-頭痛醫頭，腳痛醫腳	tau4 tung3 ji1 tau4 ，goek3 tung3 ji1 goek3
+頭痛醫頭，腳痛醫腳	tau4 tung3 ji1 tau4 goek3 tung3 ji1 goek3
 頭癬	tau4 sin2
 頭皮屑	tau4 pei4 sit3
 頭目	tau4 muk6
@@ -119461,7 +119521,7 @@ let dictWords = `我	ngo5
 顴弓	kyun4 gung1
 顴骨	kyun4 gwat1
 風中之燭	fung1 zung1 zi1 zuk1
-風中燭，瓦上霜	fung1 zung1 zuk1, ngaa5 soeng6 soeng1
+風中燭，瓦上霜	fung1 zung1 zuk1 ngaa5 soeng6 soeng1
 風俗習慣	fung1 zuk6 zaap6 gwaan3
 風信	fung1 seon3
 風信子	fung1 seon3 zi2
@@ -119502,7 +119562,7 @@ let dictWords = `我	ngo5
 風檔玻璃	fung1 dong2 bo1 lei1
 風櫃	fung1 gwai6
 風水佬呃你十年八年	fung1 seoi2 lou2 ak1 nei5 sap6 nin4 baat3 nin4
-風水佬呃你十年八年，唔呃得一世	fung1 seoi2 lou2 ak1 nei5 sap6 nin4 baat3 nin4 ，m4 ak1 dak1 jat1 sai3
+風水佬呃你十年八年，唔呃得一世	fung1 seoi2 lou2 ak1 nei5 sap6 nin4 baat3 nin4 m4 ak1 dak1 jat1 sai3
 風水尾	fung1 seoi2 mei5
 風油精	fung1 jau4 zing1
 風油軚	fung1 jau4 taai5
@@ -119700,11 +119760,11 @@ let dictWords = `我	ngo5
 飛鼠	fei1 syu2
 飛龍	fei1 lung4
 食七噉食	sik6 cat1 gam2 sik6
-食不厭精，膾不厭細	sik6 bat1 jim3 zing1 ，kui2 bat1 jim3 sai3
+食不厭精，膾不厭細	sik6 bat1 jim3 zing1 kui2 bat1 jim3 sai3
 食不果腹	sik6 bat1 gwo2 fuk1
 食不知味	sik6 bat1 zi1 mei6
-食之無味，棄之不甘	sik6 zi1 mou4 mei6, hei3 zi1 bat1 gam1
-食之無味，棄之可惜	sik6 zi1 mou4 mei6 ，hei3 zi1 ho2 sik1
+食之無味，棄之不甘	sik6 zi1 mou4 mei6 hei3 zi1 bat1 gam1
+食之無味，棄之可惜	sik6 zi1 mou4 mei6 hei3 zi1 ho2 sik1
 食井水	sik6 zeng2 seoi2
 食人俗	sik6 jan4 zuk6
 食人族	sik6 jan4 zuk6
@@ -119759,7 +119819,7 @@ let dictWords = `我	ngo5
 食用	sik6 jung6
 食療	sik6 liu4
 食皇家飯	sik6 wong4 gaa1 faan6
-食碗面，反碗底	sik6 wun2 min6 , faan2 wun2 dai2
+食碗面，反碗底	sik6 wun2 min6  faan2 wun2 dai2
 食碗麵反碗底	sik6 wun2 min6 faan2 wun2 dai2
 食神	sik6 san4
 食祿	sik6 luk6
@@ -119814,9 +119874,9 @@ let dictWords = `我	ngo5
 飫甘饜肥	jyu3 gam1 jim3 fei4
 飯剷頭	faan6 caan2 tau4
 飯島柳鶯	faan6 dou2 lau5 ang1
-飯後一支煙，賽過活神仙	faan6 hau6 jat1 zi1 jin1 ，coi3 gwo3 wut6 san4 sin1
+飯後一支煙，賽過活神仙	faan6 hau6 jat1 zi1 jin1 coi3 gwo3 wut6 san4 sin1
 飯後服用	faan6 hau6 fuk6 jung6
-飯後百步走，活到九十九	faan6 hau6 baak3 bou6 zau2 ，wut6 dou3 gau2 sap6 gau2
+飯後百步走，活到九十九	faan6 hau6 baak3 bou6 zau2 wut6 dou3 gau2 sap6 gau2
 飯托	faan6 tok3
 飯替	faan6 tai3
 飯桌	faan6 coek3
@@ -119876,7 +119936,7 @@ let dictWords = `我	ngo5
 飽和脂肪酸	baau2 wo4 zi1 fong1 syun1
 飽嗝兒	baau2 gaak3 ji4
 飽學	baau2 hok6
-飽暖思淫欲，飢寒起盜心	baau2 nyun5 si1 jam4 juk6, gei1 hon4 hei2 dou6 sam1
+飽暖思淫欲，飢寒起盜心	baau2 nyun5 si1 jam4 juk6 gei1 hon4 hei2 dou6 sam1
 飽死	baau2 sei2
 飽死荷蘭豆	baau2 sei2 ho4 laan1 dau6
 飽漢不知餓漢飢	baau2 hon3 bat1 zi1 ngo6 hon3 gei1
@@ -119889,7 +119949,7 @@ let dictWords = `我	ngo5
 飽讀	baau2 duk6
 飽足	baau2 zuk1
 飽食終日	baau2 sik6 zung1 jat6
-飽食終日，無所用心	baau2 sik6 zung1 jat6 ，mou4 so2 jung6 sam1
+飽食終日，無所用心	baau2 sik6 zung1 jat6 mou4 so2 jung6 sam1
 飽餐	baau2 caan1
 飽餐一頓	baau2 caan1 jat1 deon6
 飽餐戰飯	baau2 caan1 zin3 faan6
@@ -119914,9 +119974,9 @@ let dictWords = `我	ngo5
 餅肥	beng2 fei4
 餅鐺	beng2 caang1
 餅餌	beng2 nei6
-養兵千日，用兵一時	joeng5 bing1 cin1 jat6 ，jung6 bing1 jat1 si4
-養兵千日，用在一時	joeng5 bing1 cin1 jat6, jung6 zoi6 jat1 si4
-養兵千日，用在一朝	joeng5 bing1 cin1 jat6 ，jung6 zoi6 jat1 ziu1
+養兵千日，用兵一時	joeng5 bing1 cin1 jat6 jung6 bing1 jat1 si4
+養兵千日，用在一時	joeng5 bing1 cin1 jat6 jung6 zoi6 jat1 si4
+養兵千日，用在一朝	joeng5 bing1 cin1 jat6 jung6 zoi6 jat1 ziu1
 養和醫院	joeng5 wo4 ji1 jyun2
 養唔熟	joeng5 m4 suk6
 養地	joeng5 dei6
@@ -120438,7 +120498,7 @@ let dictWords = `我	ngo5
 馬尾水	maa5 mei5 seoi2
 馬尾水師學堂	maa5 mei5 seoi2 si1 hok6 tong4
 馬尾港	maa5 mei5 gong2
-馬尾穿豆腐，提不起來	maa5 mei5 cyun1 dau6 fu6 ，tai4 bat1 hei2 loi4
+馬尾穿豆腐，提不起來	maa5 mei5 cyun1 dau6 fu6 tai4 bat1 hei2 loi4
 馬尾軍港	maa5 mei5 gwan1 gong2
 馬尾辮	maa5 mei5 bin1
 馬尿水	maa5 niu6 seoi2
@@ -120504,7 +120564,7 @@ let dictWords = `我	ngo5
 馬氏管	maa5 si6 gun2
 馬洛	maa5 lok6
 馬海毛	maa5 hoi2 mou4
-馬無夜草不肥，人無外快不富	maa5 mou4 je6 cou2 bat1 fei4 ，jan4 mou4 ngoi6 faai3 bat1 fu3
+馬無夜草不肥，人無外快不富	maa5 mou4 je6 cou2 bat1 fei4 jan4 mou4 ngoi6 faai3 bat1 fu3
 馬熊	maa5 hung4
 馬燈	maa5 dang1
 馬爾他	maa5 ji5 taa1
@@ -121670,7 +121730,7 @@ let dictWords = `我	ngo5
 魔障	mo1 zoeng3
 魔難	mo1 naan6
 魔頭	mo1 tau4
-魔高一丈，道高一尺	mo1 gou1 jat1 zoeng6 ，dou6 gou1 jat1 cek3
+魔高一丈，道高一尺	mo1 gou1 jat1 zoeng6 dou6 gou1 jat1 cek3
 魔鬼島	mo1 gwai2 dou2
 魔鬼粘	mo1 gwai2 nim4
 魔鬼魚	mo1 gwai2 jyu2
@@ -121708,7 +121768,7 @@ let dictWords = `我	ngo5
 魚漂	jyu4 piu1
 魚狗	jyu4 gau2
 魚獲	jyu4 wok6
-魚生火，肉生痰，青菜豆腐保平安	jyu4 sang1 fo2 ，juk6 sang1 taam4 ，cing1 coi3 dau6 fu6 bou2 ping4 on1
+魚生火，肉生痰，青菜豆腐保平安	jyu4 sang1 fo2 juk6 sang1 taam4 cing1 coi3 dau6 fu6 bou2 ping4 on1
 魚生粥	jyu4 saang1 zuk1
 魚皮餃	jyu4 pei4 gaau2
 魚目混珠	jyu4 muk6 wan6 zyu1
@@ -121951,9 +122011,9 @@ let dictWords = `我	ngo5
 鱷龍	ngok6 lung4
 鱸	lou4
 鲅魚圈區	bat6 jyu2 hyun1 keoi1
-鳥不拉屎，雞不生蛋	niu5 bat1 laai1 si2, gai1 bat1 sang1 daan2
+鳥不拉屎，雞不生蛋	niu5 bat1 laai1 si2 gai1 bat1 sang1 daan2
 鳥不生蛋	niu5 bat1 saang1 daan2
-鳥不生蛋，狗不拉屎	niu5 bat1 sang1 daan2, gau2 bat1 laai1 si2
+鳥不生蛋，狗不拉屎	niu5 bat1 sang1 daan2 gau2 bat1 laai1 si2
 鳥事	niu5 si6
 鳥人	niu5 jan4
 鳥兒	niu5 ji4
@@ -122229,7 +122289,7 @@ let dictWords = `我	ngo5
 鷲科	zau6 fo1
 鷲鳥	zau6 niu5
 鷸蚌相爭	wat6 pong5 soeng1 zang1
-鷸蚌相爭，漁翁得利	wat6 pong5 soeng1 zang1 ，jyu4 jung1 dak1 lei6
+鷸蚌相爭，漁翁得利	wat6 pong5 soeng1 zang1 jyu4 jung1 dak1 lei6
 鷹嘴豆	jing1 zeoi2 dau2
 鷹嘴豆麵粉	jing1 zeoi2 dau2 min6 fan2
 鷹手營子礦	jing1 sau2 jing4 zi2 kwong3
@@ -122915,7 +122975,7 @@ let dictWords = `我	ngo5
 黃麻	wong4 maa4
 黃鼠狼	wong4 syu2 long4
 黃鼠狼給雞拜年	wong4 syu2 long4 kap1 gai1 baai3 nin4
-黃鼠狼給雞拜年，沒安好心	wong4 syu2 long4 kap1 gai1 baai3 nin4 ，mut6 on1 hou2 sam1
+黃鼠狼給雞拜年，沒安好心	wong4 syu2 long4 kap1 gai1 baai3 nin4 mut6 on1 hou2 sam1
 黃鼬	wong4 jau6
 黃龍病	wong4 lung4 beng6
 黃龍縣	wong4 lung4 jyun6
@@ -123684,7 +123744,7 @@ let dictWords = `我	ngo5
 龍涎香	lung4 jin4 hoeng1
 龍港	lung4 gong2
 龍港區	lung4 gong2 keoi1
-龍游淺水，遭蝦戲	lung4 jau4 cin2 seoi2, zou1 haa1 hei3
+龍游淺水，遭蝦戲	lung4 jau4 cin2 seoi2 zou1 haa1 hei3
 龍湖	lung4 wu4
 龍湖區	lung4 wu4 keoi1
 龍潭	lung4 taam4
