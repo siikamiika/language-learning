@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-import sys
+import os
+import json
+from os.path import dirname, realpath
+import tornado.ioloop
+import tornado.web
+
+os.chdir(dirname(realpath(__file__)))
+
 
 class CantoParser(object):
     def __init__(self, dict_path):
@@ -49,7 +56,7 @@ class CantoParser(object):
         if word in self.dict:
             return self.dict[word]
         else:
-            return ''
+            return None
 
     def _read_dict(self):
         with open(self.dict_path) as f:
@@ -89,9 +96,32 @@ class CantoParser(object):
                 if reading not in self.dict[char]:
                     self.dict[char].append(reading)
 
+
+class ParseHandler(tornado.web.RequestHandler):
+    def initialize(self, parser):
+        self.parser = parser
+
+    def post(self):
+        input_data = json.loads(self.request.body.decode('utf-8'))
+        result = [self.parser.parse_text(l) for l in input_data['text'].splitlines()]
+        self.write(json.dumps(result))
+
+
+def get_app(parser):
+    return tornado.web.Application([
+        (r'/parse', ParseHandler, dict(parser=parser)),
+        (r'/(.*)', tornado.web.StaticFileHandler,
+         {'path': 'static', 'default_filename': 'index.html'}),
+    ])
+
+
 def main():
     canto_parser = CantoParser('sorted_words_expanded.txt')
-    print(canto_parser.parse_text(' '.join(sys.argv[1:])))
+    address, port = '', 9899
+    app = get_app(canto_parser)
+    app.listen(port, address=address)
+    main_loop = tornado.ioloop.IOLoop.instance()
+    main_loop.start()
 
 if __name__ == '__main__':
     main()

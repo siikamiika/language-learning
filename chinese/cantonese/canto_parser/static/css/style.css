@@ -1,0 +1,28 @@
+#text-input {
+    width: 90%;
+}
+
+.output-row {
+    font-size: 32px;
+}
+
+.wordreading {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.word {
+    border-bottom: 3px solid black;
+}
+
+.reading {
+    font-size: 10px;
+}
+
+.reading:after {
+    content: "/";
+}
+
+.reading:last-child:after {
+    content: '';
+}
