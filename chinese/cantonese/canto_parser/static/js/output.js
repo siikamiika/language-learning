@@ -16,8 +16,13 @@ class Output {
             // row
             this.outputTextElement.appendChild(buildDom({E: 'div',
                 className: 'output-row',
-                // word with readings
-                C: line.map(word => ({E: 'ruby',
+                // tts
+                C: [{E: 'button',
+                    onclick: _ => this.view.app.api.tts(line.map(w => w[0]).join('')),
+                    C: '🔊'
+                }]
+                // words with readings
+                .concat(line.map(word => ({E: 'ruby',
                     className: 'wordreading',
                     onclick: _ => this._outputWordInfo(word[0]),
                     C: [
@@ -41,7 +46,7 @@ class Output {
                         },
                     ]
                 }))
-            }));
+            )}));
         }
     }
 
@@ -49,11 +54,25 @@ class Output {
         clearChildren(this.readingInfoElement);  // hide unrelated info
         clearChildren(this.wordInfoElement);
 
-        this.wordInfoElement.appendChild(buildDom({E: 'div',
-            C: word
-        }));
+        let outputTranslations = (data) => {
+            this.wordInfoElement.appendChild(buildDom({E: 'div',
+                C: {E: 'ul',
+                    C: data.map(tl => ({E: 'li',
+                        C: [
+                            {E: 'span', className: 'word-trad', C: word}, ' ',
+                            {E: 'span', className: 'word-simp', C: `(${tl[0]})`}, ' ',
+                            {E: 'span', className: 'reading-canto', C: tl[2]}, ' ',
+                            {E: 'span', className: 'reading-mandarin', C: `{${tl[1]}}`},
+                            {E: 'ol', C: tl[3].split('/').filter(g => g).map(gloss => ({E: 'li', C: gloss}))}
+                        ]
+                    }))
+                }
+            }));
+        }
+        this.view.app.api.get('dict', {query: word}, null, outputTranslations);
     }
 
+    // TODO
     _outputCharInfo(character) {
         clearChildren(this.charInfoElement);
 
@@ -62,6 +81,7 @@ class Output {
         }));
     }
 
+    // TODO
     _outputReadingInfo(reading) {
         clearChildren(this.wordInfoElement);  // hide unrelated info
         clearChildren(this.charInfoElement);  //

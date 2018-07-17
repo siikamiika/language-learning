@@ -8,6 +8,25 @@ import tornado.web
 os.chdir(dirname(realpath(__file__)))
 
 
+class CantoDict(object):
+    def __init__(self, dict_path):
+        self.dict_path = dict_path
+        self.dict = {}
+        self._read_dict()
+
+    def query(self, word):
+        return self.dict.get(word) or []
+
+    def _read_dict(self):
+        with open(self.dict_path) as f:
+            words = [w.split('\t') for w in f.read().splitlines()]
+        for word in words:
+            key = word[0]
+            if key not in self.dict:
+                self.dict[key] = []
+            self.dict[key].append(word[1:])
+
+
 class CantoParser(object):
     def __init__(self, dict_path):
         self.dict_path = dict_path
@@ -102,14 +121,28 @@ class ParseHandler(tornado.web.RequestHandler):
         self.parser = parser
 
     def post(self):
+        self.set_header('Content-Type', 'application/json')
         input_data = json.loads(self.request.body.decode('utf-8'))
         result = [self.parser.parse_text(l) for l in input_data['text'].splitlines()]
-        self.write(json.dumps(result))
+        self.write(json.dumps(result, ensure_ascii=False))
 
 
-def get_app(parser):
+class DictHandler(tornado.web.RequestHandler):
+    def initialize(self, dictionary):
+        self.dictionary = dictionary
+
+    def get(self):
+        self.set_header('Cache-Control', 'max-age=3600')
+        self.set_header('Content-Type', 'application/json')
+        query = self.get_query_argument('query').strip()
+        result = self.dictionary.query(query)
+        self.write(json.dumps(result, ensure_ascii=False))
+
+
+def get_app(parser, dictionary):
     return tornado.web.Application([
         (r'/parse', ParseHandler, dict(parser=parser)),
+        (r'/dict', DictHandler, dict(dictionary=dictionary)),
         (r'/(.*)', tornado.web.StaticFileHandler,
          {'path': 'static', 'default_filename': 'index.html'}),
     ])
@@ -117,8 +150,9 @@ def get_app(parser):
 
 def main():
     canto_parser = CantoParser('sorted_words_expanded.txt')
+    canto_dict = CantoDict('canto_dict_combined.txt')
     address, port = '', 9899
-    app = get_app(canto_parser)
+    app = get_app(canto_parser, canto_dict)
     app.listen(port, address=address)
     main_loop = tornado.ioloop.IOLoop.instance()
     main_loop.start()

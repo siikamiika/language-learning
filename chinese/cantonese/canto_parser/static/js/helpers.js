@@ -93,3 +93,5 @@ const intersect = (xs,ys,...rest) => ys === undefined ? xs : intersect(intersect
 function range(start, end) {
     return new Array(end - start).fill().map((d, i) => i + start);
 }
+
+const obj2qs = obj => Object.keys(obj).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(obj[key])}`).join('&');

@@ -26,3 +26,15 @@
 .reading:last-child:after {
     content: '';
 }
+
+.word-trad {
+    font-size: 28px;
+}
+
+.word-simp {
+    color: gray;
+}
+
+.reading-mandarin {
+    color: gray;
+}
