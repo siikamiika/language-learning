@@ -54,6 +54,22 @@ class Output {
         clearChildren(this.readingInfoElement);  // hide unrelated info
         clearChildren(this.wordInfoElement);
 
+        // external links
+        this.wordInfoElement.appendChild(buildDom({E: 'div',
+            id: 'external-links',
+            C: {E: 'ul',
+                C: EXTERNAL_LINKS.word.map(link => ({E: 'li',
+                    C: {E: 'a',
+                        rel: 'noopener noreferrer',
+                        target: '_blank',
+                        href: link.urlTemplate.replace('%QUERY%', word),
+                        C: `[${link.name}]`
+                    }
+                }))
+            }
+        }));
+
+        // translations
         let outputTranslations = (data) => {
             this.wordInfoElement.appendChild(buildDom({E: 'div',
                 C: {E: 'ul',

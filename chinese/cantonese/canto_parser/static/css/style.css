@@ -38,3 +38,21 @@
 .reading-mandarin {
     color: gray;
 }
+
+#external-links {
+    padding-bottom: 20px;
+}
+
+#external-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#external-links li {
+    float: left;
+}
+
+#external-links li:after {
+    content: ' ';
+}
