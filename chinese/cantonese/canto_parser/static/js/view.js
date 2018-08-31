@@ -13,6 +13,7 @@ class View {
         this.charInfoElement = null;
         this.wordInfoElement = null;
         this.readingInfoElement = null;
+        this.synonymInfoElement = null;
 
         for (let k in this.app.elementIds) {
             this[k] = document.getElementById(this.app.elementIds[k]);

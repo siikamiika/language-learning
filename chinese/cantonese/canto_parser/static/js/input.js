@@ -6,6 +6,10 @@ class Input {
         this.textInputElement = this.view.textInputElement;
 
         this.inputElement.addEventListener('input', this._oninput.bind(this));
+
+        this.view.app.api.socket('ws://localhost:9873', null, null, data => {
+            this._oninput({target: {value: data.data}});
+        });
     }
 
     _oninput(event) {

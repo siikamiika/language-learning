@@ -4,8 +4,8 @@ class App {
         this.elementIds = elementIds;
         this.settings = {};
 
-        this.view = new View(this);
         this.api = new Api(this);
+        this.view = new View(this);
     }
 
 }
@@ -18,4 +18,5 @@ const app = new App({
     charInfoElement: 'char-info',
     wordInfoElement: 'word-info',
     readingInfoElement: 'reading-info',
+    synonymInfoElement: 'synonym-info',
 });

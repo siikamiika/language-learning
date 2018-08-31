@@ -4,6 +4,8 @@ class Api {
         this.app = app;
 
         this.urlBase = `http://${location.host}/`;
+
+        this.ws = null;
     }
 
     async _request(method, path, data, headers, callback) {
@@ -23,6 +25,17 @@ class Api {
     async get(path, query, headers, callback) {
         query = query || {};
         await this._request('GET', `${path}?${obj2qs(query)}`, null, headers, callback);
+    }
+
+    socket(url, onopen, onclose, onmessage) {
+        onopen = onopen || (_ => {});
+        onclose = onclose || (_ => {});
+        onmessage = onmessage || (_ => {});
+
+        this.ws = new WebSocket(url);
+        this.ws.onopen = onopen;
+        this.ws.onclose = onclose;
+        this.ws.onmessage = onmessage;
     }
 
     tts(text, lang) {

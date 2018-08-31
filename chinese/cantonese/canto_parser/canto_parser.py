@@ -116,6 +116,21 @@ class CantoParser(object):
                     self.dict[char].append(reading)
 
 
+class SynonymDict(object):
+    def __init__(self, dict_path):
+        self.dict_path = dict_path
+        self.dict = {}
+        self._read_dict()
+
+    def query(self, word):
+        return self.dict.get(word) or []
+
+    def _read_dict(self):
+        with open(self.dict_path) as f:
+            for word, *synonyms in [l.split('\t') for l in f.read().splitlines()]:
+                self.dict[word] = synonyms
+
+
 class ParseHandler(tornado.web.RequestHandler):
     def initialize(self, parser):
         self.parser = parser
@@ -139,10 +154,23 @@ class DictHandler(tornado.web.RequestHandler):
         self.write(json.dumps(result, ensure_ascii=False))
 
 
-def get_app(parser, dictionary):
+class SynonymDictHandler(tornado.web.RequestHandler):
+    def initialize(self, dictionary):
+        self.dictionary = dictionary
+
+    def get(self):
+        self.set_header('Cache-Control', 'max-age=3600')
+        self.set_header('Content-Type', 'application/json')
+        query = self.get_query_argument('query').strip()
+        result = self.dictionary.query(query)
+        self.write(json.dumps(result, ensure_ascii=False))
+
+
+def get_app(parser, dictionary, synonym_dictionary):
     return tornado.web.Application([
         (r'/parse', ParseHandler, dict(parser=parser)),
         (r'/dict', DictHandler, dict(dictionary=dictionary)),
+        (r'/synonym_dict', SynonymDictHandler, dict(dictionary=synonym_dictionary)),
         (r'/(.*)', tornado.web.StaticFileHandler,
          {'path': 'static', 'default_filename': 'index.html'}),
     ])
@@ -151,8 +179,9 @@ def get_app(parser, dictionary):
 def main():
     canto_parser = CantoParser('sorted_words_expanded.txt')
     canto_dict = CantoDict('canto_dict_combined.txt')
+    synonym_dictionary = SynonymDict('hk_synonyms.tsv')
     address, port = '', 9899
-    app = get_app(canto_parser, canto_dict)
+    app = get_app(canto_parser, canto_dict, synonym_dictionary)
     app.listen(port, address=address)
     main_loop = tornado.ioloop.IOLoop.instance()
     main_loop.start()

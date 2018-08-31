@@ -7,6 +7,7 @@ class Output {
         this.charInfoElement = this.view.charInfoElement;
         this.wordInfoElement = this.view.wordInfoElement;
         this.readingInfoElement = this.view.readingInfoElement;
+        this.synonymInfoElement = this.view.synonymInfoElement;
     }
 
     outputText(data) {
@@ -50,9 +51,23 @@ class Output {
         }
     }
 
-    _outputWordInfo(word) {
+    _outputWordInfo(word, skipSynonyms) {
         clearChildren(this.readingInfoElement);  // hide unrelated info
         clearChildren(this.wordInfoElement);
+
+        // synonyms
+        if (!skipSynonyms) {
+            clearChildren(this.synonymInfoElement);
+            let outputSynonyms = (data) => {
+                this.synonymInfoElement.appendChild(buildDom({E: 'ul',
+                    C: data.map(w => ({E: 'li',
+                        onclick: _ => this._outputWordInfo(w, true),
+                        C: w
+                    }))
+                }));
+            }
+            this.view.app.api.get('synonym_dict', {query: word}, null, outputSynonyms);
+        }
 
         // external links
         this.wordInfoElement.appendChild(buildDom({E: 'div',
