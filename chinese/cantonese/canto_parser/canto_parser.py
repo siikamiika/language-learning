@@ -79,14 +79,17 @@ class CantoParser(object):
 
     def _read_dict(self):
         with open(self.dict_path) as f:
-            words = [w.split('\t') for w in f.read().splitlines()]
+            words = [(lambda l: [l[0], l[2]])(w.split('\t')) for w in f.read().splitlines()]
         # generate readings for individual characters not in the dictionary by themselves
         chars = {}
         for word, reading in words:
             # add word to dictionary
             if word not in self.dict:
                 self.dict[word] = []
-            self.dict[word].append(reading)
+            readings = reading.split('/')
+            for reading in readings:
+                if reading and reading not in self.dict[word]:
+                    self.dict[word].append(reading)
             # add word to trie and individual chars to chars
             trie_pos = self.trie
             char_readings = reading.split()
@@ -177,8 +180,8 @@ def get_app(parser, dictionary, synonym_dictionary):
 
 
 def main():
-    canto_parser = CantoParser('sorted_words_expanded.txt')
-    canto_dict = CantoDict('canto_dict_combined.txt')
+    canto_parser = CantoParser('combined_dict.tsv')
+    canto_dict = CantoDict('combined_dict.tsv')
     synonym_dictionary = SynonymDict('hk_synonyms.tsv')
     address, port = '', 9899
     app = get_app(canto_parser, canto_dict, synonym_dictionary)

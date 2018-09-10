@@ -91,9 +91,9 @@ class Output {
                     C: data.map(tl => ({E: 'li',
                         C: [
                             {E: 'span', className: 'word-trad', C: word}, ' ',
-                            {E: 'span', className: 'word-simp', C: `(${tl[0]})`}, ' ',
-                            {E: 'span', className: 'reading-canto', C: tl[2]}, ' ',
-                            {E: 'span', className: 'reading-mandarin', C: `{${tl[1]}}`},
+                            {E: 'span', className: 'word-type', C: tl[2]}, ' ',
+                            {E: 'span', className: 'reading-canto', C: tl[1]}, ' ',
+                            {E: 'span', className: 'reading-mandarin', C: `{${tl[0]}}`},
                             {E: 'ol', C: tl[3].split('/').filter(g => g).map(gloss => ({E: 'li', C: gloss}))}
                         ]
                     }))
