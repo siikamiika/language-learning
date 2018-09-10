@@ -19,6 +19,20 @@ CANTODICT_CHAR_PATT = re.compile(r'^(.)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?$')
 # single pinyin reading
 PINYIN_PATT = re.compile(r'([a-z]+)([1-9/*]+)')
 
+# fix common errors
+REPLACEMENTS = {
+    'yau': 'jau',
+    'au': 'jau',
+    'jua': 'jau',
+    'seong': 'soeng',
+    'leong': 'loeng',
+    'zeong': 'zoeng',
+    'ceong': 'coeng',
+    'geong': 'goeng',
+    'jeong': 'joeng',
+    'heong': 'hoeng',
+}
+
 
 class DictEntry(object):
     def __init__(self):
@@ -41,18 +55,25 @@ def detect_filetype(filename):
                     return filetype
 
 def expand(reading):
-    if not reading[0]:
+    base = reading[0]
+    if base in REPLACEMENTS:
+        base = REPLACEMENTS[base]
+    elif not base:
         return []
     readings = []
     for tone in set(re.split(r'[/*]', reading[1])):
-        readings.append(reading[0] + tone)
+        readings.append(base + tone)
     return readings
 
 def normalize_pinyin(word, pinyin):
     pinyin = pinyin.lower()
-    parts = PINYIN_PATT.findall(pinyin)
+    parts = list(PINYIN_PATT.findall(pinyin))
     if len(word) == 1 < len(parts):
-        return '/'.join([''.join(p) for p in sorted(parts)])
+        readings = set()
+        for part in parts:
+            for reading in expand(part):
+                readings.add(reading)
+        return '/'.join(sorted(readings))
     else:
         readings = itertools.product(*[expand(r) for r in parts])
         return '/'.join([' '.join(r) for r in sorted(readings)])
@@ -109,8 +130,8 @@ def combine_dictionaries():
             key = (traditional, pinyin)
             if key not in combined_dict:
                 combined_dict[key] = DictEntry()
+                combined_dict[key].jyutping = jyutping
             combined_dict[key].type = type
-            combined_dict[key].jyutping = jyutping  # authoritative; override
             combined_dict[key].definitions.append(definition)
 
     return combined_dict
