@@ -52,8 +52,6 @@ def normalize_pinyin(word, pinyin):
     pinyin = pinyin.lower()
     parts = PINYIN_PATT.findall(pinyin)
     if len(word) == 1 < len(parts):
-        if word == '妳':
-            print(parts, file=sys.stderr)
         return '/'.join([''.join(p) for p in sorted(parts)])
     else:
         readings = itertools.product(*[expand(r) for r in parts])
