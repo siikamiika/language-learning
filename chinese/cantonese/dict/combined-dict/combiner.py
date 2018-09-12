@@ -17,7 +17,7 @@ CANTODICT_PATT = re.compile(r'^(...*)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?$')
 CANTODICT_CHAR_PATT = re.compile(r'^(.)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?$')
 
 # single pinyin reading
-PINYIN_PATT = re.compile(r'([a-z]+)([1-9/*]+)')
+PINYIN_PATT = re.compile(r'([a-z:]+)([1-9/*]+)')
 
 # fix common errors
 REPLACEMENTS = {
@@ -31,6 +31,7 @@ REPLACEMENTS = {
     'geong': 'goeng',
     'jeong': 'joeng',
     'heong': 'hoeng',
+    'seung': 'soeng',
 }
 
 
@@ -56,6 +57,7 @@ def detect_filetype(filename):
 
 def expand(reading):
     base = reading[0]
+    base = base.replace('u:', 'v')
     if base in REPLACEMENTS:
         base = REPLACEMENTS[base]
     elif not base:
