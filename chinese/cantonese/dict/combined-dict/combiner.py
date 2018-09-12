@@ -130,6 +130,7 @@ def combine_dictionaries():
             key = (traditional, pinyin)
             if key not in combined_dict:
                 combined_dict[key] = DictEntry()
+            if not combined_dict[key].jyutping:
                 combined_dict[key].jyutping = jyutping
             combined_dict[key].type = type
             combined_dict[key].definitions.append(definition)

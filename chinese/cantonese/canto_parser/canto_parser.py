@@ -4,6 +4,7 @@ import json
 from os.path import dirname, realpath
 import tornado.ioloop
 import tornado.web
+import re
 
 os.chdir(dirname(realpath(__file__)))
 
@@ -93,6 +94,7 @@ class CantoParser(object):
             # add word to trie and individual chars to chars
             trie_pos = self.trie
             char_readings = reading.split()
+            word = re.sub(r'[,，.?!？！]', '', word)
             if len(char_readings) != len(word):
                 # TODO: handle these instead of skipping
                 continue
