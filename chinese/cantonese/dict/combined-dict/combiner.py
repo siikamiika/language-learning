@@ -61,22 +61,37 @@ def expand(reading):
     elif not base:
         return []
     readings = []
-    for tone in set(re.split(r'[/*]', reading[1])):
+    for tone in set(re.split(r'[/*]+', reading[1])):
         readings.append(base + tone)
     return readings
 
 def normalize_pinyin(word, pinyin):
     pinyin = pinyin.lower()
-    parts = list(PINYIN_PATT.findall(pinyin))
-    if len(word) == 1 < len(parts):
-        readings = set()
-        for part in parts:
-            for reading in expand(part):
-                readings.add(reading)
-        return '/'.join(sorted(readings))
+
+    length_test = [PINYIN_PATT.findall(p) for p in re.split(r'(?<=[\s\d])/(?=[^\d*])', pinyin)]
+    if len(length_test) == 1:
+        parts = length_test[0]
+        if len(word) == 1 < len(parts):
+            readings = set()
+            for part in parts:
+                for reading in expand(part):
+                    readings.add(reading)
+            return '/'.join(sorted(readings))
+        else:
+            readings = itertools.product(*[expand(r) for r in parts])
+            return '/'.join([' '.join(r) for r in sorted(readings)])
+    elif (len(length_test) == 2 and len(length_test[0]) == len(length_test[1])):
+        return '/'.join([' '.join([''.join(p) for p in r]) for r in sorted(length_test)])
     else:
-        readings = itertools.product(*[expand(r) for r in parts])
+        readings = [expand(p) for p in length_test[0]]
+        for part in length_test[1:]:
+            first, rest = part[0], part[1:]
+            readings[-1] += expand(first)
+            for p in rest:
+                readings.append(expand(p))
+        readings = list(itertools.product(*readings))
         return '/'.join([' '.join(r) for r in sorted(readings)])
+
 
 def parse_entries(filename, pattern):
     with open(filename) as f:
@@ -95,20 +110,27 @@ def combine_dictionaries():
             input_files[filetype] = filename
 
     combined_dict = {}
+    pinyin_by_traditional = {}
+    def cache_pinyin(traditional, pinyin):
+        if traditional not in pinyin_by_traditional:
+            pinyin_by_traditional[traditional] = set()
+        pinyin_by_traditional[traditional].add(pinyin)
 
     # basic cedict
     for traditional, _, pinyin, definition in parse_entries(input_files[CEDICT_PATT], CEDICT_PATT):
         pinyin = normalize_pinyin(traditional, pinyin)
         key = (traditional, pinyin)
+        cache_pinyin(traditional, pinyin)
         if key not in combined_dict:
             combined_dict[key] = DictEntry()
-        combined_dict[key].definitions.append(definition)
+        combined_dict[key].definitions.append(f'[CC] {definition}')
 
     # add jyutping
     for traditional, _, pinyin, jyutping in parse_entries(input_files[CCCEDICT_CANTO_PATT], CCCEDICT_CANTO_PATT):
         pinyin = normalize_pinyin(traditional, pinyin)
         jyutping = normalize_pinyin(traditional, jyutping)
         key = (traditional, pinyin)
+        cache_pinyin(traditional, pinyin)
         if key in combined_dict:
             combined_dict[key].jyutping = jyutping
 
@@ -117,15 +139,22 @@ def combine_dictionaries():
         pinyin = normalize_pinyin(traditional, pinyin)
         jyutping = normalize_pinyin(traditional, jyutping)
         key = (traditional, pinyin)
+        cache_pinyin(traditional, pinyin)
         if key not in combined_dict:
             combined_dict[key] = DictEntry()
         combined_dict[key].jyutping = jyutping
-        combined_dict[key].definitions.append(definition)
+        definition = re.sub(r'1\.\s?', '', definition)
+        definition = re.sub(r'\s*?/\s*', ', ', definition)
+        definition = re.sub(r';?\s?\d\.\s?|;\s?', '/', definition)
+        combined_dict[key].definitions.append(f'[CCC] {definition}')
 
     # merge cantodict
     for filename, patt in [(input_files[p], p) for p in [CANTODICT_PATT, CANTODICT_CHAR_PATT]]:
         for traditional, jyutping, pinyin, definition, type, _ in parse_entries(filename, patt):
-            pinyin = normalize_pinyin(traditional, pinyin)
+            if not pinyin and traditional in pinyin_by_traditional:
+                pinyin = next(iter(pinyin_by_traditional[traditional]))
+            else:
+                pinyin = normalize_pinyin(traditional, pinyin)
             jyutping = normalize_pinyin(traditional, jyutping)
             key = (traditional, pinyin)
             if key not in combined_dict:
@@ -133,7 +162,7 @@ def combine_dictionaries():
             if not combined_dict[key].jyutping:
                 combined_dict[key].jyutping = jyutping
             combined_dict[key].type = type
-            combined_dict[key].definitions.append(definition)
+            combined_dict[key].definitions.append(f'[CD] {definition}')
 
     return combined_dict
 
@@ -143,12 +172,11 @@ def main():
     for key in sorted(combined_dict):
         traditional, pinyin = key
         entry = combined_dict[key]
-        for definition in entry.definitions:
-            output_line = '\t'.join((traditional, pinyin, entry.jyutping, entry.type, definition))
-            if output_line.count('\t') == 4:
-                print(output_line)
-            else:
-                raise Exception(f'Invalid output line: {output_line}')
+        output_line = '\t'.join((traditional, pinyin, entry.jyutping, entry.type, '/'.join(entry.definitions)))
+        if output_line.count('\t') == 4:
+            print(output_line)
+        else:
+            raise Exception(f'Invalid output line: {output_line}')
 
 if __name__ == '__main__':
     main()
