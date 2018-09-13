@@ -17,21 +17,22 @@ CANTODICT_PATT = re.compile(r'^(...*)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?$')
 CANTODICT_CHAR_PATT = re.compile(r'^(.)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?$')
 
 # single pinyin reading
-PINYIN_PATT = re.compile(r'([a-z:]+)([1-9/*]+)')
+PINYIN_PATT = re.compile(r'([a-zü:]+)([1-9/*]+)')
 
 # fix common errors
 REPLACEMENTS = {
-    'yau': 'jau',
-    'au': 'jau',
-    'jua': 'jau',
-    'seong': 'soeng',
-    'leong': 'loeng',
-    'zeong': 'zoeng',
-    'ceong': 'coeng',
-    'geong': 'goeng',
-    'jeong': 'joeng',
-    'heong': 'hoeng',
-    'seung': 'soeng',
+    re.compile('^yau$'): 'jau',
+    re.compile('^au$'): 'jau',
+    re.compile('^jua$'): 'jau',
+    re.compile('eong$'): 'oeng',
+    re.compile('eung$'): 'oeng',
+    re.compile('u:|ü'): 'v',
+}
+
+TONE_REPLACEMENTS = {
+    '7': '1',
+    '8': '3',
+    '9': '6',
 }
 
 
@@ -57,13 +58,12 @@ def detect_filetype(filename):
 
 def expand(reading):
     base = reading[0]
-    base = base.replace('u:', 'v')
-    if base in REPLACEMENTS:
-        base = REPLACEMENTS[base]
-    elif not base:
-        return []
+    for replace in REPLACEMENTS:
+        base = replace.sub(REPLACEMENTS[replace], base)
     readings = []
     for tone in set(re.split(r'[/*]+', reading[1])):
+        if tone in TONE_REPLACEMENTS:
+            tone = TONE_REPLACEMENTS[tone]
         readings.append(base + tone)
     return readings
 
