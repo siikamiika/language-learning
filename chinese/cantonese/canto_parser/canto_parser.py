@@ -5,18 +5,56 @@ from os.path import dirname, realpath
 import tornado.ioloop
 import tornado.web
 import re
+import itertools
 
 os.chdir(dirname(realpath(__file__)))
 
 
+class VariantConverter(object):
+    def __init__(self, simp_to_trad_path, trad_to_simp_path):
+        self.simp_to_trad_dict = self._parse_dict(simp_to_trad_path)
+        self.trad_to_simp_dict = self._parse_dict(trad_to_simp_path)
+
+    def _parse_dict(self, path):
+        output = {}
+        for line in open(path):
+            key, *values = line.strip().split('\t')
+            output[key] = values
+
+        return output
+
+    def _convert(self, text, dictionary, first):
+        output = []
+        for char in text:
+            if char in dictionary:
+                output.append(dictionary[char])
+            else:
+                output.append([char])
+
+        conversions = [''.join(o) for o in itertools.product(*output)]
+        if first:
+            return conversions[0]
+        return conversions
+
+    def simp_to_trad(self, text, first=False):
+        return self._convert(text, self.simp_to_trad_dict, first)
+
+    def trad_to_simp(self, text, first=False):
+        return self._convert(text, self.trad_to_simp_dict, first)
+
+
 class CantoDict(object):
-    def __init__(self, dict_path):
+    def __init__(self, dict_path, variant_converter):
         self.dict_path = dict_path
+        self.variant_converter = variant_converter
         self.dict = {}
         self._read_dict()
 
     def query(self, word):
-        return self.dict.get(word) or []
+        output = []
+        for trad_word in self.variant_converter.simp_to_trad(word):
+            output += [[trad_word, self.variant_converter.trad_to_simp(trad_word, first=True)] + r for r in self.dict.get(trad_word) or []]
+        return output
 
     def _read_dict(self):
         with open(self.dict_path) as f:
@@ -29,8 +67,9 @@ class CantoDict(object):
 
 
 class CantoParser(object):
-    def __init__(self, dict_path):
+    def __init__(self, dict_path, variant_converter):
         self.dict_path = dict_path
+        self.variant_converter = variant_converter
         # {word: reading}
         self.dict = {}
         # {'a': {'b': {'c': {'EOW': True}}}} -> 'abc'
@@ -81,6 +120,11 @@ class CantoParser(object):
     def _read_dict(self):
         with open(self.dict_path) as f:
             words = [(lambda l: [l[0], l[2]])(w.split('\t')) for w in f.read().splitlines()]
+        for word, reading in list(words):
+            for simp_word in self.variant_converter.trad_to_simp(word):
+                if simp_word == word:
+                    continue
+                words.append((simp_word, reading))
         # generate readings for individual characters not in the dictionary by themselves
         chars = {}
         for word, reading in words:
@@ -122,13 +166,17 @@ class CantoParser(object):
 
 
 class SynonymDict(object):
-    def __init__(self, dict_path):
+    def __init__(self, dict_path, variant_converter):
         self.dict_path = dict_path
+        self.variant_converter = variant_converter
         self.dict = {}
         self._read_dict()
 
     def query(self, word):
-        return self.dict.get(word) or []
+        output = []
+        for trad_word in self.variant_converter.simp_to_trad(word):
+            output += self.dict.get(trad_word) or []
+        return output
 
     def _read_dict(self):
         with open(self.dict_path) as f:
@@ -182,9 +230,10 @@ def get_app(parser, dictionary, synonym_dictionary):
 
 
 def main():
-    canto_parser = CantoParser('combined_dict.tsv')
-    canto_dict = CantoDict('combined_dict.tsv')
-    synonym_dictionary = SynonymDict('hk_synonyms.tsv')
+    variant_converter = VariantConverter('simp_to_trad.tsv', 'trad_to_simp.tsv')
+    canto_parser = CantoParser('combined_dict.tsv', variant_converter)
+    canto_dict = CantoDict('combined_dict.tsv', variant_converter)
+    synonym_dictionary = SynonymDict('hk_synonyms.tsv', variant_converter)
     address, port = '', 9899
     app = get_app(canto_parser, canto_dict, synonym_dictionary)
     app.listen(port, address=address)

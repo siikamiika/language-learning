@@ -5,6 +5,8 @@ import os
 import sys
 import itertools
 
+MAX_TRY_FILETYPE = 100
+
 # 0:traditional, 1:simplified, 2:pinyin, 3:definition
 CEDICT_PATT = re.compile(r'^([^ ]+) ([^ ]+) \[(.*)?\] /(.*)?/$')
 # 0:traditional, 1:simplified, 2:pinyin, 3:jyutping
@@ -15,6 +17,8 @@ CCCANTO_PATT = re.compile(r'^([^ ]+) ([^ ]+) \[(.*)?\] \{(.*)?\} /(.*)?/$')
 CANTODICT_PATT = re.compile(r'^(...*)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?$')
 # 0:traditional, 1:jytping, 2:pinyin, 3:definition, 4:type, 5:index
 CANTODICT_CHAR_PATT = re.compile(r'^(.)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?\t(.*)?$')
+# 0:traditional, 1:jyutping, 2:pinyin, 3:definition
+USER_PATT = re.compile(r'^(.*)?\t(.*)?\t(.*)?\t(.*)?$')
 
 # single pinyin reading
 PINYIN_PATT = re.compile(r'([a-zü:]+)([1-9/*]+)')
@@ -45,16 +49,21 @@ class DictEntry(object):
 
 def detect_filetype(filename):
     with open(filename) as f:
+        line_count = 0
         for line in f:
+            line_count += 1
             for filetype in [
                 CEDICT_PATT,
                 CCCEDICT_CANTO_PATT,
                 CCCANTO_PATT,
                 CANTODICT_PATT,
-                CANTODICT_CHAR_PATT
+                CANTODICT_CHAR_PATT,
+                USER_PATT,
             ]:
                 if filetype.match(line):
                     return filetype
+            if line_count >= MAX_TRY_FILETYPE:
+                return
 
 def expand(reading):
     base = reading[0]
@@ -104,11 +113,13 @@ def parse_entries(filename, pattern):
                 pass
 
 def combine_dictionaries():
-    input_files = {}
+    input_files = {USER_PATT: []}
 
     for filename in os.listdir():
         filetype = detect_filetype(filename)
-        if filetype and filetype not in input_files:
+        if filetype == USER_PATT:
+            input_files[filetype].append(filename)
+        elif filetype and filetype not in input_files:
             input_files[filetype] = filename
 
     combined_dict = {}
@@ -165,6 +176,18 @@ def combine_dictionaries():
                 combined_dict[key].jyutping = jyutping
             combined_dict[key].type = type
             combined_dict[key].definitions.append(f'[CD] {definition}')
+
+    # merge user dictionaries
+    for filename in input_files[USER_PATT]:
+        for traditional, jyutping, pinyin, definition in parse_entries(filename, USER_PATT):
+            pinyin = normalize_pinyin(traditional, pinyin)
+            jyutping = normalize_pinyin(traditional, jyutping)
+            key = (traditional, pinyin)
+            if key not in combined_dict:
+                combined_dict[key] = DictEntry()
+            if not combined_dict[key].jyutping:
+                combined_dict[key].jyutping = jyutping
+            combined_dict[key].definitions.append(f'[USR] {definition}')
 
     return combined_dict
 
