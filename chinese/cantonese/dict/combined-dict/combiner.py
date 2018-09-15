@@ -37,12 +37,29 @@ TONE_REPLACEMENTS = {"7": "1", "8": "3", "9": "6"}
 
 
 class Definition(object):
+    ignored_words = {
+        "a",
+        "an",
+        "the",
+        "to",
+        "(idiom)",
+        "(verb)",
+        "(adverb)",
+        "(noun)",
+        "(pronoun)",
+        "(adjective)",
+        "(conjunction)",
+        "(preposition)",
+    }
+
     def __init__(self, definition, dict_name):
         self.definition = definition
         self.dict_name = dict_name
 
     def __eq__(self, other):
-        return self.definition == other.definition
+        this_definition = set(self.definition.lower().split()) - self.ignored_words
+        other_definition = set(other.definition.lower().split()) - self.ignored_words
+        return this_definition == other_definition
 
 
 class DictEntry(object):
