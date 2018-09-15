@@ -36,6 +36,15 @@ REPLACEMENTS = {
 TONE_REPLACEMENTS = {"7": "1", "8": "3", "9": "6"}
 
 
+class Definition(object):
+    def __init__(self, definition, dict_name):
+        self.definition = definition
+        self.dict_name = dict_name
+
+    def __eq__(self, other):
+        return self.definition == other.definition
+
+
 class DictEntry(object):
     def __init__(self):
         self.definitions = []
@@ -142,7 +151,9 @@ def combine_dictionaries():
         if key not in combined_dict:
             cache_pinyin(*key)
             combined_dict[key] = DictEntry()
-        combined_dict[key].definitions.append(f"[CC] {definition}")
+        combined_dict[key].definitions += [
+            Definition(d, "CC") for d in definition.split("/")
+        ]
 
     # add jyutping
     for traditional, _, pinyin, jyutping in parse_entries(
@@ -168,7 +179,9 @@ def combine_dictionaries():
         definition = re.sub(r"1\.\s?", "", definition)
         definition = re.sub(r"\s*?/\s*", ", ", definition)
         definition = re.sub(r";?\s?\d\.\s?|;\s?", "/", definition)
-        combined_dict[key].definitions.append(f"[CCC] {definition}")
+        combined_dict[key].definitions += [
+            Definition(d, "CCC") for d in definition.split("/")
+        ]
 
     # merge cantodict
     for filename, patt in [
@@ -200,7 +213,10 @@ def combine_dictionaries():
             if not combined_dict[key].jyutping:
                 combined_dict[key].jyutping = jyutping
             combined_dict[key].type = type
-            combined_dict[key].definitions.append(f"[CD] {definition}")
+            definition = re.sub("\s*;\s*", "/", definition)
+            combined_dict[key].definitions += [
+                Definition(d, "CD") for d in definition.split("/")
+            ]
 
     # merge user dictionaries
     for filename in input_files[USER_PATT]:
@@ -214,7 +230,9 @@ def combine_dictionaries():
                 combined_dict[key] = DictEntry()
             if not combined_dict[key].jyutping:
                 combined_dict[key].jyutping = jyutping
-            combined_dict[key].definitions.append(f"[USR] {definition}")
+            combined_dict[key].definitions += [
+                Definition(d, "USR") for d in definition.split("/")
+            ]
 
     return combined_dict
 
@@ -225,14 +243,23 @@ def main():
     for key in sorted(combined_dict):
         traditional, pinyin = key
         entry = combined_dict[key]
+
+        def_pos = len(combined_dict[key].definitions) - 1
+        while def_pos > 0:
+            if entry.definitions[def_pos] in entry.definitions[:def_pos]:
+                entry.definitions.pop(def_pos)
+            def_pos -= 1
+        definitions = []
+        last_dict = None
+        for definition in entry.definitions:
+            if definition.dict_name != last_dict:
+                last_dict = definition.dict_name
+                definitions.append(f"[{definition.dict_name}] {definition.definition}")
+            else:
+                definitions.append(definition.definition)
+
         output_line = "\t".join(
-            (
-                traditional,
-                pinyin,
-                entry.jyutping,
-                entry.type,
-                "/".join(entry.definitions),
-            )
+            (traditional, pinyin, entry.jyutping, entry.type, "/".join(definitions))
         )
         if output_line.count("\t") == 4:
             print(output_line)
