@@ -59,7 +59,7 @@ class Definition(object):
     def __eq__(self, other):
         this_definition = set(self.definition.lower().split()) - self.ignored_words
         other_definition = set(other.definition.lower().split()) - self.ignored_words
-        return this_definition == other_definition
+        return this_definition.issubset(other_definition)
 
 
 class DictEntry(object):
