@@ -14,6 +14,7 @@ class View {
         this.wordInfoElement = null;
         this.readingInfoElement = null;
         this.synonymInfoElement = null;
+        this.mouseoverDefinitionElement = null;
 
         for (let k in this.app.elementIds) {
             this[k] = document.getElementById(this.app.elementIds[k]);

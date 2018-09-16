@@ -8,6 +8,7 @@ class Output {
         this.wordInfoElement = this.view.wordInfoElement;
         this.readingInfoElement = this.view.readingInfoElement;
         this.synonymInfoElement = this.view.synonymInfoElement;
+        this.mouseoverDefinitionElement = this.view.mouseoverDefinitionElement;
     }
 
     outputText(data) {
@@ -26,9 +27,12 @@ class Output {
                 .concat(line.map(word => ({E: 'ruby',
                     className: 'wordreading',
                     onclick: _ => this._outputWordInfo(word[0]),
+                    onmouseenter: _ => this._outputMouseoverDefinition(word[0]),
+                    onmousemove: e => this._updateMouseoverPosition(e),
+                    onmouseleave: _ => this._hideMouseoverDefinition(),
                     C: [
                         // the word
-                        {E: 'rb', className: 'word',
+                        {E: 'rb', className: 'word clickable',
                             C: Array.from(word[0]).map(character => ({E: 'span',
                                 onclick: _ => this._outputCharInfo(character),
                                 C: character
@@ -37,7 +41,7 @@ class Output {
                         // the readings
                         {E: 'rt',
                             C: (word[1] || []).map(reading => ({E: 'span',
-                                className: 'reading',
+                                className: 'reading clickable',
                                 onclick: e => {
                                     this._outputReadingInfo(reading);
                                     e.stopPropagation();
@@ -49,6 +53,42 @@ class Output {
                 }))
             )}));
         }
+    }
+
+    _outputMouseoverDefinition(word) {
+        clearChildren(this.mouseoverDefinitionElement);
+
+        let outputTranslations = (data) => {
+            this.mouseoverDefinitionElement.appendChild(buildDom({E: 'div',
+                C: {E: 'ul',
+                    C: data.map(tl => ({E: 'li',
+                        C: [
+                            {E: 'span', className: 'word-trad', C: tl[0]}, ' ',
+                            {E: 'span', className: 'word-simp', C: tl[1]}, ' ',
+                            {E: 'span', className: 'word-type', C: tl[4]}, ' ',
+                            {E: 'span', className: 'reading-canto', C: tl[3]}, ' ',
+                            {E: 'span', className: 'reading-mandarin', C: `{${tl[2]}}`},
+                            {E: 'br'},
+                            {E: 'span', C: tl[5].split('/').filter(g => g).map((gloss, i) => `${i + 1}. ${gloss} `)},
+                        ]
+                    }))
+                }
+            }));
+        }
+        this.view.app.api.get('dict', {query: word}, null, outputTranslations);
+
+        this.mouseoverDefinitionElement.style.visibility = 'visible';
+    }
+
+    _updateMouseoverPosition(event) {
+        let X = Math.min(event.clientX, innerWidth - this.mouseoverDefinitionElement.clientWidth);
+        let Y = Math.min(event.clientY, innerHeight - this.mouseoverDefinitionElement.clientHeight);
+        this.mouseoverDefinitionElement.style.left = X + 'px';
+        this.mouseoverDefinitionElement.style.top = Y + 'px';
+    }
+
+    _hideMouseoverDefinition(word) {
+        this.mouseoverDefinitionElement.style.visibility = 'hidden';
     }
 
     _outputWordInfo(word, skipSynonyms) {

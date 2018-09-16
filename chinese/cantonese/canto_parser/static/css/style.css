@@ -56,3 +56,17 @@
 #external-links li:after {
     content: ' ';
 }
+
+#mouseover-definition {
+    position: fixed;
+    z-index: 10;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: white;
+    border: 1px solid black;
+    width: 350px;
+}
+
+.clickable {
+    cursor: pointer;
+}

@@ -19,4 +19,5 @@ const app = new App({
     wordInfoElement: 'word-info',
     readingInfoElement: 'reading-info',
     synonymInfoElement: 'synonym-info',
+    mouseoverDefinitionElement: 'mouseover-definition',
 });
