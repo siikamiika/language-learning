@@ -101,8 +101,13 @@ class Output {
             let outputSynonyms = (data) => {
                 this.synonymInfoElement.appendChild(buildDom({E: 'ul',
                     C: data.map(w => ({E: 'li',
-                        onclick: _ => this._outputWordInfo(w, true),
-                        C: w
+                        C: {E: 'span', className: 'clickable',
+                            onclick: _ => this._outputWordInfo(w, true),
+                            onmouseenter: _ => this._outputMouseoverDefinition(w),
+                            onmousemove: e => this._updateMouseoverPosition(e),
+                            onmouseleave: _ => this._hideMouseoverDefinition(),
+                            C: w
+                        }
                     }))
                 }));
             }
