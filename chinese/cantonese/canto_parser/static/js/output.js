@@ -154,19 +154,17 @@ class Output {
 
         let outputDecomp = (data) => {
             this.charInfoElement.appendChild(buildDom({E: 'div',
-                C: {E: 'ul',
-                    C: Array.from(data).map(chr => ({E: 'span', className: 'clickable',
-                        onclick: _ => {
-                            this._outputWordInfo(chr);
-                            this._outputCharInfo(chr);
-                            this._hideMouseoverDefinition();
-                        },
-                        onmouseenter: _ => this._outputMouseoverDefinition(chr),
-                        onmousemove: e => this._updateMouseoverPosition(e),
-                        onmouseleave: _ => this._hideMouseoverDefinition(),
-                        C: chr
-                    }))
-                }
+                C: Array.from(character + data).map(chr => ({E: 'span', className: 'clickable',
+                    onclick: _ => {
+                        this._outputWordInfo(chr);
+                        this._outputCharInfo(chr);
+                        this._hideMouseoverDefinition();
+                    },
+                    onmouseenter: _ => this._outputMouseoverDefinition(chr),
+                    onmousemove: e => this._updateMouseoverPosition(e),
+                    onmouseleave: _ => this._hideMouseoverDefinition(),
+                    C: chr
+                }))
             }));
         }
         this.view.app.api.get('decomp_dict', {query: character}, null, outputDecomp);
