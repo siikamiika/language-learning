@@ -106,7 +106,10 @@ class Output {
                             onmouseenter: _ => this._outputMouseoverDefinition(w),
                             onmousemove: e => this._updateMouseoverPosition(e),
                             onmouseleave: _ => this._hideMouseoverDefinition(),
-                            C: w
+                            C: Array.from(w).map(c => ({E: 'span',
+                                onclick: _ => this._outputCharInfo(c),
+                                C: c
+                            }))
                         }
                     }))
                 }));
@@ -135,8 +138,24 @@ class Output {
                 C: {E: 'ul',
                     C: data.map(tl => ({E: 'li',
                         C: [
-                            {E: 'span', className: 'word-trad', C: tl[0]}, ' ',
-                            {E: 'span', className: 'word-simp', C: tl[1]}, ' ',
+                            {E: 'span', className: 'word-trad',
+                                C: Array.from(tl[0]).map(c => ({E: 'span', className: 'clickable',
+                                    onmouseenter: _ => this._outputMouseoverDefinition(c),
+                                    onmousemove: e => this._updateMouseoverPosition(e),
+                                    onmouseleave: _ => this._hideMouseoverDefinition(),
+                                    onclick: _ => this._outputCharInfo(c),
+                                    C: c
+                                }))
+                            }, ' ',
+                            {E: 'span', className: 'word-simp',
+                                C: Array.from(tl[1]).map(c => ({E: 'span', className: 'clickable',
+                                    onmouseenter: _ => this._outputMouseoverDefinition(c),
+                                    onmousemove: e => this._updateMouseoverPosition(e),
+                                    onmouseleave: _ => this._hideMouseoverDefinition(),
+                                    onclick: _ => this._outputCharInfo(c),
+                                    C: c
+                                }))
+                            }, ' ',
                             {E: 'span', className: 'word-type', C: tl[4]}, ' ',
                             {E: 'span', className: 'reading-canto', C: tl[3]}, ' ',
                             {E: 'span', className: 'reading-mandarin', C: `{${tl[2]}}`},
