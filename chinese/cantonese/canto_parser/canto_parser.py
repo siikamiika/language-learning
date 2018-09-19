@@ -43,6 +43,23 @@ class VariantConverter(object):
         return self._convert(text, self.trad_to_simp_dict, first)
 
 
+class DecompDict(object):
+    def __init__(self, dict_path):
+        self.dict = self._parse_dict(dict_path)
+
+    def query(self, char):
+        return self.dict.get(char) or ''
+
+    def _parse_dict(self, path):
+        output = {}
+        with open(path) as f:
+            for line in f:
+                key, value = line.split('\t')
+                output[key] = value
+
+        return output
+
+
 class CantoDict(object):
     def __init__(self, dict_path, variant_converter):
         self.dict_path = dict_path
@@ -219,11 +236,24 @@ class SynonymDictHandler(tornado.web.RequestHandler):
         self.write(json.dumps(result, ensure_ascii=False))
 
 
-def get_app(parser, dictionary, synonym_dictionary):
+class DecompDictHandler(tornado.web.RequestHandler):
+    def initialize(self, dictionary):
+        self.dictionary = dictionary
+
+    def get(self):
+        self.set_header('Cache-Control', 'max-age=3600')
+        self.set_header('Content-Type', 'application/json')
+        query = self.get_query_argument('query').strip()
+        result = self.dictionary.query(query)
+        self.write(json.dumps(result, ensure_ascii=False))
+
+
+def get_app(parser, dictionary, synonym_dictionary, decomp_dict):
     return tornado.web.Application([
         (r'/parse', ParseHandler, dict(parser=parser)),
         (r'/dict', DictHandler, dict(dictionary=dictionary)),
         (r'/synonym_dict', SynonymDictHandler, dict(dictionary=synonym_dictionary)),
+        (r'/decomp_dict', DecompDictHandler, dict(dictionary=decomp_dict)),
         (r'/(.*)', tornado.web.StaticFileHandler,
          {'path': 'static', 'default_filename': 'index.html'}),
     ])
@@ -231,11 +261,12 @@ def get_app(parser, dictionary, synonym_dictionary):
 
 def main():
     variant_converter = VariantConverter('simp_to_trad.tsv', 'trad_to_simp.tsv')
+    decomp_dict = DecompDict('decomp.tsv')
     canto_parser = CantoParser('combined_dict.tsv', variant_converter)
     canto_dict = CantoDict('combined_dict.tsv', variant_converter)
     synonym_dictionary = SynonymDict('hk_synonyms.tsv', variant_converter)
     address, port = '', 9899
-    app = get_app(canto_parser, canto_dict, synonym_dictionary)
+    app = get_app(canto_parser, canto_dict, synonym_dictionary, decomp_dict)
     app.listen(port, address=address)
     main_loop = tornado.ioloop.IOLoop.instance()
     main_loop.start()
