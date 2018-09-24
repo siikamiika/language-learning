@@ -70,3 +70,11 @@
 .clickable {
     cursor: pointer;
 }
+
+.order {
+    color: red;
+}
+
+.info {
+    color: gray;
+}

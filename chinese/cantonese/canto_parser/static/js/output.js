@@ -69,7 +69,14 @@ class Output {
                             {E: 'span', className: 'reading-canto', C: tl[3]}, ' ',
                             {E: 'span', className: 'reading-mandarin', C: `{${tl[2]}}`},
                             {E: 'br'},
-                            {E: 'span', C: tl[5].split('/').filter(g => g).map((gloss, i) => `${i + 1}. ${gloss} `)},
+                            {E: 'span',
+                                C: tl[5].split('/').filter(g => g)
+                                .map((gloss, i) =>
+                                    [{E: 'span', className: 'order', C: `${i + 1}. `}]
+                                    .concat(processGloss(gloss))
+                                )
+                                .reduce((acc, v) => acc.concat(v))
+                            },
                         ]
                     }))
                 }
@@ -159,7 +166,10 @@ class Output {
                             {E: 'span', className: 'word-type', C: tl[4]}, ' ',
                             {E: 'span', className: 'reading-canto', C: tl[3]}, ' ',
                             {E: 'span', className: 'reading-mandarin', C: `{${tl[2]}}`},
-                            {E: 'ol', C: tl[5].split('/').filter(g => g).map(gloss => ({E: 'li', C: gloss}))}
+                            {E: 'ol',
+                                C: tl[5].split('/').filter(g => g)
+                                .map(gloss => ({E: 'li', C: processGloss(gloss)}))
+                            }
                         ]
                     }))
                 }

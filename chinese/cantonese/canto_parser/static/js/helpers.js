@@ -95,3 +95,14 @@ function range(start, end) {
 }
 
 const obj2qs = obj => Object.keys(obj).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(obj[key])}`).join('&');
+
+function processGloss(gloss) {
+    let infoPatt = /^\[.*\]$/;
+    return gloss.match(/\[.*?\]|.+?((?=\[)|$)/g)
+        .map(part =>
+            infoPatt.test(part) ?
+            {E: 'span', className: 'info', C: part} :
+            part
+        )
+        .concat(' ');
+}
