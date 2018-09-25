@@ -16,6 +16,11 @@ class Settings {
             if (readingChoice.checked) {
                 this.view.app.settings.readingChoice = readingChoice.value;
                 this.view.input.reinput();
+                if (readingChoice.value == 'pinyin') {
+                    document.documentElement.lang = 'zh-CN';
+                } else {
+                    document.documentElement.lang = 'zh-HK';
+                }
                 break;
             }
         }
