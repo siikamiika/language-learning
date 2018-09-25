@@ -7,12 +7,18 @@ class Input {
 
         this.inputElement.addEventListener('input', this._oninput.bind(this));
 
+        this.lastEvent = null;
         this.view.app.api.socket('ws://localhost:9873', null, null, data => {
             this._oninput({target: {value: data.data}});
         });
     }
 
+    reinput() {
+        this._oninput(this.lastEvent);
+    }
+
     _oninput(event) {
+        this.lastEvent = event;
         let inputText = event.target.value;
         this.view.app.api.post('parse', {text: inputText}, null, data => {
             this.view.output.outputText(data);

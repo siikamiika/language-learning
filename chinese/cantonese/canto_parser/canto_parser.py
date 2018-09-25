@@ -87,7 +87,7 @@ class CantoParser(object):
     def __init__(self, dict_path, variant_converter):
         self.dict_path = dict_path
         self.variant_converter = variant_converter
-        # {word: reading}
+        # {word: [[py1, ...], [jp1, ...]]}
         self.dict = {}
         # {'a': {'b': {'c': {'EOW': True}}}} -> 'abc'
         self.trie = {}
@@ -96,7 +96,7 @@ class CantoParser(object):
 
     def parse_text(self, text):
         pos = 0
-        # (word, [reading1, ...])
+        # (word, [[py1, ...], [jp1, ...]])
         matches = []
         while pos < len(text):
             # longest word from pos
@@ -132,54 +132,38 @@ class CantoParser(object):
         if word in self.dict:
             return self.dict[word]
         else:
-            return None
+            return [None, None]
 
     def _read_dict(self):
         with open(self.dict_path) as f:
-            words = [(lambda l: [l[0], l[2]])(w.split('\t')) for w in f.read().splitlines()]
-        for word, reading in list(words):
+            words = [w.split('\t')[:3] for w in f.read().splitlines()]
+        # add simplified
+        for word, pinyin, jyutping in list(words):
             for simp_word in self.variant_converter.trad_to_simp(word):
                 if simp_word == word:
                     continue
-                words.append((simp_word, reading))
-        # generate readings for individual characters not in the dictionary by themselves
-        chars = {}
-        for word, reading in words:
+                words.append((simp_word, pinyin, jyutping))
+        # add words with readings to dict
+        for word, pinyin, jyutping in words:
             # add word to dictionary
             if word not in self.dict:
-                self.dict[word] = []
-            readings = reading.split('/')
-            for reading in readings:
-                if reading and reading not in self.dict[word]:
-                    self.dict[word].append(reading)
-            # add word to trie and individual chars to chars
+                self.dict[word] = [[], []]
+            # pinyin
+            for py in pinyin.split('/'):
+                if py and py not in self.dict[word][0]:
+                    self.dict[word][0].append(py)
+            # jyutping
+            for jp in jyutping.split('/'):
+                if jp and jp not in self.dict[word][1]:
+                    self.dict[word][1].append(jp)
+            # add word to trie
             trie_pos = self.trie
-            char_readings = reading.split()
-            word = re.sub(r'[,，.?!？！]', '', word)
-            if len(char_readings) != len(word):
-                # TODO: handle these instead of skipping
-                continue
-            for char, char_reading in zip(word, char_readings):
-                # char
-                if char not in chars:
-                    chars[char] = set()
-                chars[char].add(char_reading)
-                # trie
+            for char in word:
                 if char not in trie_pos:
                     trie_pos[char] = {}
                 trie_pos = trie_pos[char]
             # set end of word
             trie_pos['EOW'] = True
-        # add generated chars to dict
-        for char in chars:
-            if char not in self.dict:
-                self.dict[char] = []
-            if char not in self.trie:
-                self.trie[char] = {}
-                self.trie[char]['EOW'] = True
-            for reading in chars[char]:
-                if reading not in self.dict[char]:
-                    self.dict[char].append(reading)
 
 
 class SynonymDict(object):

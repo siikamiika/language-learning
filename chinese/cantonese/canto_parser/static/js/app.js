@@ -2,7 +2,9 @@ class App {
 
     constructor(elementIds) {
         this.elementIds = elementIds;
-        this.settings = {};
+        this.settings = {
+            readingChoice: 'jyutping',
+        };
 
         this.api = new Api(this);
         this.view = new View(this);
@@ -11,6 +13,7 @@ class App {
 }
 
 const app = new App({
+    readingChoiceElements: 'reading-choice',
     inputElement: 'input',
     textInputElement: 'text-input',
     outputElement: 'output',

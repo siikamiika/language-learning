@@ -20,7 +20,10 @@ class Output {
                 className: 'output-row',
                 // tts
                 C: [{E: 'button',
-                    onclick: _ => this.view.app.api.tts(line.map(w => w[0]).join('')),
+                    onclick: _ => this.view.app.api.tts(
+                        line.map(w => w[0]).join(''),
+                        this.view.app.settings.readingChoice == 'jyutping' ? 'zh-HK' : 'zh-CN'
+                    ),
                     C: '🔊'
                 }]
                 // words with readings
@@ -40,7 +43,7 @@ class Output {
                         },
                         // the readings
                         {E: 'rt',
-                            C: (word[1] || []).map(reading => ({E: 'span',
+                            C: (word[1][this.view.app.settings.readingChoice == 'jyutping' ? 1 : 0] || []).map(reading => ({E: 'span',
                                 className: 'reading clickable',
                                 onclick: e => {
                                     this._outputReadingInfo(reading);

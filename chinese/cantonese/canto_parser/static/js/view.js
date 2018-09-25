@@ -4,6 +4,8 @@ class View {
         this.app = app;
 
         // DOM
+        // settings
+        this.readingChoiceElements = null;
         // input
         this.inputElement = null;
         this.textInputElement = null;
@@ -22,6 +24,7 @@ class View {
 
 
         // views
+        this.settings = new Settings(this);
         this.input = new Input(this);
         this.output = new Output(this);
     }
