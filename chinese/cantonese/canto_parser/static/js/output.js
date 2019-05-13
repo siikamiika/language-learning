@@ -50,8 +50,8 @@ class Output {
                             }))
                         },
                         // the readings
-                        {E: 'rt',
-                            C: (word[1][this.view.app.settings.readingChoice == 'jyutping' ? 1 : 0] || []).map(reading => ({E: 'span',
+                        {E: 'rt', C: {E: 'ul', className: 'reading-list',
+                            C: (word[1][this.view.app.settings.readingChoice == 'jyutping' ? 1 : 0] || []).map(reading => ({E: 'li',
                                 className: 'reading clickable',
                                 onclick: e => {
                                     this._outputReadingInfo(reading);
@@ -59,7 +59,7 @@ class Output {
                                 },
                                 C: reading
                             }))
-                        },
+                        }},
                     ]
                 }))
             )}));
@@ -99,7 +99,7 @@ class Output {
     }
 
     _updateMouseoverPosition(event) {
-        let X = Math.min(event.clientX, innerWidth - this.mouseoverDefinitionElement.clientWidth);
+        let X = Math.min(event.clientX, innerWidth - this.mouseoverDefinitionElement.clientWidth - 10) + 10;
         let Y = Math.min(event.clientY, innerHeight - this.mouseoverDefinitionElement.clientHeight);
         this.mouseoverDefinitionElement.style.left = X + 'px';
         this.mouseoverDefinitionElement.style.top = Y + 'px';
