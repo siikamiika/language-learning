@@ -17,6 +17,7 @@ const app = new App({
     inputElement: 'input',
     textInputElement: 'text-input',
     outputElement: 'output',
+    translateIframe: 'translate-iframe',
     outputTextElement: 'output-text',
     charInfoElement: 'char-info',
     wordInfoElement: 'word-info',

@@ -10,6 +10,7 @@
             <form id="reading-choice">
                 <label><input checked type="radio" name="reading" value="jyutping">jyutping</label>
                 <label><input type="radio" name="reading" value="pinyin">pinyin</label>
+                <label><input type="radio" name="reading" value="translate">Google Translate</label>
             </form>
         </div>
         <div id="input">
@@ -17,6 +18,7 @@
         </div>
         <div id="output">
             <div id="output-text"></div>
+            <iframe id="translate-iframe" class="hide"></iframe>
             <div id="char-info"></div>
             <div id="synonym-info"></div>
             <div id="word-info"></div>

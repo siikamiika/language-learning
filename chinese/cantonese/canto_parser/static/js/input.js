@@ -20,9 +20,14 @@ class Input {
     _oninput(event) {
         this.lastEvent = event;
         let inputText = event.target.value;
-        this.view.app.api.post('parse', {text: inputText}, null, data => {
-            this.view.output.outputText(data);
-        });
+        if (this.view.app.settings.readingChoice == 'translate') {
+            // requires ignoring x-frame-options
+            this.view.translateIframe.setAttribute('src', `https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=${encodeURIComponent(inputText)}`);
+        } else {
+            this.view.app.api.post('parse', {text: inputText}, null, data => {
+                this.view.output.outputText(data);
+            });
+        }
     }
 
 }

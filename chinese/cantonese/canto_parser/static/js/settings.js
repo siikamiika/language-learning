@@ -1,3 +1,8 @@
+function toggle(a, b) {
+    a.classList.remove('hide');
+    b.classList.add('hide');
+}
+
 class Settings {
 
     constructor(view) {
@@ -15,12 +20,16 @@ class Settings {
         for (let readingChoice of this.readingChoiceElements) {
             if (readingChoice.checked) {
                 this.view.app.settings.readingChoice = readingChoice.value;
-                this.view.input.reinput();
                 if (readingChoice.value == 'pinyin') {
                     document.documentElement.lang = 'zh-CN';
-                } else {
+                    toggle(this.view.outputTextElement, this.view.translateIframe);
+                } else if (readingChoice.value == 'jyutping') {
                     document.documentElement.lang = 'zh-HK';
+                    toggle(this.view.outputTextElement, this.view.translateIframe);
+                } else if (readingChoice.value == 'translate') {
+                    toggle(this.view.translateIframe, this.view.outputTextElement);
                 }
+                this.view.input.reinput();
                 break;
             }
         }

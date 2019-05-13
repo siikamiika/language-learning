@@ -11,6 +11,7 @@ class View {
         this.textInputElement = null;
         // output
         this.outputElement = null;
+        this.translateIframe = null;
         this.outputTextElement = null;
         this.charInfoElement = null;
         this.wordInfoElement = null;
