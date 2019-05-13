@@ -10,6 +10,7 @@ class Input {
         this.lastEvent = null;
         this.view.app.api.socket('ws://localhost:9873', null, null, data => {
             this._oninput({target: {value: data.data}});
+            this.textInputElement.value = data.data;
         });
     }
 
