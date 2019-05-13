@@ -18,6 +18,10 @@ class Output {
             // row
             this.outputTextElement.appendChild(buildDom({E: 'div',
                 className: 'output-row',
+                onmouseup: _ => {
+                    const selectedText = window.getSelection().toString();
+                    this._outputWordInfo(selectedText, true);
+                },
                 // tts
                 C: [{E: 'button',
                     onclick: _ => this.view.app.api.tts(
@@ -29,7 +33,11 @@ class Output {
                 // words with readings
                 .concat(line.map(word => ({E: 'ruby',
                     className: 'wordreading',
-                    onclick: _ => this._outputWordInfo(word[0]),
+                    onclick: _ => {
+                        if (!window.getSelection().toString()) {
+                            this._outputWordInfo(word[0]);
+                        }
+                    },
                     onmouseenter: _ => this._outputMouseoverDefinition(word[0]),
                     onmousemove: e => this._updateMouseoverPosition(e),
                     onmouseleave: _ => this._hideMouseoverDefinition(),
