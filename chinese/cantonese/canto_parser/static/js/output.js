@@ -6,7 +6,6 @@ class Output {
         this.outputTextElement = this.view.outputTextElement;
         this.charInfoElement = this.view.charInfoElement;
         this.wordInfoElement = this.view.wordInfoElement;
-        this.readingInfoElement = this.view.readingInfoElement;
         this.synonymInfoElement = this.view.synonymInfoElement;
         this.mouseoverDefinitionElement = this.view.mouseoverDefinitionElement;
     }
@@ -38,12 +37,12 @@ class Output {
                             this._outputWordInfo(word[0]);
                         }
                     },
-                    onmouseenter: _ => this._outputMouseoverDefinition(word[0]),
                     onmousemove: e => this._updateMouseoverPosition(e),
                     onmouseleave: _ => this._hideMouseoverDefinition(),
                     C: [
                         // the word
                         {E: 'rb', className: 'word clickable',
+                            onmouseenter: _ => this._outputMouseoverDefinition(word[0]),
                             C: Array.from(word[0]).map(character => ({E: 'span',
                                 onclick: _ => this._outputCharInfo(character),
                                 C: character
@@ -54,9 +53,10 @@ class Output {
                             C: (word[1][this.view.app.settings.readingChoice == 'jyutping' ? 1 : 0] || []).map(reading => ({E: 'li',
                                 className: 'reading clickable',
                                 onclick: e => {
-                                    this._outputReadingInfo(reading);
+                                    this._outputWordInfo(word[0], false, reading);
                                     e.stopPropagation();
                                 },
+                                onmouseenter: _ => this._outputMouseoverDefinition(word[0], reading),
                                 C: reading
                             }))
                         }},
@@ -66,7 +66,7 @@ class Output {
         }
     }
 
-    _outputMouseoverDefinition(word) {
+    _outputMouseoverDefinition(word, reading) {
         clearChildren(this.mouseoverDefinitionElement);
 
         let outputTranslations = (data) => {
@@ -93,7 +93,7 @@ class Output {
                 }
             }));
         }
-        this.view.app.api.get('dict', {query: word}, null, outputTranslations);
+        this.view.app.api.get('dict', {query: word}, null, data => this._filterByReading(data, reading, outputTranslations));
 
         this.mouseoverDefinitionElement.style.visibility = 'visible';
     }
@@ -109,8 +109,7 @@ class Output {
         this.mouseoverDefinitionElement.style.visibility = 'hidden';
     }
 
-    _outputWordInfo(word, skipSynonyms) {
-        clearChildren(this.readingInfoElement);  // hide unrelated info
+    _outputWordInfo(word, skipSynonyms, reading) {
         clearChildren(this.wordInfoElement);
 
         // synonyms
@@ -186,7 +185,16 @@ class Output {
                 }
             }));
         }
-        this.view.app.api.get('dict', {query: word}, null, outputTranslations);
+        this.view.app.api.get('dict', {query: word}, null, data => this._filterByReading(data, reading, outputTranslations));
+    }
+
+    _filterByReading(data, reading, cb) {
+        const mode = this.view.app.settings.readingChoice == 'jyutping' ? 3 : 2;
+        cb(
+            !reading
+            ? data
+            : data.filter(d => d[mode].split('/').includes(reading))
+        );
     }
 
     _outputCharInfo(character) {
@@ -209,16 +217,4 @@ class Output {
         }
         this.view.app.api.get('decomp_dict', {query: character}, null, outputDecomp);
     }
-
-    // TODO
-    _outputReadingInfo(reading) {
-        clearChildren(this.wordInfoElement);  // hide unrelated info
-        clearChildren(this.charInfoElement);  //
-        clearChildren(this.readingInfoElement);
-
-        this.readingInfoElement.appendChild(buildDom({E: 'div',
-            C: reading
-        }));
-    }
-
 }

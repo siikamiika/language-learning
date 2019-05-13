@@ -21,7 +21,6 @@ const app = new App({
     outputTextElement: 'output-text',
     charInfoElement: 'char-info',
     wordInfoElement: 'word-info',
-    readingInfoElement: 'reading-info',
     synonymInfoElement: 'synonym-info',
     mouseoverDefinitionElement: 'mouseover-definition',
 });

@@ -15,7 +15,6 @@ class View {
         this.outputTextElement = null;
         this.charInfoElement = null;
         this.wordInfoElement = null;
-        this.readingInfoElement = null;
         this.synonymInfoElement = null;
         this.mouseoverDefinitionElement = null;
 

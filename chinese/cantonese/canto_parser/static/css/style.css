@@ -24,6 +24,10 @@
     font-size: 10px;
 }
 
+.reading:hover {
+    color: red;
+}
+
 .reading-list {
     list-style-type: none;
     margin: 0;
