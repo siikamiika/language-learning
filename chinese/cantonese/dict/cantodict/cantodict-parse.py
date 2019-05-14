@@ -2,14 +2,34 @@
 
 import os
 import sys
+import re
 
 import bs4
+
+CLEANUP = [
+    (re.compile("^[\u200b\s]*"), ""),
+    (re.compile("[\u200b\s]+"), " "),
+    # remove single TW pinyin that occurs before a PRC pinyin
+    #                [tw pinyin]   [TW annotation        ][maybe /][PRC lookahead    ]
+    (re.compile(r"\s?[a-z]+[1-6]\s*[\(\[](Taiwan|TW)[\)\]]\s*/?\s*(?=[a-z]+[1-6]\s*[\(\[])"), ""),
+    # same but in reverse
+    (re.compile(r"(?<=[\)\]])\s*/?\s*[a-z]+[1-6]\s*[\(\[](Taiwan|TW)[\)\]]"), ""),
+    # remove entire TW pinyin blocks
+    (re.compile(r"^.+?[\(\[](Taiwan|TW)[\)\]][,;]? "), ""),
+    (re.compile(r"(?<=[\)\]])[,;]? .+?[\(\[](Taiwan|TW)[\)\]]"), ""),
+]
 
 def parse_page(soup):
     table = soup.find('td', string='jyutping').parent.parent
     for row in table.find_all('tr')[1:-1]:
         data = row.find_all('td')
-        yield tuple(d.text.strip().replace('\t', ' ') for d in data[:5]) + ((data[0].find('a') or {'href': '/////'})['href'].split('/')[5],)
+        cleaned_data = []
+        for d in data[:5]:
+            d = d.text.strip().replace('\t', ' ')
+            for patt, repl in CLEANUP:
+                d = patt.sub(repl, d)
+            cleaned_data.append(d)
+        yield tuple(cleaned_data) + ((data[0].find('a') or {'href': '/////'})['href'].split('/')[5],)
 
 def parse_pages(path):
     for page in sorted(os.listdir(path)):
