@@ -8,6 +8,12 @@ class Output {
         this.wordInfoElement = this.view.wordInfoElement;
         this.synonymInfoElement = this.view.synonymInfoElement;
         this.mouseoverDefinitionElement = this.view.mouseoverDefinitionElement;
+
+        this.lastTranslated = [];
+    }
+
+    retranslate() {
+        this._outputWordInfo(...this.lastTranslated);
     }
 
     outputText(data) {
@@ -77,8 +83,7 @@ class Output {
                             {E: 'span', className: 'word-trad', C: tl[0]}, ' ',
                             {E: 'span', className: 'word-simp', C: tl[1]}, ' ',
                             {E: 'span', className: 'word-type', C: tl[4]}, ' ',
-                            {E: 'span', className: 'reading-canto', C: tl[3]}, ' ',
-                            {E: 'span', className: 'reading-mandarin', C: `{${tl[2]}}`},
+                            {E: 'span', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
                             {E: 'br'},
                             {E: 'span',
                                 C: tl[5].split('/').filter(g => g)
@@ -110,6 +115,7 @@ class Output {
     }
 
     _outputWordInfo(word, skipSynonyms, reading) {
+        this.lastTranslated = [word, skipSynonyms, reading];
         clearChildren(this.wordInfoElement);
 
         // synonyms
@@ -174,8 +180,7 @@ class Output {
                                 }))
                             }, ' ',
                             {E: 'span', className: 'word-type', C: tl[4]}, ' ',
-                            {E: 'span', className: 'reading-canto', C: tl[3]}, ' ',
-                            {E: 'span', className: 'reading-mandarin', C: `{${tl[2]}}`},
+                            {E: 'span', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
                             {E: 'ol',
                                 C: tl[5].split('/').filter(g => g)
                                 .map(gloss => ({E: 'li', C: processGloss(gloss)}))

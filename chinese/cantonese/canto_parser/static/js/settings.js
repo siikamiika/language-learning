@@ -30,6 +30,7 @@ class Settings {
                     toggle(this.view.translateIframe, this.view.outputTextElement);
                 }
                 this.view.input.reinput();
+                this.view.output.retranslate();
                 break;
             }
         }
