@@ -24,8 +24,10 @@ class Output {
             this.outputTextElement.appendChild(buildDom({E: 'div',
                 className: 'output-row',
                 onmouseup: _ => {
-                    const selectedText = window.getSelection().toString();
-                    this._outputWordInfo(selectedText, true);
+                    const selectedText = window.getSelection().toString().replace(/\s/g, '');
+                    if (selectedText) {
+                        this._outputWordInfo(selectedText, true);
+                    }
                 },
                 // tts
                 C: [{E: 'button',
@@ -67,8 +69,8 @@ class Output {
                             }))
                         }},
                     ]
-                }))
-            )}));
+                })))
+            }));
         }
     }
 
