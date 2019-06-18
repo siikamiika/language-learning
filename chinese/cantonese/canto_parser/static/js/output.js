@@ -75,10 +75,8 @@ class Output {
     }
 
     _outputMouseoverDefinition(word, reading) {
-        clearChildren(this.mouseoverDefinitionElement);
-
         let outputTranslations = (data) => {
-            this.mouseoverDefinitionElement.appendChild(buildDom({E: 'div',
+            let newDefinition = buildDom({E: 'div',
                 C: {E: 'ul',
                     C: data.map(tl => ({E: 'li',
                         C: [
@@ -98,7 +96,8 @@ class Output {
                         ]
                     }))
                 }
-            }));
+            });
+            this.mouseoverDefinitionElement.replaceChild(newDefinition, this.mouseoverDefinitionElement.firstChild);
         }
         this.view.app.api.get('dict', {query: word}, null, data => this._filterByReading(data, reading, outputTranslations));
 
