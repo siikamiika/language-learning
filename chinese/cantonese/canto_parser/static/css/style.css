@@ -92,6 +92,10 @@
     width: 500px;
 }
 
+.definition-reading {
+    color: red;
+}
+
 .mouseover-columns {
     columns: 2;
     column-gap: 10px;

@@ -83,7 +83,7 @@ class Output {
                             {E: 'span', className: 'word-trad', C: tl[0]}, ' ',
                             {E: 'span', className: 'word-simp', C: tl[1]}, ' ',
                             {E: 'span', className: 'word-type', C: tl[4]}, ' ',
-                            {E: 'span', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
+                            {E: 'span', className: 'definition-reading', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
                             {E: 'br'},
                             {E: 'ol', className: 'mouseover-columns',
                                 C: tl[5].split('/').filter(g => g)
@@ -177,7 +177,7 @@ class Output {
                                 }))
                             }, ' ',
                             {E: 'span', className: 'word-type', C: tl[4]}, ' ',
-                            {E: 'span', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
+                            {E: 'span', className: 'definition-reading', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
                             {E: 'ol', className: 'definition-columns',
                                 C: tl[5].split('/').filter(g => g)
                                 .map(gloss => ({E: 'li', C: processGloss(gloss)}))
