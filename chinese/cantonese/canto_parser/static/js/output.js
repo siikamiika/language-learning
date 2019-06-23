@@ -85,13 +85,9 @@ class Output {
                             {E: 'span', className: 'word-type', C: tl[4]}, ' ',
                             {E: 'span', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
                             {E: 'br'},
-                            {E: 'span',
+                            {E: 'ol', className: 'mouseover-columns',
                                 C: tl[5].split('/').filter(g => g)
-                                .map((gloss, i) =>
-                                    [{E: 'span', className: 'order', C: `${i + 1}. `}]
-                                    .concat(processGloss(gloss))
-                                )
-                                .reduce((acc, v) => acc.concat(v))
+                                .map(gloss => ({E: 'li', C: processGloss(gloss)}))
                             },
                         ]
                     }))
@@ -182,7 +178,7 @@ class Output {
                             }, ' ',
                             {E: 'span', className: 'word-type', C: tl[4]}, ' ',
                             {E: 'span', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
-                            {E: 'ol',
+                            {E: 'ol', className: 'definition-columns',
                                 C: tl[5].split('/').filter(g => g)
                                 .map(gloss => ({E: 'li', C: processGloss(gloss)}))
                             }

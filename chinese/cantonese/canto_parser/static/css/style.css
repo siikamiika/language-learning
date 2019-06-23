@@ -59,7 +59,8 @@
 }
 
 .word-simp {
-    color: gray;
+    font-size: 28px;
+    color: #777;
 }
 
 #external-links {
@@ -81,13 +82,24 @@
 }
 
 #mouseover-definition {
+    font-size: 80%;
     position: fixed;
     z-index: 10;
     visibility: hidden;
     pointer-events: none;
     background-color: rgba(255, 255, 255, .8);
     border: 1px solid black;
-    width: 350px;
+    width: 500px;
+}
+
+.mouseover-columns {
+    columns: 2;
+    column-gap: 10px;
+}
+
+.definition-columns {
+    columns: 3;
+    column-gap: 20px;
 }
 
 .clickable {
