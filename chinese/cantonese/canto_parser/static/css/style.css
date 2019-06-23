@@ -106,6 +106,10 @@
     column-gap: 20px;
 }
 
+.mouseover-columns li, .definition-columns li {
+    break-inside: avoid;
+}
+
 .clickable {
     cursor: pointer;
 }
