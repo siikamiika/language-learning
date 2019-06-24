@@ -76,22 +76,20 @@ class Output {
 
     _outputMouseoverDefinition(word, reading) {
         let outputTranslations = (data) => {
-            let newDefinition = buildDom({E: 'div',
-                C: {E: 'ul',
-                    C: data.map(tl => ({E: 'li',
-                        C: [
-                            {E: 'span', className: 'word-trad', C: tl[0]}, ' ',
-                            {E: 'span', className: 'word-simp', C: tl[1]}, ' ',
-                            {E: 'span', className: 'word-type', C: tl[4]}, ' ',
-                            {E: 'span', className: 'definition-reading', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
-                            {E: 'br'},
-                            {E: 'ol', className: 'mouseover-columns',
-                                C: tl[5].split('/').filter(g => g)
-                                .map(gloss => ({E: 'li', C: processGloss(gloss)}))
-                            },
-                        ]
-                    }))
-                }
+            let newDefinition = buildDom({E: 'ul',
+                C: data.map(tl => ({E: 'li',
+                    C: [
+                        {E: 'span', className: 'word-trad', C: tl[0]}, ' ',
+                        {E: 'span', className: 'word-simp', C: tl[1]}, ' ',
+                        {E: 'span', className: 'word-type', C: tl[4]}, ' ',
+                        {E: 'span', className: 'definition-reading', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
+                        {E: 'br'},
+                        {E: 'ol', className: 'mouseover-columns',
+                            C: tl[5].split('/').filter(g => g)
+                            .map(gloss => ({E: 'li', C: {E: 'span', C: processGloss(gloss)}}))
+                        },
+                    ]
+                }))
             });
             this.mouseoverDefinitionElement.replaceChild(newDefinition, this.mouseoverDefinitionElement.firstChild);
         }
@@ -180,7 +178,7 @@ class Output {
                             {E: 'span', className: 'definition-reading', C: this.view.app.settings.readingChoice == 'jyutping' ? tl[3] : tl[2]},
                             {E: 'ol', className: 'definition-columns',
                                 C: tl[5].split('/').filter(g => g)
-                                .map(gloss => ({E: 'li', C: processGloss(gloss)}))
+                                .map(gloss => ({E: 'li', C: {E: 'span', C: processGloss(gloss)}}))
                             }
                         ]
                     }))
