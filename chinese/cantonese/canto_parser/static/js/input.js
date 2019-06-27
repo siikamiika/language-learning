@@ -26,6 +26,20 @@ class Input {
             this.view.translateIframe.setAttribute('src', `https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=${encodeURIComponent(inputText)}`);
         } else {
             this.view.app.api.post('parse', {text: inputText}, null, data => {
+                data = data.map(
+                    row => row.map(
+                        ([word, readings]) => [word, [
+                            (readings[0] || []).map(pinyin => ({
+                                withNum: pinyin,
+                                withMark: pinyinToneNumToMark(pinyin, 'pinyin'),
+                            })),
+                            (readings[1] || []).map(jyutping => ({
+                                withNum: jyutping,
+                                withMark: pinyinToneNumToMark(jyutping, 'jyutping'),
+                            })),
+                        ]]
+                    )
+                );
                 this.view.output.outputText(data);
             });
         }

@@ -106,3 +106,63 @@ function processGloss(gloss) {
         )
         .concat(' ');
 }
+
+function pinyinToneNumToMark(pinyin, mode) {
+    // set mode, default to pinyin
+    mode = mode || 'pinyin';
+
+    if (!pinyin) {
+        return '';
+    }
+
+    // regex
+    let allPinyinPatt = /[a-z]+\d?/g;
+    let splitTonePatt = /([a-z]+)(\d?$)/;
+    let vowelPatt = /[aeiouv]/; // v denotes ü
+
+    // tone number to mark mapping
+    let pinyinToMark = {
+        1: '\u0304', // macron
+        2: '\u0301', // acute
+        3: '\u030c', // caron
+        4: '\u0300', // grave
+        5: '',       // neutral tone
+    };
+
+    let jyutpingToMark = {
+        1: '\u0304', // macron
+        2: '\u0301', // acute
+        // 3: '\u0307', // dot above
+        3: '',       // mid tone
+        4: '\u0316', // grave below
+        5: '\u0317', // acute below
+        6: '\u0323', // dot below
+    };
+
+    // choose mapping
+    let chosenPinyinToMark = {
+        'pinyin': pinyinToMark,
+        'jyutping': jyutpingToMark,
+    }[mode];
+
+    if (!chosenPinyinToMark) {
+        throw new Error('invalid mode');
+    }
+
+    return pinyin.match(allPinyinPatt)
+        .map(singlePinyin => {
+            let [text, tone] = singlePinyin
+                .match(splitTonePatt)
+                .slice(1);
+            let diacritic = chosenPinyinToMark[tone] || '';
+            let firstVowel = vowelPatt.exec(text);
+            if (firstVowel !== null) {
+                let afterFirstVowel = firstVowel.index + 1;
+                return (text.slice(0, afterFirstVowel)
+                    + diacritic
+                    + text.slice(afterFirstVowel)
+                    + tone).normalize('NFC');
+            }
+            return text;
+        }).join(' ');
+}

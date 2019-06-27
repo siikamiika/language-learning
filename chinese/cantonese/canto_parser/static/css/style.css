@@ -21,11 +21,15 @@
 }
 
 .reading {
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .reading:hover {
     color: red;
+}
+
+.wordreading:hover .reading .hide {
+    display: initial;
 }
 
 .reading-list {

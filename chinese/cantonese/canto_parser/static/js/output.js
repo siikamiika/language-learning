@@ -61,11 +61,16 @@ class Output {
                             C: (word[1][this.view.app.settings.readingChoice == 'jyutping' ? 1 : 0] || []).map(reading => ({E: 'li',
                                 className: 'reading clickable',
                                 onclick: e => {
-                                    this._outputWordInfo(word[0], false, reading);
+                                    this._outputWordInfo(word[0], false, reading.withNum);
                                     e.stopPropagation();
                                 },
-                                onmouseenter: _ => this._outputMouseoverDefinition(word[0], reading),
-                                C: reading
+                                onmouseenter: _ => this._outputMouseoverDefinition(word[0], reading.withNum),
+                                // hide tone by default
+                                C: reading.withMark.split(' ').map(
+                                    singleReading => (
+                                        ([text, tone]) => [text, {E: 'span', className: 'hide', C: tone}, ' ']
+                                    )(singleReading.match(/([^\d]+)(\d?)/).slice(1))
+                                ).flat().slice(0, -1)
                             }))
                         }},
                     ]
