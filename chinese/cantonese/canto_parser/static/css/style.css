@@ -91,7 +91,7 @@
     z-index: 10;
     visibility: hidden;
     pointer-events: none;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .9);
     border: 1px solid black;
     width: 700px;
     max-width: 60vw;
