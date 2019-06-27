@@ -97,7 +97,7 @@ function range(start, end) {
 const obj2qs = obj => Object.keys(obj).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(obj[key])}`).join('&');
 
 function processGloss(gloss) {
-    let infoPatt = /^\[.*\]$/;
+    let infoPatt = /^\[(CC|CCC|CD|USR)\]$/;
     return gloss.match(/\[.*?\]|.+?((?=\[)|$)/g)
         .map(part =>
             infoPatt.test(part) ?
