@@ -31,11 +31,11 @@ class Input {
                         ([word, readings]) => [word, [
                             (readings[0] || []).map(pinyin => ({
                                 withNum: pinyin,
-                                withMark: pinyinToneNumToMark(pinyin, 'pinyin'),
+                                withMark: pinyinToneNumToMark(pinyin, 'pinyin').replace(/v/g, 'ü').normalize('NFC'),
                             })),
                             (readings[1] || []).map(jyutping => ({
                                 withNum: jyutping,
-                                withMark: pinyinToneNumToMark(jyutping, 'jyutping'),
+                                withMark: pinyinToneNumToMark(jyutping, 'jyutping').normalize('NFC'),
                             })),
                         ]]
                     )

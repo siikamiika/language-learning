@@ -20,10 +20,6 @@
     border-bottom: 3px solid black;
 }
 
-.reading {
-    font-size: 11px;
-}
-
 .reading:hover {
     color: red;
 }
@@ -42,19 +38,19 @@
     padding-inline-start: 0;
 }
 
-.reading-list li:nth-of-type(2):not(:last-child):after {
+.reading-list li:nth-of-type(1):not(:last-child):after {
     content: '...';
 }
 
-.reading-list li:nth-of-type(1n+3) {
+.reading-list li:nth-of-type(1n+2) {
     display: none;
 }
 
-.wordreading:hover .reading-list li:nth-of-type(1n+3) {
+.wordreading:hover .reading-list li:nth-of-type(1n+2) {
     display: block;
 }
 
-.wordreading:hover .reading-list li:nth-of-type(2):after {
+.wordreading:hover .reading-list li:nth-of-type(1):after {
     content: '';
 }
 

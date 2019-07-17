@@ -158,10 +158,10 @@ function pinyinToneNumToMark(pinyin, mode) {
             let firstVowel = vowelPatt.exec(text);
             if (firstVowel !== null) {
                 let afterFirstVowel = firstVowel.index + 1;
-                return (text.slice(0, afterFirstVowel)
+                return text.slice(0, afterFirstVowel)
                     + diacritic
                     + text.slice(afterFirstVowel)
-                    + tone).normalize('NFC');
+                    + tone;
             }
             return text;
         }).join(' ');
