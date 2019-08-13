@@ -25,10 +25,11 @@
 }
 
 .wordreading:hover .reading .hide {
-    display: initial;
+    visibility: visible;
 }
 
 .reading-list {
+    position: relative;
     list-style-type: none;
     margin: 0;
     margin-block-start: 0;
@@ -40,11 +41,18 @@
 }
 
 .reading-list li:nth-of-type(1):not(:last-child):after {
+    position: absolute;
+    right: -5px;
     content: '...';
 }
 
 .reading-list li:nth-of-type(1n+2) {
     display: none;
+}
+
+.tone {
+    color: gray;
+    font-size: 80%;
 }
 
 .wordreading:hover .reading-list li:nth-of-type(1n+2) {
@@ -133,5 +141,5 @@
 }
 
 .hide {
-    display: none;
+    visibility: hidden;
 }

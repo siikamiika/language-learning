@@ -68,9 +68,9 @@ class Output {
                                 // hide tone by default
                                 C: reading.withMark.split(' ').map(
                                     singleReading => (
-                                        ([text, tone]) => [text, {E: 'span', className: 'hide', C: tone}, ' ']
+                                        ([text, tone]) => [text, {E: 'span', className: 'tone hide', C: tone}]
                                     )(singleReading.match(/([^\d]+)(\d?)/).slice(1))
-                                ).flat().slice(0, -1)
+                                ).flat()
                             }))
                         }},
                     ]
@@ -104,7 +104,7 @@ class Output {
     }
 
     _updateMouseoverPosition(event) {
-        let X = Math.min(event.clientX, innerWidth - this.mouseoverDefinitionElement.clientWidth - 10) + 10;
+        let X = Math.min(event.clientX + 20, innerWidth - this.mouseoverDefinitionElement.clientWidth - 10) + 10;
         let Y = Math.min(event.clientY, innerHeight - this.mouseoverDefinitionElement.clientHeight);
         this.mouseoverDefinitionElement.style.left = X + 'px';
         this.mouseoverDefinitionElement.style.top = Y + 'px';
