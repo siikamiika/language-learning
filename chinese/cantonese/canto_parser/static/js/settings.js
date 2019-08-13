@@ -1,6 +1,6 @@
 function toggle(a, b) {
-    a.classList.remove('hide');
-    b.classList.add('hide');
+    a.classList.remove('remove');
+    b.classList.add('remove');
 }
 
 class Settings {
