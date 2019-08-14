@@ -18,6 +18,10 @@ class Settings {
         for (let readingChoice of this.readingChoiceElements) {
             if (readingChoice.value == this.view.app.settings.readingChoice) {
                 readingChoice.checked = true;
+                document.documentElement.lang = {
+                    pinyin: 'zh-CN',
+                    jyutping: 'zh-HK'
+                }[readingChoice.value];
             }
             readingChoice.addEventListener('click', e => this._updateSettings());
         }
