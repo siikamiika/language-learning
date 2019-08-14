@@ -9,8 +9,16 @@ class Settings {
         this.view = view;
         this.readingChoiceElements = document.getElementsByName('reading');
 
+        const storedSettings = localStorage.getItem('settings');
+        if (storedSettings) {
+            this.view.app.settings = JSON.parse(storedSettings);
+        }
+
         // reading choice
         for (let readingChoice of this.readingChoiceElements) {
+            if (readingChoice.value == this.view.app.settings.readingChoice) {
+                readingChoice.checked = true;
+            }
             readingChoice.addEventListener('click', e => this._updateSettings());
         }
     }
@@ -34,6 +42,7 @@ class Settings {
                 break;
             }
         }
+        localStorage.setItem('settings', JSON.stringify(this.view.app.settings));
     }
 
 }
